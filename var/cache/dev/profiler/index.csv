@@ -116,3 +116,15 @@ dd097d,127.0.0.1,GET,http://localhost:8084/checkUser/2,1697789701,,200
 73fc71,127.0.0.1,GET,http://localhost:8084/checkUser/2,1697789818,,200
 0edc39,127.0.0.1,GET,http://localhost:8084/verificar,1697789820,195612,404
 195612,127.0.0.1,GET,http://localhost:8084/verificar,1697789820,,404
+e9b6a7,127.0.0.1,GET,http://localhost:8084/checkUser/2,1697790077,,200
+f82b81,127.0.0.1,GET,http://localhost:8084/checkUser/2,1697790314,,200
+a3c0ea,127.0.0.1,GET,http://localhost:8084/usuario/editar/3,1697790319,673fce,500
+673fce,127.0.0.1,GET,http://localhost:8084/usuario/editar/3,1697790319,,500
+4800a6,127.0.0.1,GET,http://localhost:8084/usuario/editar/3,1697790339,d2e176,500
+d2e176,127.0.0.1,GET,http://localhost:8084/usuario/editar/3,1697790339,,500
+5b5a1e,127.0.0.1,GET,http://localhost:8084/usuario/editar/3,1697790410,,200
+7a4126,127.0.0.1,GET,http://localhost:8084/usuario/editar/3,1697790410,,200
+342186,127.0.0.1,GET,http://localhost:8084/usuario/editar/2,1697790425,,200
+ffa26f,127.0.0.1,POST,http://localhost:8084/usuario/editar/2,1697790448,,200
+c58688,127.0.0.1,GET,http://localhost:8084/usuario/editar/2,1697790452,,200
+397c6c,127.0.0.1,GET,http://localhost:8084/checkUser/2,1697790457,,200

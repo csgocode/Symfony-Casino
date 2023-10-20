@@ -65,5 +65,38 @@ class ControladorCasinoController extends AbstractController
     }
 
 
+    #[Route('/usuario/editar/{id}', name: 'editUser')]
+    public function edit(ManagerRegistry $doctrine, Request $request, $id) {
+        
+        $repositorio = $doctrine->getRepository(Usuarios::class);
+        $user = $repositorio->find($id);
+
+
+        $formulario = $this->createFormBuilder($user)
+            ->add('docIdentidad', TextType::class)
+            ->add('nombre', TextType::class)
+            ->add('apellido1', TextType::class)
+            ->add('apellido2', TextType::class)
+            ->add('email', EmailType::class, array('label' => 'Correo electrónico'))
+            ->add('contrasena', PasswordType::class)
+            ->add('save', SubmitType::class, array('label' => 'Enviar'))
+            ->getForm();
+            $formulario->handleRequest($request);
+
+            if ($formulario->isSubmitted() && $formulario->isValid()) {
+                $user = $formulario->getData();
+                $entityManager = $doctrine->getManager();
+                $entityManager->persist($user);
+                $entityManager->flush();
+            }
+
+
+        return $this->render('checks/edit.html.twig', array(
+            'formulario' => $formulario->createView()
+        ));
+
+    }
+
+
 
 }

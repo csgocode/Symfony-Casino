@@ -19,4 +19,5 @@ return [
     'app_controlador_casino' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::index'], [], [['text', '/controlador/casino']], [], [], []],
     'checkUser_DNI' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::checkUser'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/checkUser']], [], [], []],
     'newUser' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::nuevo'], [], [['text', '/usuario/nuevo']], [], [], []],
+    'editUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::edit'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/usuario/editar']], [], [], []],
 ];
