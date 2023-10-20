@@ -58,7 +58,7 @@ class ControladorCasinoController extends AbstractController
             }
 
 
-        return $this->render('checks/newUser.html.twig', array(
+        return $this->render('funciones/register.html.twig', array(
             'formulario' => $formulario->createView()
         ));
 
