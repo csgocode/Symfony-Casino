@@ -56,6 +56,9 @@ class Usuarios
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $DOC_SELFIE = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $banReason = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -225,6 +228,18 @@ class Usuarios
     public function setDOCSELFIE(?string $DOC_SELFIE): static
     {
         $this->DOC_SELFIE = $DOC_SELFIE;
+
+        return $this;
+    }
+
+    public function getBanReason(): ?string
+    {
+        return $this->banReason;
+    }
+
+    public function setBanReason(?string $banReason): static
+    {
+        $this->banReason = $banReason;
 
         return $this;
     }

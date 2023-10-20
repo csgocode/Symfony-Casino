@@ -5,6 +5,11 @@ namespace App\Controller;
 use App\Entity\Usuarios;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -18,14 +23,47 @@ class ControladorCasinoController extends AbstractController
         ]);
     }
 
-    #[Route('/checkUser/{DNI}', name: 'checkUser_DNI')]
-    public function checkUser(ManagerRegistry $doctrine, $dni): Response
+    #[Route('/checkUser/{id}', name: 'checkUser_DNI')]
+    public function checkUser(ManagerRegistry $doctrine, $id): Response
     {
         $repositorio = $doctrine->getRepository(Usuarios::class);
-        $usuario = $repositorio->find($dni);
+        $usuario = $repositorio->find($id);
 
-        return $this->render('checks/DNIcheck.html.twig', [
+        return $this->render('checks/DNIcheck.html.twig', array(
             'usuario' => $usuario
-        ]);
+        ));
     }
+
+    #[Route('/usuario/nuevo', name: 'newUser')]
+    public function nuevo(ManagerRegistry $doctrine, Request $request) {
+        $user = new Usuarios();
+
+        $formulario = $this->createFormBuilder($user)
+            ->add('docIdentidad', TextType::class)
+            ->add('nombre', TextType::class)
+            ->add('apellido1', TextType::class)
+            ->add('apellido2', TextType::class)
+            ->add('email', EmailType::class, array('label' => 'Correo electrónico'))
+            ->add('contrasena', PasswordType::class)
+            ->add('save', SubmitType::class, array('label' => 'Enviar'))
+            ->getForm();
+            $formulario->handleRequest($request);
+
+            if ($formulario->isSubmitted() && $formulario->isValid()) {
+                $user = $formulario->getData();
+                $entityManager = $doctrine->getManager();
+                $entityManager->persist($user);
+                $entityManager->flush();
+                return $this->redirectToRoute('checkUser_DNI', ["id" => $user->getId()]);
+            }
+
+
+        return $this->render('checks/newUser.html.twig', array(
+            'formulario' => $formulario->createView()
+        ));
+
+    }
+
+
+
 }

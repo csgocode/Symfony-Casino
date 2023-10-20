@@ -5,6 +5,31 @@
         <title>DNI Check</title>
     </head>
     <body>
-       <p>{{contacto.DNI}}</p>
+<h2>Usuario ID {{ usuario.id }}</h2>
+<p><strong>Documento identidad:</strong> {{ usuario.docidentidad }}</p>
+<p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
+<p><strong>Apellidos:</strong> {{ usuario.apellido1 }} {{ usuario.apellido2 }}</p>
+<p><strong>Correo:</strong> {{ usuario.email }}</p>
+<p><strong>Password:</strong> {{ usuario.contrasena }}</p>
+<p><strong>Último login:</strong> {{ usuario.lastlogin|date('d-m-Y') }}</p>
+<p><strong>Dinero disponible:</strong> {{ usuario.dinero }}€</p>
+<p><strong>Baneado:</strong> {{ usuario.estaBaneado == 1 ? 'Sí' : 'No' }}</p>
+{% if usuario.estaBaneado == 1 %}
+<p><strong>Razón baneo:</strong> {{ usuario.banreason }}</p>
+<p><strong>Solicitar desbaneo:</strong><a href="/unban"><button>Solicitar unban</button></a></p>
+{% endif %}
+<p><strong>Verificado:</strong> {{ usuario.estaVerificado == 1 ? 'Sí' : 'No' }}</p>
+{% if usuario.estaVerificado == 1 %}
+    <p><strong>Cara DNI:</strong> {{ usuario.docimg1 }}</p>
+    <img src="../docs/{{ usuario.docimg1 }}" />
+    <p><strong>Parte trasera DNI:</strong> {{ usuario.docimg2 }}</p>
+    <img src="../docs/{{ usuario.docimg2 }}" />
+    <p><strong>Selfie:</strong> {{ usuario.docselfie }}</p>
+    <img src="../docs/{{ usuario.docselfie }}" />
+{% else %}
+<p>Solicita tu verificacion de identidad:<a href="/verificar"><button>Verificar tu identidad</button></a></p> 
+{% endif %}
+
+
     </body>
 </html>

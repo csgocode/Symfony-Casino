@@ -17,5 +17,6 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'app_controlador_casino' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::index'], [], [['text', '/controlador/casino']], [], [], []],
-    'checkUser_DNI' => [['DNI'], ['_controller' => 'App\\Controller\\ControladorCasinoController::checkUser'], [], [['variable', '/', '[^/]++', 'DNI', true], ['text', '/checkUser']], [], [], []],
+    'checkUser_DNI' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::checkUser'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/checkUser']], [], [], []],
+    'newUser' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::nuevo'], [], [['text', '/usuario/nuevo']], [], [], []],
 ];
