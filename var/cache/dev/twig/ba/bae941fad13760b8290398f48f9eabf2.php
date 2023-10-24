@@ -71,7 +71,7 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
         echo "</p>
 <p><strong>Password:</strong> ";
         // line 13
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 13, $this->source); })()), "contrasena", [], "any", false, false, false, 13), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 13, $this->source); })()), "password", [], "any", false, false, false, 13), "html", null, true);
         echo "</p>
 <p><strong>Último login:</strong> ";
         // line 14
@@ -90,7 +90,7 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
         if ((twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 17, $this->source); })()), "estaBaneado", [], "any", false, false, false, 17) == 1)) {
             // line 18
             echo "<p><strong>Razón baneo:</strong> ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 18, $this->source); })()), "banreason", [], "any", false, false, false, 18), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 18, $this->source); })()), "razonbaneo", [], "any", false, false, false, 18), "html", null, true);
             echo "</p>
 <p><strong>Solicitar desbaneo:</strong><a href=\"/unban\"><button>Solicitar unban</button></a></p>
 ";
@@ -174,12 +174,12 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
 <p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
 <p><strong>Apellidos:</strong> {{ usuario.apellido1 }} {{ usuario.apellido2 }}</p>
 <p><strong>Correo:</strong> {{ usuario.email }}</p>
-<p><strong>Password:</strong> {{ usuario.contrasena }}</p>
+<p><strong>Password:</strong> {{ usuario.password }}</p>
 <p><strong>Último login:</strong> {{ usuario.lastlogin|date('d-m-Y') }}</p>
 <p><strong>Dinero disponible:</strong> {{ usuario.dinero }}€</p>
 <p><strong>Baneado:</strong> {{ usuario.estaBaneado == 1 ? 'Sí' : 'No' }}</p>
 {% if usuario.estaBaneado == 1 %}
-<p><strong>Razón baneo:</strong> {{ usuario.banreason }}</p>
+<p><strong>Razón baneo:</strong> {{ usuario.razonbaneo }}</p>
 <p><strong>Solicitar desbaneo:</strong><a href=\"/unban\"><button>Solicitar unban</button></a></p>
 {% endif %}
 <p><strong>Verificado:</strong> {{ usuario.estaVerificado == 1 ? 'Sí' : 'No' }}</p>

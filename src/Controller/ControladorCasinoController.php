@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\Usuarios;
+use App\Entity\User;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
@@ -26,7 +26,7 @@ class ControladorCasinoController extends AbstractController
     #[Route('/checkUser/{id}', name: 'checkUser_DNI')]
     public function checkUser(ManagerRegistry $doctrine, $id): Response
     {
-        $repositorio = $doctrine->getRepository(Usuarios::class);
+        $repositorio = $doctrine->getRepository(User::class);
         $usuario = $repositorio->find($id);
 
         return $this->render('checks/DNIcheck.html.twig', array(
@@ -34,9 +34,33 @@ class ControladorCasinoController extends AbstractController
         ));
     }
 
+    #[Route('/checkUsers', name: 'checkusers')]
+    public function checkAllUsers(ManagerRegistry $doctrine): Response
+    {
+        $repositorio = $doctrine->getRepository(User::class);
+        $usuarios = $repositorio->findAll();
+
+        return $this->render('checks/checkAllUsers.html.twig', array(
+            'usuarios' => $usuarios
+        ));
+    }
+
+    #[Route('/checkBannedUsers', name: 'bannedUsers')]
+    public function checkBannedUsers(ManagerRegistry $doctrine): Response
+    {
+        $repositorio = $doctrine->getRepository(User::class);
+        $usuariosBaneados = $repositorio->findBy(['estaBaneado' => 1]);
+
+        return $this->render('checks/checkBannedUsers.html.twig', array(
+            'usuarios' => $usuariosBaneados
+        ));
+    }
+
+
+
     #[Route('/usuario/nuevo', name: 'newUser')]
     public function nuevo(ManagerRegistry $doctrine, Request $request) {
-        $user = new Usuarios();
+        $user = new User();
 
         $formulario = $this->createFormBuilder($user)
             ->add('docIdentidad', TextType::class)
@@ -44,7 +68,7 @@ class ControladorCasinoController extends AbstractController
             ->add('apellido1', TextType::class)
             ->add('apellido2', TextType::class)
             ->add('email', EmailType::class, array('label' => 'Correo electrónico'))
-            ->add('contrasena', PasswordType::class)
+            ->add('password', PasswordType::class)
             ->add('save', SubmitType::class, array('label' => 'Enviar'))
             ->getForm();
             $formulario->handleRequest($request);
@@ -68,7 +92,7 @@ class ControladorCasinoController extends AbstractController
     #[Route('/usuario/editar/{id}', name: 'editUser')]
     public function edit(ManagerRegistry $doctrine, Request $request, $id) {
         
-        $repositorio = $doctrine->getRepository(Usuarios::class);
+        $repositorio = $doctrine->getRepository(User::class);
         $user = $repositorio->find($id);
 
 
@@ -78,7 +102,7 @@ class ControladorCasinoController extends AbstractController
             ->add('apellido1', TextType::class)
             ->add('apellido2', TextType::class)
             ->add('email', EmailType::class, array('label' => 'Correo electrónico'))
-            ->add('contrasena', PasswordType::class)
+            ->add('password', PasswordType::class)
             ->add('save', SubmitType::class, array('label' => 'Enviar'))
             ->getForm();
             $formulario->handleRequest($request);

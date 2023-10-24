@@ -18,6 +18,8 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'app_controlador_casino' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::index'], [], [['text', '/controlador/casino']], [], [], []],
     'checkUser_DNI' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::checkUser'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/checkUser']], [], [], []],
+    'checkusers' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::checkAllUsers'], [], [['text', '/checkUsers']], [], [], []],
+    'bannedUsers' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::checkBannedUsers'], [], [['text', '/checkBannedUsers']], [], [], []],
     'newUser' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::nuevo'], [], [['text', '/usuario/nuevo']], [], [], []],
     'editUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::edit'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/usuario/editar']], [], [], []],
 ];
