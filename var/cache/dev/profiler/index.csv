@@ -413,3 +413,10 @@ f3d4f8,127.0.0.1,POST,http://localhost:8080/usuario/makeAdmin/8,1698222657,,302
 e4c6f0,127.0.0.1,GET,http://localhost:8080/checkUsers,1698222657,,200
 ab1ce2,127.0.0.1,GET,http://localhost:8080/checkUsers,1698222879,,200
 77ad8d,127.0.0.1,GET,http://localhost:8080/checkUsers,1698222905,,200
+35872a,127.0.0.1,GET,http://localhost:8080/checkUsers,1698222995,,200
+bf3535,127.0.0.1,GET,http://localhost:8080/checkUsers,1698223027,,200
+d2480c,127.0.0.1,GET,http://localhost:8080/checkUsers,1698223075,,200
+d99466,127.0.0.1,GET,http://localhost:8080/usuario/makeAdmin/7,1698223098,,200
+857090,127.0.0.1,POST,http://localhost:8080/usuario/makeAdmin/7,1698223102,,302
+ba1a9d,127.0.0.1,GET,http://localhost:8080/checkUsers,1698223102,,200
+7c11ac,127.0.0.1,GET,http://localhost:8080/usuario/verificar/8,1698223113,,200
