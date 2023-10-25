@@ -1,0 +1,8 @@
+{% extends "base.html.twig" %}
+{% block title %}Usuario{% endblock %}
+{% block body %}
+<h1>Toni Casino - Verificación de identidad</h1><hr>
+<p>Comprueba que los datos coinciden con los de tu cuenta, de lo contrario vamos a denegar tu solicitud de verificación.</p>
+<p>{{usuario.nombre}} {{usuario.apellido1}} {{usuario.apellido2}} - Nacimiento: {{usuario.fechaNacimiento|date('d-m-Y')}}</p>
+{{ form(formulario) }}
+{% endblock %}

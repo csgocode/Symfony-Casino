@@ -10,10 +10,11 @@
 
 {% for usuario in usuarios %}
     <hr>
-    <h3>Usuario ID {{ usuario.id }}</h3>
+    <h3>Usuario ID {{ usuario.id }}</h3><a href="../checkUser/{{usuario.id}}"><button>Ver usuario</button></a> <a href="../usuario/editar/{{usuario.id}}"><button>Editar usuario</button></a> <a href="../usuario/eliminar/{{usuario.id}}"><button>Eliminar usuario</button></a>
     <p><strong>Documento identidad:</strong> {{ usuario.docidentidad }}</p>
     <p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
     <p><strong>Apellidos:</strong> {{ usuario.apellido1 }} {{ usuario.apellido2 }}</p>
+    <p><strong>Fecha nacimiento:</strong> {{usuario.fechaNacimiento|date('d-m-Y') }}</p>
     <p><strong>Correo:</strong> {{ usuario.email }}</p>
     <p><strong>Password:</strong> {{ usuario.password }}</p>
     <p><strong>Último login:</strong> {{ usuario.lastlogin|date('d-m-Y') }}</p>
@@ -22,19 +23,22 @@
 
     {% if usuario.estaBaneado == 1 %}
     <p><strong>Razón baneo:</strong> {{ usuario.razonbaneo }}</p>
-    <p><strong>Solicitar desbaneo: </strong><a href="/unban/{{usuario.id}}"><button>Solicitar unban</button></a></p>
+    <p><strong>Solicitar desbaneo: </strong><a href="../usuario/unban/{{usuario.id}}"><button>Solicitar unban</button></a></p>
+    {% else %}
+    <a href="../usuario/banear/{{usuario.id}}"><button>Banear usuario</button></a>
     {% endif %}
+
 
     <p><strong>Verificado:</strong> {{ usuario.estaVerificado == 1 ? 'Sí' : 'No' }}</p>
     {% if usuario.estaVerificado == 1 %}
         <p><strong>Cara DNI:</strong> {{ usuario.docimg1 }}</p>
-        <img src="../docs/{{ usuario.docimg1 }}" alt="Cara DNI" />
+        <img src="..{{ usuario.docimg1 }}" alt="Cara DNI" />
         <p><strong>Parte trasera DNI:</strong> {{ usuario.docimg2 }}</p>
-        <img src="../docs/{{ usuario.docimg2 }}" alt="Parte trasera DNI" />
+        <img src="..{{ usuario.docimg2 }}" alt="Parte trasera DNI" />
         <p><strong>Selfie:</strong> {{ usuario.docselfie }}</p>
-        <img src="../docs/{{ usuario.docselfie }}" alt="Selfie" />
+        <img src="..{{ usuario.docselfie }}" alt="Selfie" />
     {% else %}
-    <p>Solicita tu verificación de identidad: <a href="/verificar/{{usuario.id}}"><button>Verificar tu identidad</button></a></p> 
+    <p>Solicita tu verificación de identidad: <a href="../usuario/verificar/{{usuario.id}}"><button>Verificar tu identidad</button></a></p> 
     {% endif %}
 {% endfor %}
 

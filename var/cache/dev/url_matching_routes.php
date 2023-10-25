@@ -14,7 +14,7 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-        '/controlador/casino' => [[['_route' => 'app_controlador_casino', '_controller' => 'App\\Controller\\ControladorCasinoController::index'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'app_controlador_casino', '_controller' => 'App\\Controller\\ControladorCasinoController::index'], null, null, null, false, false, null]],
         '/checkUsers' => [[['_route' => 'checkusers', '_controller' => 'App\\Controller\\ControladorCasinoController::checkAllUsers'], null, null, null, false, false, null]],
         '/checkBannedUsers' => [[['_route' => 'bannedUsers', '_controller' => 'App\\Controller\\ControladorCasinoController::checkBannedUsers'], null, null, null, false, false, null]],
         '/usuario/nuevo' => [[['_route' => 'newUser', '_controller' => 'App\\Controller\\ControladorCasinoController::nuevo'], null, null, null, false, false, null]],
@@ -37,7 +37,15 @@ return [
                     .')'
                 .')'
                 .'|/checkUser/([^/]++)(*:188)'
-                .'|/usuario/editar/([^/]++)(*:220)'
+                .'|/usuario/(?'
+                    .'|e(?'
+                        .'|ditar/([^/]++)(*:226)'
+                        .'|liminar/([^/]++)(*:250)'
+                    .')'
+                    .'|banear/([^/]++)(*:274)'
+                    .'|unban/([^/]++)(*:296)'
+                    .'|verificar/([^/]++)(*:322)'
+                .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -49,8 +57,12 @@ return [
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
         188 => [[['_route' => 'checkUser_DNI', '_controller' => 'App\\Controller\\ControladorCasinoController::checkUser'], ['id'], null, null, false, true, null]],
-        220 => [
-            [['_route' => 'editUser', '_controller' => 'App\\Controller\\ControladorCasinoController::edit'], ['id'], null, null, false, true, null],
+        226 => [[['_route' => 'editUser', '_controller' => 'App\\Controller\\ControladorCasinoController::edit'], ['id'], null, null, false, true, null]],
+        250 => [[['_route' => 'removeUser', '_controller' => 'App\\Controller\\ControladorCasinoController::eliminar'], ['id'], null, null, false, true, null]],
+        274 => [[['_route' => 'banUser', '_controller' => 'App\\Controller\\ControladorCasinoController::banear'], ['id'], null, null, false, true, null]],
+        296 => [[['_route' => 'unbanUser', '_controller' => 'App\\Controller\\ControladorCasinoController::desbanear'], ['id'], null, null, false, true, null]],
+        322 => [
+            [['_route' => 'verifyUser', '_controller' => 'App\\Controller\\ControladorCasinoController::verifyUser'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

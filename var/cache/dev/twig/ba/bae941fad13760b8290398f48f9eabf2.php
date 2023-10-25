@@ -65,74 +65,78 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
         echo " ";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 11, $this->source); })()), "apellido2", [], "any", false, false, false, 11), "html", null, true);
         echo "</p>
-<p><strong>Correo:</strong> ";
+<p><strong>Fecha nacimiento:</strong> ";
         // line 12
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 12, $this->source); })()), "email", [], "any", false, false, false, 12), "html", null, true);
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 12, $this->source); })()), "fechaNacimiento", [], "any", false, false, false, 12), "d-m-Y"), "html", null, true);
+        echo "</p>
+<p><strong>Correo:</strong> ";
+        // line 13
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 13, $this->source); })()), "email", [], "any", false, false, false, 13), "html", null, true);
         echo "</p>
 <p><strong>Password:</strong> ";
-        // line 13
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 13, $this->source); })()), "password", [], "any", false, false, false, 13), "html", null, true);
+        // line 14
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 14, $this->source); })()), "password", [], "any", false, false, false, 14), "html", null, true);
         echo "</p>
 <p><strong>Último login:</strong> ";
-        // line 14
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 14, $this->source); })()), "lastlogin", [], "any", false, false, false, 14), "d-m-Y"), "html", null, true);
+        // line 15
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 15, $this->source); })()), "lastlogin", [], "any", false, false, false, 15), "d-m-Y"), "html", null, true);
         echo "</p>
 <p><strong>Dinero disponible:</strong> ";
-        // line 15
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 15, $this->source); })()), "dinero", [], "any", false, false, false, 15), "html", null, true);
+        // line 16
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 16, $this->source); })()), "dinero", [], "any", false, false, false, 16), "html", null, true);
         echo "€</p>
 <p><strong>Baneado:</strong> ";
-        // line 16
-        echo (((twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 16, $this->source); })()), "estaBaneado", [], "any", false, false, false, 16) == 1)) ? ("Sí") : ("No"));
+        // line 17
+        echo (((twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 17, $this->source); })()), "estaBaneado", [], "any", false, false, false, 17) == 1)) ? ("Sí") : ("No"));
         echo "</p>
 ";
-        // line 17
-        if ((twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 17, $this->source); })()), "estaBaneado", [], "any", false, false, false, 17) == 1)) {
-            // line 18
+        // line 18
+        if ((twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 18, $this->source); })()), "estaBaneado", [], "any", false, false, false, 18) == 1)) {
+            // line 19
             echo "<p><strong>Razón baneo:</strong> ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 18, $this->source); })()), "razonbaneo", [], "any", false, false, false, 18), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 19, $this->source); })()), "razonbaneo", [], "any", false, false, false, 19), "html", null, true);
             echo "</p>
 <p><strong>Solicitar desbaneo:</strong><a href=\"/unban\"><button>Solicitar unban</button></a></p>
 ";
         }
-        // line 21
+        // line 22
         echo "<p><strong>Verificado:</strong> ";
-        echo (((twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 21, $this->source); })()), "estaVerificado", [], "any", false, false, false, 21) == 1)) ? ("Sí") : ("No"));
+        echo (((twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 22, $this->source); })()), "estaVerificado", [], "any", false, false, false, 22) == 1)) ? ("Sí") : ("No"));
         echo "</p>
 ";
-        // line 22
-        if ((twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 22, $this->source); })()), "estaVerificado", [], "any", false, false, false, 22) == 1)) {
-            // line 23
-            echo "    <p><strong>Cara DNI:</strong> ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 23, $this->source); })()), "docimg1", [], "any", false, false, false, 23), "html", null, true);
-            echo "</p>
-    <img src=\"../docs/";
+        // line 23
+        if ((twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 23, $this->source); })()), "estaVerificado", [], "any", false, false, false, 23) == 1)) {
             // line 24
+            echo "    <p><strong>Cara DNI:</strong> ";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 24, $this->source); })()), "docimg1", [], "any", false, false, false, 24), "html", null, true);
+            echo "</p>
+    <img src=\"..";
+            // line 25
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 25, $this->source); })()), "docimg1", [], "any", false, false, false, 25), "html", null, true);
             echo "\" />
     <p><strong>Parte trasera DNI:</strong> ";
-            // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 25, $this->source); })()), "docimg2", [], "any", false, false, false, 25), "html", null, true);
-            echo "</p>
-    <img src=\"../docs/";
             // line 26
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 26, $this->source); })()), "docimg2", [], "any", false, false, false, 26), "html", null, true);
+            echo "</p>
+    <img src=\"..";
+            // line 27
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 27, $this->source); })()), "docimg2", [], "any", false, false, false, 27), "html", null, true);
             echo "\" />
     <p><strong>Selfie:</strong> ";
-            // line 27
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 27, $this->source); })()), "docselfie", [], "any", false, false, false, 27), "html", null, true);
-            echo "</p>
-    <img src=\"../docs/";
             // line 28
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 28, $this->source); })()), "docselfie", [], "any", false, false, false, 28), "html", null, true);
+            echo "</p>
+    <img src=\"..";
+            // line 29
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 29, $this->source); })()), "docselfie", [], "any", false, false, false, 29), "html", null, true);
             echo "\" />
 ";
         } else {
-            // line 30
+            // line 31
             echo "<p>Solicita tu verificacion de identidad:<a href=\"/verificar\"><button>Verificar tu identidad</button></a></p> 
 ";
         }
-        // line 32
+        // line 33
         echo "
 
     </body>
@@ -157,7 +161,7 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
 
     public function getDebugInfo()
     {
-        return array (  136 => 32,  132 => 30,  127 => 28,  123 => 27,  119 => 26,  115 => 25,  111 => 24,  106 => 23,  104 => 22,  99 => 21,  92 => 18,  90 => 17,  86 => 16,  82 => 15,  78 => 14,  74 => 13,  70 => 12,  64 => 11,  60 => 10,  56 => 9,  52 => 8,  43 => 1,);
+        return array (  140 => 33,  136 => 31,  131 => 29,  127 => 28,  123 => 27,  119 => 26,  115 => 25,  110 => 24,  108 => 23,  103 => 22,  96 => 19,  94 => 18,  90 => 17,  86 => 16,  82 => 15,  78 => 14,  74 => 13,  70 => 12,  64 => 11,  60 => 10,  56 => 9,  52 => 8,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -173,6 +177,7 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
 <p><strong>Documento identidad:</strong> {{ usuario.docidentidad }}</p>
 <p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
 <p><strong>Apellidos:</strong> {{ usuario.apellido1 }} {{ usuario.apellido2 }}</p>
+<p><strong>Fecha nacimiento:</strong> {{ usuario.fechaNacimiento|date('d-m-Y')}}</p>
 <p><strong>Correo:</strong> {{ usuario.email }}</p>
 <p><strong>Password:</strong> {{ usuario.password }}</p>
 <p><strong>Último login:</strong> {{ usuario.lastlogin|date('d-m-Y') }}</p>
@@ -185,11 +190,11 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
 <p><strong>Verificado:</strong> {{ usuario.estaVerificado == 1 ? 'Sí' : 'No' }}</p>
 {% if usuario.estaVerificado == 1 %}
     <p><strong>Cara DNI:</strong> {{ usuario.docimg1 }}</p>
-    <img src=\"../docs/{{ usuario.docimg1 }}\" />
+    <img src=\"..{{ usuario.docimg1 }}\" />
     <p><strong>Parte trasera DNI:</strong> {{ usuario.docimg2 }}</p>
-    <img src=\"../docs/{{ usuario.docimg2 }}\" />
+    <img src=\"..{{ usuario.docimg2 }}\" />
     <p><strong>Selfie:</strong> {{ usuario.docselfie }}</p>
-    <img src=\"../docs/{{ usuario.docselfie }}\" />
+    <img src=\"..{{ usuario.docselfie }}\" />
 {% else %}
 <p>Solicita tu verificacion de identidad:<a href=\"/verificar\"><button>Verificar tu identidad</button></a></p> 
 {% endif %}

@@ -67,6 +67,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $docselfie = null;
 
+    #[ORM\Column(type: Types::DATE_MUTABLE, nullable: true)]
+    private ?\DateTimeInterface $fechaNacimiento = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -289,6 +292,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setDocselfie(?string $docselfie): static
     {
         $this->docselfie = $docselfie;
+
+        return $this;
+    }
+
+    public function getFechaNacimiento(): ?\DateTimeInterface
+    {
+        return $this->fechaNacimiento;
+    }
+
+    public function setFechaNacimiento(?\DateTimeInterface $fechaNacimiento): static
+    {
+        $this->fechaNacimiento = $fechaNacimiento;
 
         return $this;
     }
