@@ -1,0 +1,8 @@
+{% extends "base.html.twig" %}
+{% block title %}Usuario{% endblock %}
+{% block body %}
+<h1>Admin panel - Quitar permisos de administrador</h1><hr>
+<p>Estas en la ficha del usuario: {{usuario.id}} - {{usuario.nombre}} {{usuario.apellido1}} {{usuario.apellido2}}</p><hr>
+<p>¿Estás seguro que quieres darle permisos de usuario normal?</p>
+{{ form(formulario) }}
+{% endblock %}

@@ -404,3 +404,12 @@ a3b0fd,127.0.0.1,GET,http://localhost:8080/checkUser/7,1698221837,,200
 cf4170,127.0.0.1,POST,http://localhost:8080/usuario/nuevo,1698222113,,302
 4ade91,127.0.0.1,GET,http://localhost:8080/checkUser/8,1698222113,,200
 38a20d,127.0.0.1,GET,http://localhost:8080/checkUsers,1698222145,,200
+aacf6b,127.0.0.1,GET,http://localhost:8080/checkUsers,1698222633,,200
+0f0797,127.0.0.1,GET,http://localhost:8080/usuario/makeAdmin/3,1698222637,,200
+6e5c34,127.0.0.1,POST,http://localhost:8080/usuario/makeAdmin/3,1698222639,,302
+0457a7,127.0.0.1,GET,http://localhost:8080/checkUsers,1698222639,,200
+e04d27,127.0.0.1,GET,http://localhost:8080/usuario/makeAdmin/8,1698222655,,200
+f3d4f8,127.0.0.1,POST,http://localhost:8080/usuario/makeAdmin/8,1698222657,,302
+e4c6f0,127.0.0.1,GET,http://localhost:8080/checkUsers,1698222657,,200
+ab1ce2,127.0.0.1,GET,http://localhost:8080/checkUsers,1698222879,,200
+77ad8d,127.0.0.1,GET,http://localhost:8080/checkUsers,1698222905,,200

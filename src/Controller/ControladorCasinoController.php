@@ -84,6 +84,7 @@ class ControladorCasinoController extends AbstractController
                 $user->setiplastlogin($_SERVER['REMOTE_ADDR']);
                 $user->setestabaneado(0);
                 $user->setestaverificado(0);
+                $user->setisAdmin(false);
                 $user->setrazonbaneo("Usuario limpio");
                 $entityManager = $doctrine->getManager();
                 $entityManager->persist($user);
@@ -164,6 +165,40 @@ class ControladorCasinoController extends AbstractController
         }
 
         return $this->render('checks/banear.html.twig', array(
+            'formulario' => $formulario->createView(),
+            'usuario' => $user
+        ));
+}
+
+
+#[Route('/usuario/makeAdmin/{id}', name: 'adminUser')]
+    public function makeAdm(ManagerRegistry $doctrine, Request $request, $id) {
+    
+        $repositorio = $doctrine->getRepository(User::class);
+        $user = $repositorio->find($id);
+
+        if (!$user) {
+            throw $this->createNotFoundException('No se encontró el usuario con ID: ' . $id);
+        }
+
+        $formulario = $this->createFormBuilder($user)
+            ->add('save', SubmitType::class, array('label' => 'Hacer admin'))
+            ->getForm();
+
+        $formulario->handleRequest($request);
+
+        if ($formulario->isSubmitted() && $formulario->isValid()) {
+            $user->setIsAdmin(true);
+            
+            $entityManager = $doctrine->getManager();
+            $entityManager->persist($user);
+            $entityManager->flush();
+
+            $this->addFlash('success', 'El usuario se ha convertido en admin exitosamente.');
+            return new RedirectResponse('/checkUsers');
+        }
+
+        return $this->render('checks/makeAdmin.html.twig', array(
             'formulario' => $formulario->createView(),
             'usuario' => $user
         ));

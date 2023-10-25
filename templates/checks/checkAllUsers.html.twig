@@ -19,6 +19,11 @@
     <p><strong>Password:</strong> {{ usuario.password }}</p>
     <p><strong>Último login:</strong> {{ usuario.lastlogin|date('d-m-Y') }}</p>
     <p><strong>Dinero disponible:</strong> {{ usuario.dinero }}€</p>
+    {% if usuario.isAdmin == true %}
+    <p><strong>Quitar administrador:</strong> <a href="../usuario/removeAdmin/{{usuario.id}}"><button>Quitar admin</button></a></p>
+    {% else %}
+    <p><strong>Hacer admin:</strong> <a href="../usuario/makeAdmin/{{usuario.id}}"><button>Hacer admin</button></a>
+    {% endif %}
     <p><strong>Baneado:</strong> {{ usuario.estaBaneado == 1 ? 'Sí' : 'No' }}</p>
 
     {% if usuario.estaBaneado == 1 %}

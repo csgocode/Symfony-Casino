@@ -70,6 +70,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: Types::DATE_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $fechaNacimiento = null;
 
+    #[ORM\Column]
+    private ?bool $isAdmin = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -304,6 +307,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setFechaNacimiento(?\DateTimeInterface $fechaNacimiento): static
     {
         $this->fechaNacimiento = $fechaNacimiento;
+
+        return $this;
+    }
+
+    public function isIsAdmin(): ?bool
+    {
+        return $this->isAdmin;
+    }
+
+    public function setIsAdmin(bool $isAdmin): static
+    {
+        $this->isAdmin = $isAdmin;
 
         return $this;
     }

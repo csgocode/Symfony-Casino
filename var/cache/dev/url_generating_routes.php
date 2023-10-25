@@ -23,6 +23,7 @@ return [
     'newUser' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::nuevo'], [], [['text', '/usuario/nuevo']], [], [], []],
     'editUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::edit'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/usuario/editar']], [], [], []],
     'banUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::banear'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/usuario/banear']], [], [], []],
+    'adminUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::makeAdm'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/usuario/makeAdmin']], [], [], []],
     'unbanUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::desbanear'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/usuario/unban']], [], [], []],
     'removeUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::eliminar'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/usuario/eliminar']], [], [], []],
     'verifyUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::verifyUser'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/usuario/verificar']], [], [], []],
