@@ -44,9 +44,10 @@ return [
                     .')'
                     .'|banear/([^/]++)(*:274)'
                     .'|makeAdmin/([^/]++)(*:300)'
-                    .'|unban/([^/]++)(*:322)'
-                    .'|verificar/([^/]++)(*:348)'
+                    .'|removeAdmin/([^/]++)(*:328)'
+                    .'|unban/([^/]++)(*:350)'
                 .')'
+                .'|/perfil/verificacion/([^/]++)(*:388)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -62,8 +63,9 @@ return [
         250 => [[['_route' => 'removeUser', '_controller' => 'App\\Controller\\ControladorCasinoController::eliminar'], ['id'], null, null, false, true, null]],
         274 => [[['_route' => 'banUser', '_controller' => 'App\\Controller\\ControladorCasinoController::banear'], ['id'], null, null, false, true, null]],
         300 => [[['_route' => 'adminUser', '_controller' => 'App\\Controller\\ControladorCasinoController::makeAdm'], ['id'], null, null, false, true, null]],
-        322 => [[['_route' => 'unbanUser', '_controller' => 'App\\Controller\\ControladorCasinoController::desbanear'], ['id'], null, null, false, true, null]],
-        348 => [
+        328 => [[['_route' => 'removeadminUser', '_controller' => 'App\\Controller\\ControladorCasinoController::removeAdm'], ['id'], null, null, false, true, null]],
+        350 => [[['_route' => 'unbanUser', '_controller' => 'App\\Controller\\ControladorCasinoController::desbanear'], ['id'], null, null, false, true, null]],
+        388 => [
             [['_route' => 'verifyUser', '_controller' => 'App\\Controller\\ControladorCasinoController::verifyUser'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

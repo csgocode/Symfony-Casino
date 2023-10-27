@@ -16,6 +16,9 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\String\Slugger\AsciiSlugger;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 class ControladorCasinoController extends AbstractController
 {
@@ -204,6 +207,39 @@ class ControladorCasinoController extends AbstractController
         ));
 }
 
+#[Route('/usuario/removeAdmin/{id}', name: 'removeadminUser')]
+    public function removeAdm(ManagerRegistry $doctrine, Request $request, $id) {
+    
+        $repositorio = $doctrine->getRepository(User::class);
+        $user = $repositorio->find($id);
+
+        if (!$user) {
+            throw $this->createNotFoundException('No se encontró el usuario con ID: ' . $id);
+        }
+
+        $formulario = $this->createFormBuilder($user)
+            ->add('save', SubmitType::class, array('label' => 'Quitar admin'))
+            ->getForm();
+
+        $formulario->handleRequest($request);
+
+        if ($formulario->isSubmitted() && $formulario->isValid()) {
+            $user->setIsAdmin(true);
+            
+            $entityManager = $doctrine->getManager();
+            $entityManager->persist($user);
+            $entityManager->flush();
+
+            $this->addFlash('success', 'El usuario se ha convertido en usuario normal exitosamente.');
+            return new RedirectResponse('/checkUsers');
+        }
+
+        return $this->render('checks/removeAdmin.html.twig', array(
+            'formulario' => $formulario->createView(),
+            'usuario' => $user
+        ));
+}
+
     #[Route('/usuario/unban/{id}', name: 'unbanUser')]
     public function desbanear(ManagerRegistry $doctrine, Request $request, $id) {
 
@@ -264,58 +300,122 @@ class ControladorCasinoController extends AbstractController
         ]);
 }
 
-#[Route('/usuario/verificar/{id}', name: 'verifyUser')]
+#[Route('/perfil/verificacion/{id}', name: 'verifyUser')]
 public function verifyUser(ManagerRegistry $doctrine, Request $request, $id) {
     $repositorio = $doctrine->getRepository(User::class);
     $user = $repositorio->find($id);
+    $verified = $repositorio->find($id);
 
     $formulario = $this->createFormBuilder($user)
-        ->add('docimg1', FileType::class, array('label' => 'Cara DNI (JPG/PNG)'))
-        ->add('docimg2', FileType::class, array('label' => 'Trasero DNI (JPG/PNG)'))
-        ->add('docselfie', FileType::class, array('label' => 'Selfie + DNI (JPG/PNG)'))
+    ->add('docimg1', FileType::class, array(
+        'label' => 'Cara DNI (JPG/PNG)',
+        'data_class' => null,
+        'constraints' => array(
+            new Assert\File(array(
+                'mimeTypes' => array(
+                    'image/jpeg',
+                    'image/png'
+                ),
+                'mimeTypesMessage' => 'Por favor, sube una imagen válida (JPG o PNG).',
+            ))
+        )
+    ))    
+    ->add('docimg2', FileType::class, array(
+        'label' => 'Trasero DNI (JPG/PNG)',
+        'data_class' => null,
+        'constraints' => array(
+            new Assert\File(array(
+                'mimeTypes' => array(
+                    'image/jpeg',
+                    'image/png'
+                ),
+                'mimeTypesMessage' => 'Por favor, sube una imagen válida (JPG o PNG).',
+            ))
+        )
+    ))
+    
+    ->add('docselfie', FileType::class, array(
+        'label' => 'Selfie con DNI (JPG/PNG)',
+        'data_class' => null,
+        'constraints' => array(
+            new Assert\File(array(
+                'mimeTypes' => array(
+                    'image/jpeg',
+                    'image/png'
+                ),
+                'mimeTypesMessage' => 'Por favor, sube una imagen válida (JPG o PNG).',
+            ))
+        )
+    ))
+    
         ->add('save', SubmitType::class, array('label' => 'Enviar'))
         ->getForm();
 
     $formulario->handleRequest($request);
 
+    
+    
+
     if ($formulario->isSubmitted() && $formulario->isValid()) {
         $uploadDir = $this->getParameter('kernel.project_dir') . '/public/docs/' . $id;
+
 
         if (!file_exists($uploadDir)) {
             mkdir($uploadDir, 0777, true);
         }
 
+        function isDirectoryEmpty($uploadDir) {
+            return (count(scandir($uploadDir)) == 2);
+          }
+
+        function subidaDocumentosOK($uploadDir) {
+            return (count(scandir($uploadDir)) == 5);
+          }
+
+        $slugger = new AsciiSlugger();
 
         $file1 = $formulario['docimg1']->getData();
-        if ($file1) {
-            $filename1 = 'front.jpg';
-            $file1->move($uploadDir, $filename1);
-            $user->setDocimg1('/docs/' . $id . '/' . $filename1);
+        if ($file1 && isDirectoryEmpty($uploadDir) && $user['estaVerificado'] != 1) {
+            $originalFilename = pathinfo($file1->getClientOriginalName(), PATHINFO_FILENAME);
+            $safeFilename = $slugger->slug($originalFilename);
+            $newFilename = $safeFilename.'-CARADNI-'.uniqid().'.'.$file1->guessExtension();
+            $file1->move($uploadDir, $newFilename);
+            $user->setDocimg1('/docs/' . $id . '/' . $newFilename);
+        } else {
+            return new Response("No puedes subir más documentos porque tu verificación de identidad está en proceso. ID:" . $id);
         }
-
 
         $file2 = $formulario['docimg2']->getData();
         if ($file2) {
-            $filename2 = 'back.jpg';
-            $file2->move($uploadDir, $filename2);
-            $user->setDocimg2('/docs/' . $id . '/' . $filename2);
-        }
+            $originalFilename = pathinfo($file2->getClientOriginalName(), PATHINFO_FILENAME);
+            $safeFilename = $slugger->slug($originalFilename);
+            $newFilename = $safeFilename.'-TRASERODNI-'.uniqid().'.'.$file2->guessExtension();
+            $file2->move($uploadDir, $newFilename);
+            $user->setDocimg2('/docs/' . $id . '/' . $newFilename);
+            }
 
         $file3 = $formulario['docselfie']->getData();
         if ($file3) {
-            $filename3 = 'selfie.jpg';
-            $file3->move($uploadDir, $filename3);
-            $user->setDocselfie('/docs/' . $id . '/' . $filename3);
+            $originalFilename = pathinfo($file3->getClientOriginalName(), PATHINFO_FILENAME);
+            $safeFilename = $slugger->slug($originalFilename);
+            $newFilename = $safeFilename.'-SELFIE-'.uniqid().'.'.$file3->guessExtension();
+            $file3->move($uploadDir, $newFilename);
+            $user->setdocselfie('/docs/' . $id . '/' . $newFilename);
         }
-
         $entityManager = $doctrine->getManager();
         $entityManager->persist($user);
         $entityManager->flush();
+        if (subidaDocumentosOK($uploadDir)) {
+            return new Response("Se han subido tus documentos y están en revision. ID: " . $id);
+        } else {
+            return new Response("Se ha producido un error al subir tus documentos. Por favor, contacta con soporte. ID: " . $id);
+        }
     }
 
-    return $this->render('checks/verificar.html.twig', array(
+    return $this->render('funciones/verificarID.html.twig', array(
         'formulario' => $formulario->createView(),
-        'usuario' => $user
+        'usuario' => $user,
+        'estaVerificado' => $verified
     ));
 }
 
