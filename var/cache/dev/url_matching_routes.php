@@ -15,6 +15,7 @@ return [
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_controlador_casino', '_controller' => 'App\\Controller\\ControladorCasinoController::index'], null, null, null, false, false, null]],
+        '/login' => [[['_route' => 'login', '_controller' => 'App\\Controller\\ControladorCasinoController::login'], null, null, null, false, false, null]],
         '/checkUsers' => [[['_route' => 'checkusers', '_controller' => 'App\\Controller\\ControladorCasinoController::checkAllUsers'], null, null, null, false, false, null]],
         '/checkBannedUsers' => [[['_route' => 'bannedUsers', '_controller' => 'App\\Controller\\ControladorCasinoController::checkBannedUsers'], null, null, null, false, false, null]],
         '/usuario/nuevo' => [[['_route' => 'newUser', '_controller' => 'App\\Controller\\ControladorCasinoController::nuevo'], null, null, null, false, false, null]],
@@ -47,7 +48,11 @@ return [
                     .'|removeAdmin/([^/]++)(*:328)'
                     .'|unban/([^/]++)(*:350)'
                 .')'
-                .'|/perfil/verificacion/([^/]++)(*:388)'
+                .'|/admin/(?'
+                    .'|verificar/([^/]++)(*:387)'
+                    .'|denegar/([^/]++)(*:411)'
+                .')'
+                .'|/perfil/verificacion/([^/]++)(*:449)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -65,7 +70,9 @@ return [
         300 => [[['_route' => 'adminUser', '_controller' => 'App\\Controller\\ControladorCasinoController::makeAdm'], ['id'], null, null, false, true, null]],
         328 => [[['_route' => 'removeadminUser', '_controller' => 'App\\Controller\\ControladorCasinoController::removeAdm'], ['id'], null, null, false, true, null]],
         350 => [[['_route' => 'unbanUser', '_controller' => 'App\\Controller\\ControladorCasinoController::desbanear'], ['id'], null, null, false, true, null]],
-        388 => [
+        387 => [[['_route' => 'verifyAdminUser', '_controller' => 'App\\Controller\\ControladorCasinoController::verificarUserAdm'], ['id'], null, null, false, true, null]],
+        411 => [[['_route' => 'verifyDenegar', '_controller' => 'App\\Controller\\ControladorCasinoController::denegarVerificacion'], ['id'], null, null, false, true, null]],
+        449 => [
             [['_route' => 'verifyUser', '_controller' => 'App\\Controller\\ControladorCasinoController::verifyUser'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

@@ -113,7 +113,7 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
     <img src=\"..";
             // line 25
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 25, $this->source); })()), "docimg1", [], "any", false, false, false, 25), "html", null, true);
-            echo "\" />
+            echo "\" height=\"300\" width=\"500\" />
     <p><strong>Parte trasera DNI:</strong> ";
             // line 26
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 26, $this->source); })()), "docimg2", [], "any", false, false, false, 26), "html", null, true);
@@ -121,7 +121,7 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
     <img src=\"..";
             // line 27
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 27, $this->source); })()), "docimg2", [], "any", false, false, false, 27), "html", null, true);
-            echo "\" />
+            echo "\" height=\"300\" width=\"500\" />
     <p><strong>Selfie:</strong> ";
             // line 28
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 28, $this->source); })()), "docselfie", [], "any", false, false, false, 28), "html", null, true);
@@ -129,7 +129,7 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
     <img src=\"..";
             // line 29
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 29, $this->source); })()), "docselfie", [], "any", false, false, false, 29), "html", null, true);
-            echo "\" />
+            echo "\" height=\"300\" width=\"500\" />
 ";
         } else {
             // line 31
@@ -190,11 +190,11 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
 <p><strong>Verificado:</strong> {{ usuario.estaVerificado == 1 ? 'Sí' : 'No' }}</p>
 {% if usuario.estaVerificado == 1 %}
     <p><strong>Cara DNI:</strong> {{ usuario.docimg1 }}</p>
-    <img src=\"..{{ usuario.docimg1 }}\" />
+    <img src=\"..{{ usuario.docimg1 }}\" height=\"300\" width=\"500\" />
     <p><strong>Parte trasera DNI:</strong> {{ usuario.docimg2 }}</p>
-    <img src=\"..{{ usuario.docimg2 }}\" />
+    <img src=\"..{{ usuario.docimg2 }}\" height=\"300\" width=\"500\" />
     <p><strong>Selfie:</strong> {{ usuario.docselfie }}</p>
-    <img src=\"..{{ usuario.docselfie }}\" />
+    <img src=\"..{{ usuario.docselfie }}\" height=\"300\" width=\"500\" />
 {% else %}
 <p>Solicita tu verificacion de identidad:<a href=\"/verificar\"><button>Verificar tu identidad</button></a></p> 
 {% endif %}

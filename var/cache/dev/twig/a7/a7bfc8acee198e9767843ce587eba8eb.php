@@ -62,23 +62,23 @@ class __TwigTemplate_64a7c39eb87924723a6dde259e9ff3b6 extends Template
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 13), "html", null, true);
             echo " - Rol: ";
             echo (((twig_get_attribute($this->env, $this->source, $context["usuario"], "isAdmin", [], "any", false, false, false, 13) == 1)) ? ("Administrador") : ("Usuario normal"));
-            echo "</h3><a href=\"../checkUser/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 13), "html", null, true);
-            echo "\"><button>Ver usuario</button></a> <a href=\"../usuario/editar/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 13), "html", null, true);
-            echo "\"><button>Editar usuario</button></a> <a href=\"../usuario/eliminar/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 13), "html", null, true);
+            echo "</h3><a href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("checkUser_DNI", ["id" => twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 13)]), "html", null, true);
+            echo "\"><button>Ver usuario</button></a> <a href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("editUser", ["id" => twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 13)]), "html", null, true);
+            echo "\"><button>Editar usuario</button></a> <a href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("removeUser", ["id" => twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 13)]), "html", null, true);
             echo "\"><button>Eliminar usuario</button></a>    ";
             if ((twig_get_attribute($this->env, $this->source, $context["usuario"], "isAdmin", [], "any", false, false, false, 13) == true)) {
                 // line 14
-                echo "    <p><strong>Roles (user/admin):</strong> <a href=\"../usuario/removeAdmin/";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 14), "html", null, true);
+                echo "    <p><strong>Roles (user/admin):</strong> <a href=\"";
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("removeadminUser", ["id" => twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 14)]), "html", null, true);
                 echo "\"><button>Quitar admin</button></a></p>
     ";
             } else {
                 // line 16
-                echo "    <p><strong>Roles (user/admin):</strong> <a href=\"../usuario/makeAdmin/";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 16), "html", null, true);
+                echo "    <p><strong>Roles (user/admin):</strong> <a href=\"";
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("adminUser", ["id" => twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 16)]), "html", null, true);
                 echo "\"><button>Hacer admin</button></a>
     ";
             }
@@ -128,65 +128,119 @@ class __TwigTemplate_64a7c39eb87924723a6dde259e9ff3b6 extends Template
                 echo "    <p><strong>Razón baneo:</strong> ";
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "razonbaneo", [], "any", false, false, false, 29), "html", null, true);
                 echo "</p>
-    <p><strong>Solicitar desbaneo: </strong><a href=\"../usuario/unban/";
+    <p><strong>¿Desbanear usuario? </strong><a href=\"";
                 // line 30
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 30), "html", null, true);
-                echo "\"><button>Solicitar unban</button></a></p>
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("unbanUser", ["id" => twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 30)]), "html", null, true);
+                echo "\"><button>Unban</button></a></p>
     ";
             } else {
                 // line 32
-                echo "    <a href=\"../usuario/banear/";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 32), "html", null, true);
+                echo "    <a href=\"";
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("banUser", ["id" => twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 32)]), "html", null, true);
                 echo "\"><button>Banear usuario</button></a>
     ";
             }
             // line 34
             echo "
-
-    <p><strong>Verificado:</strong> ";
-            // line 36
-            echo (((twig_get_attribute($this->env, $this->source, $context["usuario"], "estaVerificado", [], "any", false, false, false, 36) == 1)) ? ("Sí") : ("No"));
-            echo "</p>
     ";
-            // line 37
-            if ((twig_get_attribute($this->env, $this->source, $context["usuario"], "estaVerificado", [], "any", false, false, false, 37) == 1)) {
+            // line 35
+            if ((twig_get_attribute($this->env, $this->source, $context["usuario"], "estaVerificado", [], "any", false, false, false, 35) == 1)) {
+                // line 36
+                echo "    <p><strong>Verificado: Sí</strong>
+    ";
+            } elseif ((twig_get_attribute($this->env, $this->source,             // line 37
+$context["usuario"], "estaVerificado", [], "any", false, false, false, 37) == 2)) {
                 // line 38
-                echo "        <p><strong>Cara DNI:</strong> ";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg1", [], "any", false, false, false, 38), "html", null, true);
-                echo "</p>
-        <img src=\"..";
-                // line 39
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg1", [], "any", false, false, false, 39), "html", null, true);
-                echo "\" alt=\"Cara DNI\" />
-        <p><strong>Parte trasera DNI:</strong> ";
-                // line 40
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg2", [], "any", false, false, false, 40), "html", null, true);
-                echo "</p>
-        <img src=\"..";
-                // line 41
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg2", [], "any", false, false, false, 41), "html", null, true);
-                echo "\" alt=\"Parte trasera DNI\" />
-        <p><strong>Selfie:</strong> ";
-                // line 42
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docselfie", [], "any", false, false, false, 42), "html", null, true);
-                echo "</p>
-        <img src=\"..";
-                // line 43
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docselfie", [], "any", false, false, false, 43), "html", null, true);
-                echo "\" alt=\"Selfie\" />
+                echo "    <p><strong>Verificado: En proceso de revisión</strong>
     ";
             } else {
+                // line 40
+                echo "    <p><strong>Verificado: No</strong>
+    ";
+            }
+            // line 42
+            echo "
+    ";
+            // line 43
+            if ((twig_get_attribute($this->env, $this->source, $context["usuario"], "estaVerificado", [], "any", false, false, false, 43) == 1)) {
+                // line 44
+                echo "        <p><strong>Cara DNI:</strong> ";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg1", [], "any", false, false, false, 44), "html", null, true);
+                echo "</p>
+        <img src=\"..";
                 // line 45
-                echo "    <p>Solicita tu verificación de identidad: <a href=\"../usuario/verificar/";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 45), "html", null, true);
-                echo "\"><button>Verificar tu identidad</button></a></p> 
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg1", [], "any", false, false, false, 45), "html", null, true);
+                echo "\" height=\"300\" width=\"500\" alt=\"Cara DNI\" />
+        <p><strong>Parte trasera DNI:</strong> ";
+                // line 46
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg2", [], "any", false, false, false, 46), "html", null, true);
+                echo "</p>
+        <img src=\"..";
+                // line 47
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg2", [], "any", false, false, false, 47), "html", null, true);
+                echo "\" height=\"300\" width=\"500\" alt=\"Parte trasera DNI\" />
+        <p><strong>Selfie:</strong> ";
+                // line 48
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docselfie", [], "any", false, false, false, 48), "html", null, true);
+                echo "</p>
+        <img src=\"..";
+                // line 49
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docselfie", [], "any", false, false, false, 49), "html", null, true);
+                echo "\" height=\"300\" width=\"500\" alt=\"Selfie\" /><br>
+        <p>Este usuario esta verificado.</p>
+    ";
+            } elseif ((twig_get_attribute($this->env, $this->source,             // line 51
+$context["usuario"], "estaVerificado", [], "any", false, false, false, 51) == 2)) {
+                // line 52
+                echo "    <p><strong>Cara DNI:</strong> ";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg1", [], "any", false, false, false, 52), "html", null, true);
+                echo "</p>
+        <img src=\"..";
+                // line 53
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg1", [], "any", false, false, false, 53), "html", null, true);
+                echo "\" height=\"300\" width=\"500\" alt=\"Cara DNI\" />
+        <p><strong>Parte trasera DNI:</strong> ";
+                // line 54
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg2", [], "any", false, false, false, 54), "html", null, true);
+                echo "</p>
+        <img src=\"..";
+                // line 55
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docimg2", [], "any", false, false, false, 55), "html", null, true);
+                echo "\" height=\"300\" width=\"500\" alt=\"Parte trasera DNI\" />
+        <p><strong>Selfie:</strong> ";
+                // line 56
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docselfie", [], "any", false, false, false, 56), "html", null, true);
+                echo "</p>
+        <img src=\"..";
+                // line 57
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "docselfie", [], "any", false, false, false, 57), "html", null, true);
+                echo "\" height=\"300\" width=\"500\" alt=\"Selfie\" /><br>
+    <a href=\"";
+                // line 58
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("verifyAdminUser", ["id" => twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 58)]), "html", null, true);
+                echo "\"><button>Aceptar sus documentos de identidad</button></a>  <a href=\"";
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("verifyDenegar", ["id" => twig_get_attribute($this->env, $this->source, $context["usuario"], "id", [], "any", false, false, false, 58)]), "html", null, true);
+                echo "\"><button>Denegar sus documentos de identidad</button></a>
+    ";
+            } elseif ((twig_get_attribute($this->env, $this->source,             // line 59
+$context["usuario"], "estaVerificado", [], "any", false, false, false, 59) ==  -1)) {
+                // line 60
+                echo "    <p>Solicitud de verificación rechazada. El usuario debe subir de nuevo su identidad.</p>
+    <p>Razón del rechazo: ";
+                // line 61
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "razonrechazoverificacion", [], "any", false, false, false, 61), "html", null, true);
+                echo "</p>
+    ";
+            } else {
+                // line 63
+                echo "    <p>Este usuario no ha subido ningun documento de identidad.</p> 
     ";
             }
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['usuario'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 48
+        // line 66
         echo "
     </body>
 </html>
@@ -211,7 +265,7 @@ class __TwigTemplate_64a7c39eb87924723a6dde259e9ff3b6 extends Template
 
     public function getDebugInfo()
     {
-        return array (  190 => 48,  180 => 45,  175 => 43,  171 => 42,  167 => 41,  163 => 40,  159 => 39,  154 => 38,  152 => 37,  148 => 36,  144 => 34,  138 => 32,  133 => 30,  128 => 29,  126 => 28,  121 => 26,  117 => 25,  113 => 24,  109 => 23,  105 => 22,  101 => 21,  95 => 20,  91 => 19,  86 => 18,  80 => 16,  74 => 14,  62 => 13,  59 => 12,  55 => 11,  43 => 1,);
+        return array (  244 => 66,  236 => 63,  231 => 61,  228 => 60,  226 => 59,  220 => 58,  216 => 57,  212 => 56,  208 => 55,  204 => 54,  200 => 53,  195 => 52,  193 => 51,  188 => 49,  184 => 48,  180 => 47,  176 => 46,  172 => 45,  167 => 44,  165 => 43,  162 => 42,  158 => 40,  154 => 38,  152 => 37,  149 => 36,  147 => 35,  144 => 34,  138 => 32,  133 => 30,  128 => 29,  126 => 28,  121 => 26,  117 => 25,  113 => 24,  109 => 23,  105 => 22,  101 => 21,  95 => 20,  91 => 19,  86 => 18,  80 => 16,  74 => 14,  62 => 13,  59 => 12,  55 => 11,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -228,10 +282,10 @@ class __TwigTemplate_64a7c39eb87924723a6dde259e9ff3b6 extends Template
 
 {% for usuario in usuarios %}
     <hr>
-    <h3>Usuario ID {{ usuario.id }} - Rol: {{ usuario.isAdmin == 1 ? 'Administrador' : 'Usuario normal' }}</h3><a href=\"../checkUser/{{usuario.id}}\"><button>Ver usuario</button></a> <a href=\"../usuario/editar/{{usuario.id}}\"><button>Editar usuario</button></a> <a href=\"../usuario/eliminar/{{usuario.id}}\"><button>Eliminar usuario</button></a>    {% if usuario.isAdmin == true %}
-    <p><strong>Roles (user/admin):</strong> <a href=\"../usuario/removeAdmin/{{usuario.id}}\"><button>Quitar admin</button></a></p>
+    <h3>Usuario ID {{ usuario.id }} - Rol: {{ usuario.isAdmin == 1 ? 'Administrador' : 'Usuario normal' }}</h3><a href=\"{{path('checkUser_DNI', {'id': usuario.id})}}\"><button>Ver usuario</button></a> <a href=\"{{path('editUser', {'id': usuario.id})}}\"><button>Editar usuario</button></a> <a href=\"{{path('removeUser', {'id': usuario.id})}}\"><button>Eliminar usuario</button></a>    {% if usuario.isAdmin == true %}
+    <p><strong>Roles (user/admin):</strong> <a href=\"{{path('removeadminUser', {'id': usuario.id})}}\"><button>Quitar admin</button></a></p>
     {% else %}
-    <p><strong>Roles (user/admin):</strong> <a href=\"../usuario/makeAdmin/{{usuario.id}}\"><button>Hacer admin</button></a>
+    <p><strong>Roles (user/admin):</strong> <a href=\"{{path('adminUser', {'id': usuario.id})}}\"><button>Hacer admin</button></a>
     {% endif %}
     <p><strong>Documento identidad:</strong> {{ usuario.docidentidad }}</p>
     <p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
@@ -245,22 +299,40 @@ class __TwigTemplate_64a7c39eb87924723a6dde259e9ff3b6 extends Template
 
     {% if usuario.estaBaneado == 1 %}
     <p><strong>Razón baneo:</strong> {{ usuario.razonbaneo }}</p>
-    <p><strong>Solicitar desbaneo: </strong><a href=\"../usuario/unban/{{usuario.id}}\"><button>Solicitar unban</button></a></p>
+    <p><strong>¿Desbanear usuario? </strong><a href=\"{{path('unbanUser', {'id': usuario.id})}}\"><button>Unban</button></a></p>
     {% else %}
-    <a href=\"../usuario/banear/{{usuario.id}}\"><button>Banear usuario</button></a>
+    <a href=\"{{path('banUser', {'id': usuario.id})}}\"><button>Banear usuario</button></a>
     {% endif %}
 
+    {% if usuario.estaVerificado == 1 %}
+    <p><strong>Verificado: Sí</strong>
+    {% elseif usuario.estaVerificado == 2 %}
+    <p><strong>Verificado: En proceso de revisión</strong>
+    {% else %}
+    <p><strong>Verificado: No</strong>
+    {% endif %}
 
-    <p><strong>Verificado:</strong> {{ usuario.estaVerificado == 1 ? 'Sí' : 'No' }}</p>
     {% if usuario.estaVerificado == 1 %}
         <p><strong>Cara DNI:</strong> {{ usuario.docimg1 }}</p>
-        <img src=\"..{{ usuario.docimg1 }}\" alt=\"Cara DNI\" />
+        <img src=\"..{{ usuario.docimg1 }}\" height=\"300\" width=\"500\" alt=\"Cara DNI\" />
         <p><strong>Parte trasera DNI:</strong> {{ usuario.docimg2 }}</p>
-        <img src=\"..{{ usuario.docimg2 }}\" alt=\"Parte trasera DNI\" />
+        <img src=\"..{{ usuario.docimg2 }}\" height=\"300\" width=\"500\" alt=\"Parte trasera DNI\" />
         <p><strong>Selfie:</strong> {{ usuario.docselfie }}</p>
-        <img src=\"..{{ usuario.docselfie }}\" alt=\"Selfie\" />
+        <img src=\"..{{ usuario.docselfie }}\" height=\"300\" width=\"500\" alt=\"Selfie\" /><br>
+        <p>Este usuario esta verificado.</p>
+    {% elseif usuario.estaVerificado == 2 %}
+    <p><strong>Cara DNI:</strong> {{ usuario.docimg1 }}</p>
+        <img src=\"..{{ usuario.docimg1 }}\" height=\"300\" width=\"500\" alt=\"Cara DNI\" />
+        <p><strong>Parte trasera DNI:</strong> {{ usuario.docimg2 }}</p>
+        <img src=\"..{{ usuario.docimg2 }}\" height=\"300\" width=\"500\" alt=\"Parte trasera DNI\" />
+        <p><strong>Selfie:</strong> {{ usuario.docselfie }}</p>
+        <img src=\"..{{ usuario.docselfie }}\" height=\"300\" width=\"500\" alt=\"Selfie\" /><br>
+    <a href=\"{{path('verifyAdminUser', {'id': usuario.id})}}\"><button>Aceptar sus documentos de identidad</button></a>  <a href=\"{{path('verifyDenegar', {'id': usuario.id})}}\"><button>Denegar sus documentos de identidad</button></a>
+    {% elseif usuario.estaVerificado == -1 %}
+    <p>Solicitud de verificación rechazada. El usuario debe subir de nuevo su identidad.</p>
+    <p>Razón del rechazo: {{ usuario.razonrechazoverificacion }}</p>
     {% else %}
-    <p>Solicita tu verificación de identidad: <a href=\"../usuario/verificar/{{usuario.id}}\"><button>Verificar tu identidad</button></a></p> 
+    <p>Este usuario no ha subido ningun documento de identidad.</p> 
     {% endif %}
 {% endfor %}
 

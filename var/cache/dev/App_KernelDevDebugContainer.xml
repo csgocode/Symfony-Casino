@@ -6090,19 +6090,21 @@
         <argument key="doctrine" type="service_closure" id="doctrine"/>
       </argument>
     </service>
-    <service id=".service_locator..gCYpne" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.R7RDC39" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\ControladorCasinoController::banear" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController::checkAllUsers" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController::checkBannedUsers" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController::checkUser" type="service_closure" id=".service_locator.GQZbvNR"/>
+        <argument key="App\Controller\ControladorCasinoController::denegarVerificacion" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController::desbanear" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController::edit" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController::eliminar" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController::makeAdm" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController::nuevo" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController::removeAdm" type="service_closure" id=".service_locator.GQZbvNR"/>
+        <argument key="App\Controller\ControladorCasinoController::verificarUserAdm" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController::verifyUser" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
@@ -6112,12 +6114,14 @@
         <argument key="App\Controller\ControladorCasinoController:checkAllUsers" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController:checkBannedUsers" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController:checkUser" type="service_closure" id=".service_locator.GQZbvNR"/>
+        <argument key="App\Controller\ControladorCasinoController:denegarVerificacion" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController:desbanear" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController:edit" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController:eliminar" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController:makeAdm" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController:nuevo" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController:removeAdm" type="service_closure" id=".service_locator.GQZbvNR"/>
+        <argument key="App\Controller\ControladorCasinoController:verificarUserAdm" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="App\Controller\ControladorCasinoController:verifyUser" type="service_closure" id=".service_locator.GQZbvNR"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
@@ -6902,12 +6906,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator..gCYpne"/>
+      <argument type="service" id=".service_locator.R7RDC39"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator..gCYpne"/>
+      <argument type="service" id=".service_locator.R7RDC39"/>
     </service>
     <service id="debug.traced.messenger.bus.default.inner" class="Symfony\Component\Messenger\MessageBus">
       <argument type="iterator">
@@ -7843,7 +7847,7 @@
     <service id="Psr\Log\LoggerInterface" alias="monolog.logger"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator..gCYpne"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.R7RDC39"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
@@ -7864,7 +7868,7 @@
     <service id=".service_locator.80edgLI" alias="messenger.receiver_locator"/>
     <service id=".service_locator.h8Jkkd2" alias="messenger.retry_strategy_locator"/>
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
-    <service id=".service_locator.2hCi_f1" alias=".service_locator..gCYpne"/>
+    <service id=".service_locator.UbmeuK_" alias=".service_locator.R7RDC39"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.Za9MpXe" alias=".service_locator.y4dplYt"/>
     <service id=".service_locator.XW18Svm" alias=".service_locator.TcKhdzh"/>

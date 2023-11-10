@@ -73,6 +73,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?bool $isAdmin = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $razonRechazoVerificacion = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -319,6 +322,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setIsAdmin(bool $isAdmin): static
     {
         $this->isAdmin = $isAdmin;
+
+        return $this;
+    }
+
+    public function getRazonRechazoVerificacion(): ?string
+    {
+        return $this->razonRechazoVerificacion;
+    }
+
+    public function setRazonRechazoVerificacion(?string $razonRechazoVerificacion): static
+    {
+        $this->razonRechazoVerificacion = $razonRechazoVerificacion;
 
         return $this;
     }

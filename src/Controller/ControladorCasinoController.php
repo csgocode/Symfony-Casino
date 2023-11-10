@@ -30,6 +30,14 @@ class ControladorCasinoController extends AbstractController
         ]);
     }
 
+    #[Route('/login', name: 'login')]
+    public function login(): Response
+    {
+        return $this->render('funciones/login.html.twig', [
+            'controller_name' => 'ControladorCasinoController',
+        ]);
+    }
+
     #[Route('/checkUser/{id}', name: 'checkUser_DNI')]
     public function checkUser(ManagerRegistry $doctrine, $id): Response
     {
@@ -224,7 +232,7 @@ class ControladorCasinoController extends AbstractController
         $formulario->handleRequest($request);
 
         if ($formulario->isSubmitted() && $formulario->isValid()) {
-            $user->setIsAdmin(true);
+            $user->setIsAdmin(false);
             
             $entityManager = $doctrine->getManager();
             $entityManager->persist($user);
@@ -293,6 +301,53 @@ class ControladorCasinoController extends AbstractController
                 return new Response("Usuario eliminado con éxito.");
             } catch (\Exception $e) {
                 return new Response("Error al remover el usuario.");
+            }
+        } else 
+            return $this->render('checks/DNIcheck.html.twig', [
+                 'usuario' => null
+            ]);
+        }
+
+#[Route('/admin/verificar/{id}', name: 'verifyAdminUser')]
+    public function verificarUserAdm(ManagerRegistry $doctrine, $id): Response {
+        
+        $entityManager = $doctrine->getManager();
+        $repositorio = $doctrine->getRepository(User::class);
+        $user = $repositorio->find($id);
+
+        if ($user) {
+            try {
+                $user->setEstaVerificado(1);
+                $entityManager->flush();
+                return new Response("Usuario verificado con éxito.");
+            } catch (\Exception $e) {
+                return new Response("Error al verificar el usuario.");
+            }
+        } else 
+            return $this->render('checks/DNIcheck.html.twig', [
+                 'usuario' => null
+        ]);
+}
+
+#[Route('/admin/denegar/{id}', name: 'verifyDenegar')]
+    public function denegarVerificacion(ManagerRegistry $doctrine, $id): Response {
+        
+        $entityManager = $doctrine->getManager();
+        $repositorio = $doctrine->getRepository(User::class);
+        $user = $repositorio->find($id);
+        $uploadDir = $this->getParameter('kernel.project_dir') . '/public/docs/' . $id;
+
+        if ($user) {
+            try {
+                $user->setEstaVerificado(-1);
+                $user->setDocimg1(null);
+                $user->setDocimg2(null);
+                $user->setDocselfie(null);
+                $entityManager->flush(); 
+                system("rm -rf ".escapeshellarg($uploadDir));
+                return new Response("Verificacion rechazada con éxito.");
+            } catch (\Exception $e) {
+                return new Response("Error al denegar la verificación del usuario.");
             }
         } else 
             return $this->render('checks/DNIcheck.html.twig', [
@@ -373,9 +428,10 @@ public function verifyUser(ManagerRegistry $doctrine, Request $request, $id) {
           }
 
         $slugger = new AsciiSlugger();
+        
 
         $file1 = $formulario['docimg1']->getData();
-        if ($file1 && isDirectoryEmpty($uploadDir) && $user['estaVerificado'] != 1) {
+        if ($file1 && isDirectoryEmpty($uploadDir)) {
             $originalFilename = pathinfo($file1->getClientOriginalName(), PATHINFO_FILENAME);
             $safeFilename = $slugger->slug($originalFilename);
             $newFilename = $safeFilename.'-CARADNI-'.uniqid().'.'.$file1->guessExtension();
@@ -406,8 +462,13 @@ public function verifyUser(ManagerRegistry $doctrine, Request $request, $id) {
         $entityManager->persist($user);
         $entityManager->flush();
         if (subidaDocumentosOK($uploadDir)) {
+            $user->setEstaVerificado(2);
+            $entityManager = $doctrine->getManager();
+            $entityManager->persist($user);
+            $entityManager->flush();
             return new Response("Se han subido tus documentos y están en revision. ID: " . $id);
         } else {
+            
             return new Response("Se ha producido un error al subir tus documentos. Por favor, contacta con soporte. ID: " . $id);
         }
     }

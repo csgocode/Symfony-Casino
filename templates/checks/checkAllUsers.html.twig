@@ -10,10 +10,10 @@
 
 {% for usuario in usuarios %}
     <hr>
-    <h3>Usuario ID {{ usuario.id }} - Rol: {{ usuario.isAdmin == 1 ? 'Administrador' : 'Usuario normal' }}</h3><a href="../checkUser/{{usuario.id}}"><button>Ver usuario</button></a> <a href="../usuario/editar/{{usuario.id}}"><button>Editar usuario</button></a> <a href="../usuario/eliminar/{{usuario.id}}"><button>Eliminar usuario</button></a>    {% if usuario.isAdmin == true %}
-    <p><strong>Roles (user/admin):</strong> <a href="../usuario/removeAdmin/{{usuario.id}}"><button>Quitar admin</button></a></p>
+    <h3>Usuario ID {{ usuario.id }} - Rol: {{ usuario.isAdmin == 1 ? 'Administrador' : 'Usuario normal' }}</h3><a href="{{path('checkUser_DNI', {'id': usuario.id})}}"><button>Ver usuario</button></a> <a href="{{path('editUser', {'id': usuario.id})}}"><button>Editar usuario</button></a> <a href="{{path('removeUser', {'id': usuario.id})}}"><button>Eliminar usuario</button></a>    {% if usuario.isAdmin == true %}
+    <p><strong>Roles (user/admin):</strong> <a href="{{path('removeadminUser', {'id': usuario.id})}}"><button>Quitar admin</button></a></p>
     {% else %}
-    <p><strong>Roles (user/admin):</strong> <a href="../usuario/makeAdmin/{{usuario.id}}"><button>Hacer admin</button></a>
+    <p><strong>Roles (user/admin):</strong> <a href="{{path('adminUser', {'id': usuario.id})}}"><button>Hacer admin</button></a>
     {% endif %}
     <p><strong>Documento identidad:</strong> {{ usuario.docidentidad }}</p>
     <p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
@@ -27,22 +27,40 @@
 
     {% if usuario.estaBaneado == 1 %}
     <p><strong>Razón baneo:</strong> {{ usuario.razonbaneo }}</p>
-    <p><strong>Solicitar desbaneo: </strong><a href="../usuario/unban/{{usuario.id}}"><button>Solicitar unban</button></a></p>
+    <p><strong>¿Desbanear usuario? </strong><a href="{{path('unbanUser', {'id': usuario.id})}}"><button>Unban</button></a></p>
     {% else %}
-    <a href="../usuario/banear/{{usuario.id}}"><button>Banear usuario</button></a>
+    <a href="{{path('banUser', {'id': usuario.id})}}"><button>Banear usuario</button></a>
     {% endif %}
 
+    {% if usuario.estaVerificado == 1 %}
+    <p><strong>Verificado: Sí</strong>
+    {% elseif usuario.estaVerificado == 2 %}
+    <p><strong>Verificado: En proceso de revisión</strong>
+    {% else %}
+    <p><strong>Verificado: No</strong>
+    {% endif %}
 
-    <p><strong>Verificado:</strong> {{ usuario.estaVerificado == 1 ? 'Sí' : 'No' }}</p>
     {% if usuario.estaVerificado == 1 %}
         <p><strong>Cara DNI:</strong> {{ usuario.docimg1 }}</p>
-        <img src="..{{ usuario.docimg1 }}" alt="Cara DNI" />
+        <img src="..{{ usuario.docimg1 }}" height="300" width="500" alt="Cara DNI" />
         <p><strong>Parte trasera DNI:</strong> {{ usuario.docimg2 }}</p>
-        <img src="..{{ usuario.docimg2 }}" alt="Parte trasera DNI" />
+        <img src="..{{ usuario.docimg2 }}" height="300" width="500" alt="Parte trasera DNI" />
         <p><strong>Selfie:</strong> {{ usuario.docselfie }}</p>
-        <img src="..{{ usuario.docselfie }}" alt="Selfie" />
+        <img src="..{{ usuario.docselfie }}" height="300" width="500" alt="Selfie" /><br>
+        <p>Este usuario esta verificado.</p>
+    {% elseif usuario.estaVerificado == 2 %}
+    <p><strong>Cara DNI:</strong> {{ usuario.docimg1 }}</p>
+        <img src="..{{ usuario.docimg1 }}" height="300" width="500" alt="Cara DNI" />
+        <p><strong>Parte trasera DNI:</strong> {{ usuario.docimg2 }}</p>
+        <img src="..{{ usuario.docimg2 }}" height="300" width="500" alt="Parte trasera DNI" />
+        <p><strong>Selfie:</strong> {{ usuario.docselfie }}</p>
+        <img src="..{{ usuario.docselfie }}" height="300" width="500" alt="Selfie" /><br>
+    <a href="{{path('verifyAdminUser', {'id': usuario.id})}}"><button>Aceptar sus documentos de identidad</button></a>  <a href="{{path('verifyDenegar', {'id': usuario.id})}}"><button>Denegar sus documentos de identidad</button></a>
+    {% elseif usuario.estaVerificado == -1 %}
+    <p>Solicitud de verificación rechazada. El usuario debe subir de nuevo su identidad.</p>
+    <p>Razón del rechazo: {{ usuario.razonrechazoverificacion }}</p>
     {% else %}
-    <p>Solicita tu verificación de identidad: <a href="../usuario/verificar/{{usuario.id}}"><button>Verificar tu identidad</button></a></p> 
+    <p>Este usuario no ha subido ningun documento de identidad.</p> 
     {% endif %}
 {% endfor %}
 
