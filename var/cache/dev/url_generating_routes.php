@@ -17,6 +17,7 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'app_controlador_casino' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::index'], [], [['text', '/']], [], [], []],
+    'contactoapp' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::contact'], [], [['text', '/contacto']], [], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::login'], [], [['text', '/login']], [], [], []],
     'checkUser_DNI' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::checkUser'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/checkUser']], [], [], []],
     'checkusers' => [[], ['_controller' => 'App\\Controller\\ControladorCasinoController::checkAllUsers'], [], [['text', '/checkUsers']], [], [], []],

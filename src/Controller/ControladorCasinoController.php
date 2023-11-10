@@ -18,7 +18,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\String\Slugger\AsciiSlugger;
 use Symfony\Component\Validator\Constraints as Assert;
-
+use App\Entity\Contacto;
+use App\Form\ContactFormType;
 
 class ControladorCasinoController extends AbstractController
 {
@@ -29,6 +30,24 @@ class ControladorCasinoController extends AbstractController
             'controller_name' => 'ControladorCasinoController',
         ]);
     }
+
+    #[Route('/contacto', name: 'contactoapp')]
+    public function contact(ManagerRegistry $doctrine, Request $request): Response
+    {
+    $contact = new Contacto();
+    $form = $this->createForm(ContactFormType::class, $contact);
+    $form->handleRequest($request);
+    if ($form->isSubmitted() && $form->isValid()) {
+        $contacto = $form->getData();    
+        $entityManager = $doctrine->getManager();    
+        $entityManager->persist($contacto);
+        $entityManager->flush();
+        return $this->redirectToRoute('contacto', []);
+    }
+    return $this->render('funciones/contacto.html.twig', array(
+        'form' => $form->createView()    
+    ));
+}
 
     #[Route('/login', name: 'login')]
     public function login(): Response
