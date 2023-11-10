@@ -32,4 +32,7 @@ return [
     'verifyAdminUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::verificarUserAdm'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/verificar']], [], [], []],
     'verifyDenegar' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::denegarVerificacion'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/denegar']], [], [], []],
     'verifyUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::verifyUser'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/perfil/verificacion']], [], [], []],
+    'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
+    'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
+    'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
 ];

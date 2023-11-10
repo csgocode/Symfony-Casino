@@ -92,9 +92,7 @@ class __TwigTemplate_64a7c39eb87924723a6dde259e9ff3b6 extends Template
             echo "</p>
     <p><strong>Apellidos:</strong> ";
             // line 20
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "apellido1", [], "any", false, false, false, 20), "html", null, true);
-            echo " ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "apellido2", [], "any", false, false, false, 20), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "apellidos", [], "any", false, false, false, 20), "html", null, true);
             echo "</p>
     <p><strong>Fecha nacimiento:</strong> ";
             // line 21
@@ -265,7 +263,7 @@ $context["usuario"], "estaVerificado", [], "any", false, false, false, 59) ==  -
 
     public function getDebugInfo()
     {
-        return array (  244 => 66,  236 => 63,  231 => 61,  228 => 60,  226 => 59,  220 => 58,  216 => 57,  212 => 56,  208 => 55,  204 => 54,  200 => 53,  195 => 52,  193 => 51,  188 => 49,  184 => 48,  180 => 47,  176 => 46,  172 => 45,  167 => 44,  165 => 43,  162 => 42,  158 => 40,  154 => 38,  152 => 37,  149 => 36,  147 => 35,  144 => 34,  138 => 32,  133 => 30,  128 => 29,  126 => 28,  121 => 26,  117 => 25,  113 => 24,  109 => 23,  105 => 22,  101 => 21,  95 => 20,  91 => 19,  86 => 18,  80 => 16,  74 => 14,  62 => 13,  59 => 12,  55 => 11,  43 => 1,);
+        return array (  242 => 66,  234 => 63,  229 => 61,  226 => 60,  224 => 59,  218 => 58,  214 => 57,  210 => 56,  206 => 55,  202 => 54,  198 => 53,  193 => 52,  191 => 51,  186 => 49,  182 => 48,  178 => 47,  174 => 46,  170 => 45,  165 => 44,  163 => 43,  160 => 42,  156 => 40,  152 => 38,  150 => 37,  147 => 36,  145 => 35,  142 => 34,  136 => 32,  131 => 30,  126 => 29,  124 => 28,  119 => 26,  115 => 25,  111 => 24,  107 => 23,  103 => 22,  99 => 21,  95 => 20,  91 => 19,  86 => 18,  80 => 16,  74 => 14,  62 => 13,  59 => 12,  55 => 11,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -289,7 +287,7 @@ $context["usuario"], "estaVerificado", [], "any", false, false, false, 59) ==  -
     {% endif %}
     <p><strong>Documento identidad:</strong> {{ usuario.docidentidad }}</p>
     <p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
-    <p><strong>Apellidos:</strong> {{ usuario.apellido1 }} {{ usuario.apellido2 }}</p>
+    <p><strong>Apellidos:</strong> {{ usuario.apellidos }}</p>
     <p><strong>Fecha nacimiento:</strong> {{usuario.fechaNacimiento|date('d-m-Y') }}</p>
     <p><strong>Correo:</strong> {{ usuario.email }}</p>
     <p><strong>Password:</strong> {{ usuario.password }}</p>

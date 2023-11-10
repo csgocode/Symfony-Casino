@@ -19,6 +19,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\String\Slugger\AsciiSlugger;
 use Symfony\Component\Validator\Constraints as Assert;
 use App\Entity\Contacto;
+use App\Entity\Usuario;
 use App\Form\ContactFormType;
 
 class ControladorCasinoController extends AbstractController
@@ -60,7 +61,7 @@ class ControladorCasinoController extends AbstractController
     #[Route('/checkUser/{id}', name: 'checkUser_DNI')]
     public function checkUser(ManagerRegistry $doctrine, $id): Response
     {
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $usuario = $repositorio->find($id);
 
         return $this->render('checks/DNIcheck.html.twig', array(
@@ -71,7 +72,7 @@ class ControladorCasinoController extends AbstractController
     #[Route('/checkUsers', name: 'checkusers')]
     public function checkAllUsers(ManagerRegistry $doctrine): Response
     {
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $usuarios = $repositorio->findAll();
 
         return $this->render('checks/checkAllUsers.html.twig', array(
@@ -82,7 +83,7 @@ class ControladorCasinoController extends AbstractController
     #[Route('/checkBannedUsers', name: 'bannedUsers')]
     public function checkBannedUsers(ManagerRegistry $doctrine): Response
     {
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $usuariosBaneados = $repositorio->findBy(['estaBaneado' => 1]);
 
         return $this->render('checks/checkBannedUsers.html.twig', array(
@@ -94,13 +95,13 @@ class ControladorCasinoController extends AbstractController
 
     #[Route('/usuario/nuevo', name: 'newUser')]
     public function nuevo(ManagerRegistry $doctrine, Request $request) {
-        $user = new User();
+        $user = new Usuario();
 
         $formulario = $this->createFormBuilder($user)
             ->add('docIdentidad', TextType::class, array('label' => 'Documento de identidad (NIF/NIE/Pasaporte)'))
+            ->add('username', TextType::class, array('label' => 'Usuario'))
             ->add('nombre', TextType::class)
-            ->add('apellido1', TextType::class, array('label' => 'Primer apellido'))
-            ->add('apellido2', TextType::class, array('label' => 'Segundo apellido'))
+            ->add('apellidos', TextType::class, array('label' => 'Apellidos'))
             ->add('fechaNacimiento', BirthdayType::class, array('label' => 'Fecha nacimiento'))
             ->add('email', EmailType::class, array('label' => 'Correo electrónico'))
             ->add('password', PasswordType::class, array('label' => 'Contraseña'))
@@ -115,6 +116,7 @@ class ControladorCasinoController extends AbstractController
                 $user->setestabaneado(0);
                 $user->setestaverificado(0);
                 $user->setisAdmin(false);
+                $user->setdineroretenido(0);
                 $user->setrazonbaneo("Usuario limpio");
                 $entityManager = $doctrine->getManager();
                 $entityManager->persist($user);
@@ -133,16 +135,15 @@ class ControladorCasinoController extends AbstractController
     #[Route('/usuario/editar/{id}', name: 'editUser')]
     public function edit(ManagerRegistry $doctrine, Request $request, $id) {
         
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $user = $repositorio->find($id);
 
 
         $formulario = $this->createFormBuilder($user)
             ->add('docIdentidad', TextType::class, array('label' => 'Documento de identidad (NIF/NIE)'))
+            ->add('username', TextType::class, array('label' => 'Usuario'))
             ->add('nombre', TextType::class)
-            ->add('apellido1', TextType::class)
-            ->add('apellido2', TextType::class)
-            ->add('apellido2', TextType::class)
+            ->add('apellidos', TextType::class)
             ->add('fechaNacimiento', BirthdayType::class)
             ->add('dinero', IntegerType::class)
             ->add('email', EmailType::class, array('label' => 'Correo electrónico'))
@@ -169,7 +170,7 @@ class ControladorCasinoController extends AbstractController
     #[Route('/usuario/banear/{id}', name: 'banUser')]
     public function banear(ManagerRegistry $doctrine, Request $request, $id) {
     
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $user = $repositorio->find($id);
 
         if (!$user) {
@@ -204,7 +205,7 @@ class ControladorCasinoController extends AbstractController
 #[Route('/usuario/makeAdmin/{id}', name: 'adminUser')]
     public function makeAdm(ManagerRegistry $doctrine, Request $request, $id) {
     
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $user = $repositorio->find($id);
 
         if (!$user) {
@@ -237,7 +238,7 @@ class ControladorCasinoController extends AbstractController
 #[Route('/usuario/removeAdmin/{id}', name: 'removeadminUser')]
     public function removeAdm(ManagerRegistry $doctrine, Request $request, $id) {
     
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $user = $repositorio->find($id);
 
         if (!$user) {
@@ -270,7 +271,7 @@ class ControladorCasinoController extends AbstractController
     #[Route('/usuario/unban/{id}', name: 'unbanUser')]
     public function desbanear(ManagerRegistry $doctrine, Request $request, $id) {
 
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $user = $repositorio->find($id);
 
         if (!$user) {
@@ -310,7 +311,7 @@ class ControladorCasinoController extends AbstractController
     public function eliminar(ManagerRegistry $doctrine, $id): Response {
         
         $entityManager = $doctrine->getManager();
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $user = $repositorio->find($id);
 
         if ($user) {
@@ -331,7 +332,7 @@ class ControladorCasinoController extends AbstractController
     public function verificarUserAdm(ManagerRegistry $doctrine, $id): Response {
         
         $entityManager = $doctrine->getManager();
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $user = $repositorio->find($id);
 
         if ($user) {
@@ -352,7 +353,7 @@ class ControladorCasinoController extends AbstractController
     public function denegarVerificacion(ManagerRegistry $doctrine, $id): Response {
         
         $entityManager = $doctrine->getManager();
-        $repositorio = $doctrine->getRepository(User::class);
+        $repositorio = $doctrine->getRepository(Usuario::class);
         $user = $repositorio->find($id);
         $uploadDir = $this->getParameter('kernel.project_dir') . '/public/docs/' . $id;
 
@@ -376,7 +377,7 @@ class ControladorCasinoController extends AbstractController
 
 #[Route('/perfil/verificacion/{id}', name: 'verifyUser')]
 public function verifyUser(ManagerRegistry $doctrine, Request $request, $id) {
-    $repositorio = $doctrine->getRepository(User::class);
+    $repositorio = $doctrine->getRepository(Usuario::class);
     $user = $repositorio->find($id);
     $verified = $repositorio->find($id);
 

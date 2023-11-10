@@ -61,9 +61,7 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
         echo "</p>
 <p><strong>Apellidos:</strong> ";
         // line 11
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 11, $this->source); })()), "apellido1", [], "any", false, false, false, 11), "html", null, true);
-        echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 11, $this->source); })()), "apellido2", [], "any", false, false, false, 11), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 11, $this->source); })()), "apellidos", [], "any", false, false, false, 11), "html", null, true);
         echo "</p>
 <p><strong>Fecha nacimiento:</strong> ";
         // line 12
@@ -161,7 +159,7 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
 
     public function getDebugInfo()
     {
-        return array (  140 => 33,  136 => 31,  131 => 29,  127 => 28,  123 => 27,  119 => 26,  115 => 25,  110 => 24,  108 => 23,  103 => 22,  96 => 19,  94 => 18,  90 => 17,  86 => 16,  82 => 15,  78 => 14,  74 => 13,  70 => 12,  64 => 11,  60 => 10,  56 => 9,  52 => 8,  43 => 1,);
+        return array (  138 => 33,  134 => 31,  129 => 29,  125 => 28,  121 => 27,  117 => 26,  113 => 25,  108 => 24,  106 => 23,  101 => 22,  94 => 19,  92 => 18,  88 => 17,  84 => 16,  80 => 15,  76 => 14,  72 => 13,  68 => 12,  64 => 11,  60 => 10,  56 => 9,  52 => 8,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -176,7 +174,7 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
 <h2>Usuario ID {{ usuario.id }}</h2>
 <p><strong>Documento identidad:</strong> {{ usuario.docidentidad }}</p>
 <p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
-<p><strong>Apellidos:</strong> {{ usuario.apellido1 }} {{ usuario.apellido2 }}</p>
+<p><strong>Apellidos:</strong> {{ usuario.apellidos }}</p>
 <p><strong>Fecha nacimiento:</strong> {{ usuario.fechaNacimiento|date('d-m-Y')}}</p>
 <p><strong>Correo:</strong> {{ usuario.email }}</p>
 <p><strong>Password:</strong> {{ usuario.password }}</p>
