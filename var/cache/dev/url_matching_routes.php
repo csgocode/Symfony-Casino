@@ -55,7 +55,10 @@ return [
                     .'|verificar/([^/]++)(*:387)'
                     .'|denegar/([^/]++)(*:411)'
                 .')'
-                .'|/perfil/verificacion/([^/]++)(*:449)'
+                .'|/perfil/(?'
+                    .'|verificacion/([^/]++)(*:452)'
+                    .'|([^/]++)(*:468)'
+                .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -75,8 +78,9 @@ return [
         350 => [[['_route' => 'unbanUser', '_controller' => 'App\\Controller\\ControladorCasinoController::desbanear'], ['id'], null, null, false, true, null]],
         387 => [[['_route' => 'verifyAdminUser', '_controller' => 'App\\Controller\\ControladorCasinoController::verificarUserAdm'], ['id'], null, null, false, true, null]],
         411 => [[['_route' => 'verifyDenegar', '_controller' => 'App\\Controller\\ControladorCasinoController::denegarVerificacion'], ['id'], null, null, false, true, null]],
-        449 => [
-            [['_route' => 'verifyUser', '_controller' => 'App\\Controller\\ControladorCasinoController::verifyUser'], ['id'], null, null, false, true, null],
+        452 => [[['_route' => 'verifyUser', '_controller' => 'App\\Controller\\ControladorCasinoController::verifyUser'], ['id'], null, null, false, true, null]],
+        468 => [
+            [['_route' => 'app_perfil', '_controller' => 'App\\Controller\\PerfilController::perfilUser'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

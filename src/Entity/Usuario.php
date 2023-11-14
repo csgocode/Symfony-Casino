@@ -81,6 +81,27 @@ class Usuario implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(nullable: true)]
     private ?bool $isAdmin = null;
 
+    #[ORM\Column]
+    private ?float $dineroAfiliados = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $sexo = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $Pais = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $Ciudad = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $Direccion = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $CP = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $telefono = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -351,6 +372,90 @@ class Usuario implements UserInterface, PasswordAuthenticatedUserInterface
     public function setIsAdmin(?bool $isAdmin): static
     {
         $this->isAdmin = $isAdmin;
+
+        return $this;
+    }
+
+    public function getDineroAfiliados(): ?float
+    {
+        return $this->dineroAfiliados;
+    }
+
+    public function setDineroAfiliados(float $dineroAfiliados): static
+    {
+        $this->dineroAfiliados = $dineroAfiliados;
+
+        return $this;
+    }
+
+    public function getSexo(): ?string
+    {
+        return $this->sexo;
+    }
+
+    public function setSexo(?string $sexo): static
+    {
+        $this->sexo = $sexo;
+
+        return $this;
+    }
+
+    public function getPais(): ?string
+    {
+        return $this->Pais;
+    }
+
+    public function setPais(?string $Pais): static
+    {
+        $this->Pais = $Pais;
+
+        return $this;
+    }
+
+    public function getCiudad(): ?string
+    {
+        return $this->Ciudad;
+    }
+
+    public function setCiudad(?string $Ciudad): static
+    {
+        $this->Ciudad = $Ciudad;
+
+        return $this;
+    }
+
+    public function getDireccion(): ?string
+    {
+        return $this->Direccion;
+    }
+
+    public function setDireccion(?string $Direccion): static
+    {
+        $this->Direccion = $Direccion;
+
+        return $this;
+    }
+
+    public function getCP(): ?string
+    {
+        return $this->CP;
+    }
+
+    public function setCP(?string $CP): static
+    {
+        $this->CP = $CP;
+
+        return $this;
+    }
+
+    public function getTelefono(): ?string
+    {
+        return $this->telefono;
+    }
+
+    public function setTelefono(?string $telefono): static
+    {
+        $this->telefono = $telefono;
 
         return $this;
     }
