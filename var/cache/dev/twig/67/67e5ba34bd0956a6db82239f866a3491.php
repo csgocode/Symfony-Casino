@@ -48,7 +48,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Toni Casino</title>
+    <title>Cripto Casino</title>
 
     <link rel=\"shortcut icon\" href=\"../../assets/images/fav.png\" type=\"image/x-icon\">
     <link rel=\"stylesheet\" href=\"../../assets/css/bootstrap.min.css\">
@@ -237,7 +237,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
                 <div class=\"row d-flex justify-content-start\">
                     <div class=\"col-sm-7\">
                         <div class=\"text-area\">
-                            <h2>Toni Casino</h2>
+                            <h2>Cripto Casino</h2>
                             <div class=\"breadcrumb-area\">
                                 <nav aria-label=\"breadcrumb\">
                                     <ol class=\"breadcrumb d-flex gap-2 gap-lg-0 mt-2 mt-lg-0\">
@@ -461,7 +461,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Toni Casino</title>
+    <title>Cripto Casino</title>
 
     <link rel=\"shortcut icon\" href=\"../../assets/images/fav.png\" type=\"image/x-icon\">
     <link rel=\"stylesheet\" href=\"../../assets/css/bootstrap.min.css\">
@@ -650,7 +650,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
                 <div class=\"row d-flex justify-content-start\">
                     <div class=\"col-sm-7\">
                         <div class=\"text-area\">
-                            <h2>Toni Casino</h2>
+                            <h2>Cripto Casino</h2>
                             <div class=\"breadcrumb-area\">
                                 <nav aria-label=\"breadcrumb\">
                                     <ol class=\"breadcrumb d-flex gap-2 gap-lg-0 mt-2 mt-lg-0\">

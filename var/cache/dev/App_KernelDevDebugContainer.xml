@@ -5093,6 +5093,20 @@
         <argument>null</argument>
       </call>
       <call method="add">
+        <argument type="service" id=".security.request_matcher.onhO3a0"/>
+        <argument type="collection">
+          <argument>ROLE_ADMIN</argument>
+        </argument>
+        <argument>null</argument>
+      </call>
+      <call method="add">
+        <argument type="service" id=".security.request_matcher.4ufiCQv"/>
+        <argument type="collection">
+          <argument>ROLE_ADMIN</argument>
+        </argument>
+        <argument>null</argument>
+      </call>
+      <call method="add">
         <argument type="service" id=".security.request_matcher.m7AUxcI"/>
         <argument type="collection">
           <argument>ROLE_USER</argument>
@@ -5719,6 +5733,12 @@
     </service>
     <service id=".security.request_matcher.5dJADCx" class="Symfony\Component\HttpFoundation\RequestMatcher">
       <argument>^/admin</argument>
+    </service>
+    <service id=".security.request_matcher.onhO3a0" class="Symfony\Component\HttpFoundation\RequestMatcher">
+      <argument>^/checkUsers</argument>
+    </service>
+    <service id=".security.request_matcher.4ufiCQv" class="Symfony\Component\HttpFoundation\RequestMatcher">
+      <argument>^/checkUser</argument>
     </service>
     <service id=".security.request_matcher.m7AUxcI" class="Symfony\Component\HttpFoundation\RequestMatcher">
       <argument>^/perfil</argument>

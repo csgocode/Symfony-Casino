@@ -253,7 +253,7 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
             <div class=\"row justify-content-between\">
                 <div class=\"col-xl-6 col-lg-6\">
                     <div class=\"section-text\">
-                        <h3 class=\"mb-3\">Toni Casino</h3>
+                        <h3 class=\"mb-3\">Cripto Casino</h3>
                         <p>¡Multiplica tu dinero! El truco está en depositar todo tu dinero en nuestro casino.</p>
                     </div>
                     <div class=\"dooplo-info cus-mar\">
@@ -741,7 +741,7 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
             <div class=\"row justify-content-between\">
                 <div class=\"col-xl-6 col-lg-6\">
                     <div class=\"section-text\">
-                        <h3 class=\"mb-3\">Toni Casino</h3>
+                        <h3 class=\"mb-3\">Cripto Casino</h3>
                         <p>¡Multiplica tu dinero! El truco está en depositar todo tu dinero en nuestro casino.</p>
                     </div>
                     <div class=\"dooplo-info cus-mar\">
