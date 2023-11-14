@@ -16,6 +16,8 @@
 # Section Area
 # Footer Area
 ============================================*/
+
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
 :root {
   --head-font: "Orbitron", sans-serif;
@@ -595,6 +597,23 @@ li {
 }
 .fadeInDown {
   animation-name: fadeInDown;
+}
+.btntoni {
+  position: relative;
+  top: 15px;
+  background-color: #351ab1; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 12px 24px; /* Espaciado interno */
+  border: none; /* Sin bordes */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor a una mano */
+  font-size: 16px; /* Tamaño del texto */
+  transition: all 0.3s ease; /* Transición suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.btntoni:hover {
+  background-color: #300964; /* Color de fondo al pasar el ratón */
 }
 
 /* cmn btn */

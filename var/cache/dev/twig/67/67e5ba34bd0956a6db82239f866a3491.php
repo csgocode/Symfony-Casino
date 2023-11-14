@@ -273,9 +273,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
         // line 230
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 230, $this->source); })()), "nombre", [], "any", false, false, false, 230), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 230, $this->source); })()), "apellido1", [], "any", false, false, false, 230), "html", null, true);
-        echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 230, $this->source); })()), "apellido2", [], "any", false, false, false, 230), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 230, $this->source); })()), "apellidos", [], "any", false, false, false, 230), "html", null, true);
         echo " - Nacimiento: ";
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 230, $this->source); })()), "fechaNacimiento", [], "any", false, false, false, 230), "d-m-Y"), "html", null, true);
         echo "</p></div>
@@ -288,7 +286,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
                                 
                                 ";
         // line 238
-        if ( !(null === twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 238, $this->source); })()), "estaVerificado", [], "any", false, false, false, 238))) {
+        if ((twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 238, $this->source); })()), "estaVerificado", [], "any", false, false, false, 238) == 1)) {
             // line 239
             echo "                                <div class=\"single-box d-flex align-items-center justify-content-between\">
                                     <div class=\"text-box\">
@@ -306,10 +304,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
             echo "                                <div class=\"single-box d-flex align-items-center justify-content-between\">
                                     <div class=\"text-box\">
                                         
-                                        <h5 class=\"mb-2\">Verifica tu identidad ";
-            // line 253
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 253, $this->source); })()), "estaVerificado", [], "any", false, false, false, 253), "html", null, true);
-            echo "</h5>
+                                        <h5 class=\"mb-2\">Verifica tu identidad</h5>
                                         <ul>
                                             <li>DNI, carnet de conducir o pasaporte</li>
                                             <li>Selfie</li>
@@ -453,7 +448,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
 
     public function getDebugInfo()
     {
-        return array (  335 => 268,  330 => 266,  322 => 261,  311 => 253,  306 => 250,  293 => 239,  291 => 238,  274 => 230,  43 => 1,);
+        return array (  330 => 268,  325 => 266,  317 => 261,  304 => 250,  291 => 239,  289 => 238,  274 => 230,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -687,7 +682,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
                         <div class=\"section-text\">
                             <h5 class=\"mb-4\">¡Verifica tu identidad!</h5>
                             <p>Para poder usar nuestro casino primero debes verificar tu identidad. Recuerda que debe coincidir con los datos proporcionados al registrarte.</p>
-                            <br><p>{{usuario.nombre}} {{usuario.apellido1}} {{usuario.apellido2}} - Nacimiento: {{usuario.fechaNacimiento|date('d-m-Y')}}</p></div>
+                            <br><p>{{usuario.nombre}} {{usuario.apellidos}} - Nacimiento: {{usuario.fechaNacimiento|date('d-m-Y')}}</p></div>
                         
                     </div>
                     <div class=\"col-lg-6\">
@@ -695,7 +690,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
                             <div class=\"tab-pane fade show active\" id=\"all-jobs\" role=\"tabpanel\"
                                 aria-labelledby=\"all-jobs-tab\">
                                 
-                                {% if usuario.estaVerificado is not null %}
+                                {% if usuario.estaVerificado == 1 %}
                                 <div class=\"single-box d-flex align-items-center justify-content-between\">
                                     <div class=\"text-box\">
                                         
@@ -710,7 +705,7 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
                                 <div class=\"single-box d-flex align-items-center justify-content-between\">
                                     <div class=\"text-box\">
                                         
-                                        <h5 class=\"mb-2\">Verifica tu identidad {{usuario.estaVerificado}}</h5>
+                                        <h5 class=\"mb-2\">Verifica tu identidad</h5>
                                         <ul>
                                             <li>DNI, carnet de conducir o pasaporte</li>
                                             <li>Selfie</li>

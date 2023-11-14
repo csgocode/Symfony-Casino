@@ -248,9 +248,33 @@ class __TwigTemplate_91be55fe13b12bbf48787de4cfa8455d extends Template
                 </div>
                 <div class=\"col-xl-5 col-lg-6 mt-5 mt-lg-0\">
                     <div class=\"form-content\">
-                        ";
+                       ";
         // line 209
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formulario"]) || array_key_exists("formulario", $context) ? $context["formulario"] : (function () { throw new RuntimeError('Variable "formulario" does not exist.', 209, $this->source); })()), 'form');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 209, $this->source); })()), 'errors');
+        echo "
+
+    ";
+        // line 211
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 211, $this->source); })()), 'form_start');
+        echo "
+        ";
+        // line 212
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 212, $this->source); })()), "email", [], "any", false, false, false, 212), 'row');
+        echo "
+        ";
+        // line 213
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 213, $this->source); })()), "plainPassword", [], "any", false, false, false, 213), 'row', ["label" => "Password"]);
+        // line 215
+        echo "
+        ";
+        // line 216
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 216, $this->source); })()), "agreeTerms", [], "any", false, false, false, 216), 'row');
+        echo "
+
+        <button type=\"submit\" class=\"btn\">Register</button>
+    ";
+        // line 219
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 219, $this->source); })()), 'form_end');
         echo "
                     </div>
                 </div>
@@ -481,7 +505,7 @@ class __TwigTemplate_91be55fe13b12bbf48787de4cfa8455d extends Template
 
     public function getDebugInfo()
     {
-        return array (  253 => 209,  43 => 1,);
+        return array (  277 => 219,  271 => 216,  268 => 215,  266 => 213,  262 => 212,  258 => 211,  253 => 209,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -694,7 +718,17 @@ class __TwigTemplate_91be55fe13b12bbf48787de4cfa8455d extends Template
                 </div>
                 <div class=\"col-xl-5 col-lg-6 mt-5 mt-lg-0\">
                     <div class=\"form-content\">
-                        {{ form(formulario) }}
+                       {{ form_errors(registrationForm) }}
+
+    {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        }) }}
+        {{ form_row(registrationForm.agreeTerms) }}
+
+        <button type=\"submit\" class=\"btn\">Register</button>
+    {{ form_end(registrationForm) }}
                     </div>
                 </div>
             </div>

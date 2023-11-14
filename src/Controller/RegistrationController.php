@@ -31,6 +31,13 @@ class RegistrationController extends AbstractController
                 )
             );
 
+            $user->setDinero(0);
+            $user->setDineroRetenido(0);
+            $user->setFechaNacimiento(new \DateTime("1800-01-01"));
+            $user->setiplastlogin($_SERVER['REMOTE_ADDR']);
+            $user->setestabaneado(0);
+            $user->setestaverificado(0);
+            $user->setisAdmin(false);
             $entityManager->persist($user);
             $entityManager->flush();
             // do anything else you need here, like send an email

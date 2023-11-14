@@ -50,13 +50,6 @@ class ControladorCasinoController extends AbstractController
     ));
 }
 
-    #[Route('/login', name: 'login')]
-    public function login(): Response
-    {
-        return $this->render('funciones/login.html.twig', [
-            'controller_name' => 'ControladorCasinoController',
-        ]);
-    }
 
     #[Route('/checkUser/{id}', name: 'checkUser_DNI')]
     public function checkUser(ManagerRegistry $doctrine, $id): Response

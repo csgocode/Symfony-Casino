@@ -92,9 +92,7 @@ class __TwigTemplate_c79c6c52499e4bf364eb9a1558a0dc59 extends Template
         echo " - ";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 5, $this->source); })()), "nombre", [], "any", false, false, false, 5), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 5, $this->source); })()), "apellido1", [], "any", false, false, false, 5), "html", null, true);
-        echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 5, $this->source); })()), "apellido2", [], "any", false, false, false, 5), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 5, $this->source); })()), "apellidos", [], "any", false, false, false, 5), "html", null, true);
         echo "</p><hr>
 <p>¿Estás seguro que quieres darle admin?</p>
 ";
@@ -122,7 +120,7 @@ class __TwigTemplate_c79c6c52499e4bf364eb9a1558a0dc59 extends Template
 
     public function getDebugInfo()
     {
-        return array (  102 => 7,  91 => 5,  88 => 4,  78 => 3,  59 => 2,  36 => 1,);
+        return array (  100 => 7,  91 => 5,  88 => 4,  78 => 3,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -131,7 +129,7 @@ class __TwigTemplate_c79c6c52499e4bf364eb9a1558a0dc59 extends Template
 {% block title %}Usuario{% endblock %}
 {% block body %}
 <h1>Admin panel - Dar permisos de administrador</h1><hr>
-<p>Estas en la ficha del usuario: {{usuario.id}} - {{usuario.nombre}} {{usuario.apellido1}} {{usuario.apellido2}}</p><hr>
+<p>Estas en la ficha del usuario: {{usuario.id}} - {{usuario.nombre}} {{usuario.apellidos}}</p><hr>
 <p>¿Estás seguro que quieres darle admin?</p>
 {{ form(formulario) }}
 {% endblock %}", "checks/makeAdmin.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/makeAdmin.html.twig");
