@@ -543,7 +543,19 @@ class ComposerStaticInit76b111b9cd8edcf616b313b6a3d197be
     );
 
     public static $classMap = array (
+        'App\\Controller\\ControladorCasinoController' => __DIR__ . '/../..' . '/src/Controller/ControladorCasinoController.php',
+        'App\\Controller\\PerfilController' => __DIR__ . '/../..' . '/src/Controller/PerfilController.php',
+        'App\\Controller\\RegistrationController' => __DIR__ . '/../..' . '/src/Controller/RegistrationController.php',
+        'App\\Controller\\SecurityController' => __DIR__ . '/../..' . '/src/Controller/SecurityController.php',
+        'App\\Controller\\WalletController' => __DIR__ . '/../..' . '/src/Controller/WalletController.php',
+        'App\\Entity\\Contacto' => __DIR__ . '/../..' . '/src/Entity/Contacto.php',
+        'App\\Entity\\Usuario' => __DIR__ . '/../..' . '/src/Entity/Usuario.php',
+        'App\\Form\\ContactFormType' => __DIR__ . '/../..' . '/src/Form/ContactFormType.php',
+        'App\\Form\\RegistrationFormType' => __DIR__ . '/../..' . '/src/Form/RegistrationFormType.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
+        'App\\Repository\\ContactoRepository' => __DIR__ . '/../..' . '/src/Repository/ContactoRepository.php',
+        'App\\Repository\\UsuarioRepository' => __DIR__ . '/../..' . '/src/Repository/UsuarioRepository.php',
+        'App\\Security\\AppCustomAuthenticator' => __DIR__ . '/../..' . '/src/Security/AppCustomAuthenticator.php',
         'Collator' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/Resources/stubs/Collator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',

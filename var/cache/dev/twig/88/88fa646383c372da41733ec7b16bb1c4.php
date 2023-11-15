@@ -71,9 +71,7 @@ class __TwigTemplate_23f5c8ab8bb8cef6607637e5415322b7 extends Template
             echo "</p>
     <p><strong>Apellidos:</strong> ";
             // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "apellido1", [], "any", false, false, false, 16), "html", null, true);
-            echo " ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "apellido2", [], "any", false, false, false, 16), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["usuario"], "apellidos", [], "any", false, false, false, 16), "html", null, true);
             echo "</p>
     <p><strong>Correo:</strong> ";
             // line 17
@@ -179,7 +177,7 @@ class __TwigTemplate_23f5c8ab8bb8cef6607637e5415322b7 extends Template
 
     public function getDebugInfo()
     {
-        return array (  158 => 40,  148 => 37,  143 => 35,  139 => 34,  135 => 33,  131 => 32,  127 => 31,  122 => 30,  120 => 29,  116 => 28,  113 => 27,  108 => 25,  103 => 24,  101 => 23,  96 => 21,  92 => 20,  88 => 19,  84 => 18,  80 => 17,  74 => 16,  70 => 15,  66 => 14,  62 => 13,  59 => 12,  55 => 11,  43 => 1,);
+        return array (  156 => 40,  146 => 37,  141 => 35,  137 => 34,  133 => 33,  129 => 32,  125 => 31,  120 => 30,  118 => 29,  114 => 28,  111 => 27,  106 => 25,  101 => 24,  99 => 23,  94 => 21,  90 => 20,  86 => 19,  82 => 18,  78 => 17,  74 => 16,  70 => 15,  66 => 14,  62 => 13,  59 => 12,  55 => 11,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -199,7 +197,7 @@ class __TwigTemplate_23f5c8ab8bb8cef6607637e5415322b7 extends Template
     <h3>Usuario ID {{ usuario.id }}</h3>
     <p><strong>Documento identidad:</strong> {{ usuario.docidentidad }}</p>
     <p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
-    <p><strong>Apellidos:</strong> {{ usuario.apellido1 }} {{ usuario.apellido2 }}</p>
+    <p><strong>Apellidos:</strong> {{ usuario.apellidos }}</p>
     <p><strong>Correo:</strong> {{ usuario.email }}</p>
     <p><strong>Password:</strong> {{ usuario.password }}</p>
     <p><strong>Último login:</strong> {{ usuario.lastlogin|date('d-m-Y') }}</p>

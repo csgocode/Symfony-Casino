@@ -176,8 +176,14 @@
                                 </div>
                             </div>
                             <div class="btn-area d-flex gap-3 align-items-center">
-                                <a href="/login">Login</a>
-                                <a href="/register" class="cmn-btn">Registro</a>
+                               {% if app.user %}
+        
+            <a href="#">Estas logueado como {{ app.user.userIdentifier }}.</a> <a class="cmn-btn" href="{{ path('app_logout') }}">Cerrar</a>
+
+    {% else %}
+      <a href="/login">Login</a>
+      <a href="/register" class="cmn-btn">Registro</a>
+    {% endif %}
                             </div>
                         </div>
                     </div>

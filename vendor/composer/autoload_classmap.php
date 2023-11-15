@@ -6,7 +6,19 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controller\\ControladorCasinoController' => $baseDir . '/src/Controller/ControladorCasinoController.php',
+    'App\\Controller\\PerfilController' => $baseDir . '/src/Controller/PerfilController.php',
+    'App\\Controller\\RegistrationController' => $baseDir . '/src/Controller/RegistrationController.php',
+    'App\\Controller\\SecurityController' => $baseDir . '/src/Controller/SecurityController.php',
+    'App\\Controller\\WalletController' => $baseDir . '/src/Controller/WalletController.php',
+    'App\\Entity\\Contacto' => $baseDir . '/src/Entity/Contacto.php',
+    'App\\Entity\\Usuario' => $baseDir . '/src/Entity/Usuario.php',
+    'App\\Form\\ContactFormType' => $baseDir . '/src/Form/ContactFormType.php',
+    'App\\Form\\RegistrationFormType' => $baseDir . '/src/Form/RegistrationFormType.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
+    'App\\Repository\\ContactoRepository' => $baseDir . '/src/Repository/ContactoRepository.php',
+    'App\\Repository\\UsuarioRepository' => $baseDir . '/src/Repository/UsuarioRepository.php',
+    'App\\Security\\AppCustomAuthenticator' => $baseDir . '/src/Security/AppCustomAuthenticator.php',
     'Collator' => $vendorDir . '/symfony/polyfill-intl-icu/Resources/stubs/Collator.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'DeepCopy\\DeepCopy' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',

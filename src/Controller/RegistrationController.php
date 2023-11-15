@@ -36,6 +36,7 @@ class RegistrationController extends AbstractController
             $user->setFechaNacimiento(new \DateTime("1800-01-01"));
             $user->setiplastlogin($_SERVER['REMOTE_ADDR']);
             $user->setestabaneado(0);
+            $user->setDineroAfiliados(0);
             $user->setestaverificado(0);
             $user->setisAdmin(false);
             $entityManager->persist($user);

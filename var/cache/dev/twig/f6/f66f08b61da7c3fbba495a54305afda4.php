@@ -218,9 +218,27 @@ class __TwigTemplate_28fe3a1780be37f70c470dccac21edf5 extends Template
                                 </div>
                             </div>
                             <div class=\"btn-area d-flex gap-3 align-items-center\">
-                                <a href=\"/login\">Login</a>
-                                <a href=\"/register\" class=\"cmn-btn\">Registro</a>
-                            </div>
+                               ";
+        // line 179
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 179, $this->source); })()), "user", [], "any", false, false, false, 179)) {
+            // line 180
+            echo "        
+            <a href=\"#\">Estas logueado como ";
+            // line 181
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 181, $this->source); })()), "user", [], "any", false, false, false, 181), "userIdentifier", [], "any", false, false, false, 181), "html", null, true);
+            echo ".</a> <a class=\"cmn-btn\" href=\"";
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            echo "\">Cerrar</a>
+
+    ";
+        } else {
+            // line 184
+            echo "      <a href=\"/login\">Login</a>
+      <a href=\"/register\" class=\"cmn-btn\">Registro</a>
+    ";
+        }
+        // line 187
+        echo "                            </div>
                         </div>
                     </div>
                 </nav>
@@ -824,9 +842,14 @@ class __TwigTemplate_28fe3a1780be37f70c470dccac21edf5 extends Template
         return "controlador_casino/index.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  241 => 187,  236 => 184,  228 => 181,  225 => 180,  223 => 179,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -1009,8 +1032,14 @@ class __TwigTemplate_28fe3a1780be37f70c470dccac21edf5 extends Template
                                 </div>
                             </div>
                             <div class=\"btn-area d-flex gap-3 align-items-center\">
-                                <a href=\"/login\">Login</a>
-                                <a href=\"/register\" class=\"cmn-btn\">Registro</a>
+                               {% if app.user %}
+        
+            <a href=\"#\">Estas logueado como {{ app.user.userIdentifier }}.</a> <a class=\"cmn-btn\" href=\"{{ path('app_logout') }}\">Cerrar</a>
+
+    {% else %}
+      <a href=\"/login\">Login</a>
+      <a href=\"/register\" class=\"cmn-btn\">Registro</a>
+    {% endif %}
                             </div>
                         </div>
                     </div>

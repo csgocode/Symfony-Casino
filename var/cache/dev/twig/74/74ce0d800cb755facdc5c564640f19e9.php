@@ -235,7 +235,7 @@ class __TwigTemplate_631b7d5fae5fef8bf61791486410cb0e extends Template
             <div class=\"row justify-content-between\">
                 <div class=\"col-xl-6 col-lg-6\">
                     <div class=\"section-text\">
-                        <h3 class=\"mb-3\">Toni Casino</h3>
+                        <h3 class=\"mb-3\">Cripto Casino</h3>
                         <p>¡Multiplica tu dinero! El truco está en depositar todo tu dinero en nuestro casino.</p>
                     </div>
                     <div class=\"dooplo-info cus-mar\">
@@ -460,7 +460,8 @@ class __TwigTemplate_631b7d5fae5fef8bf61791486410cb0e extends Template
     <script src=\"../../assets/js/main.js\"></script>
 </body>
 
-</html>";
+</html>
+";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -681,7 +682,7 @@ class __TwigTemplate_631b7d5fae5fef8bf61791486410cb0e extends Template
             <div class=\"row justify-content-between\">
                 <div class=\"col-xl-6 col-lg-6\">
                     <div class=\"section-text\">
-                        <h3 class=\"mb-3\">Toni Casino</h3>
+                        <h3 class=\"mb-3\">Cripto Casino</h3>
                         <p>¡Multiplica tu dinero! El truco está en depositar todo tu dinero en nuestro casino.</p>
                     </div>
                     <div class=\"dooplo-info cus-mar\">
@@ -903,6 +904,7 @@ class __TwigTemplate_631b7d5fae5fef8bf61791486410cb0e extends Template
     <script src=\"../../assets/js/main.js\"></script>
 </body>
 
-</html>", "funciones/login.html.twig", "/home/alumno/Symf/symfony-casino/templates/funciones/login.html.twig");
+</html>
+", "funciones/login.html.twig", "/home/alumno/Symf/symfony-casino/templates/funciones/login.html.twig");
     }
 }

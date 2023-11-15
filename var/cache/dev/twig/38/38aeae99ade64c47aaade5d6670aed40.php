@@ -91,9 +91,7 @@ class __TwigTemplate_bfc81a2e99a15400ee3874352d6390de extends Template
         // line 6
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 6, $this->source); })()), "nombre", [], "any", false, false, false, 6), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 6, $this->source); })()), "apellido1", [], "any", false, false, false, 6), "html", null, true);
-        echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 6, $this->source); })()), "apellido2", [], "any", false, false, false, 6), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 6, $this->source); })()), "apellidos", [], "any", false, false, false, 6), "html", null, true);
         echo " - Nacimiento: ";
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["usuario"]) || array_key_exists("usuario", $context) ? $context["usuario"] : (function () { throw new RuntimeError('Variable "usuario" does not exist.', 6, $this->source); })()), "fechaNacimiento", [], "any", false, false, false, 6), "d-m-Y"), "html", null, true);
         echo "</p>
@@ -122,7 +120,7 @@ class __TwigTemplate_bfc81a2e99a15400ee3874352d6390de extends Template
 
     public function getDebugInfo()
     {
-        return array (  102 => 7,  92 => 6,  88 => 4,  78 => 3,  59 => 2,  36 => 1,);
+        return array (  100 => 7,  92 => 6,  88 => 4,  78 => 3,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -132,7 +130,7 @@ class __TwigTemplate_bfc81a2e99a15400ee3874352d6390de extends Template
 {% block body %}
 <h1>Toni Casino - Verificación de identidad</h1><hr>
 <p>Comprueba que los datos coinciden con los de tu cuenta, de lo contrario vamos a denegar tu solicitud de verificación.</p>
-<p>{{usuario.nombre}} {{usuario.apellido1}} {{usuario.apellido2}} - Nacimiento: {{usuario.fechaNacimiento|date('d-m-Y')}}</p>
+<p>{{usuario.nombre}} {{usuario.apellidos}} - Nacimiento: {{usuario.fechaNacimiento|date('d-m-Y')}}</p>
 {{ form(formulario) }}
 {% endblock %}", "checks/verificar.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/verificar.html.twig");
     }
