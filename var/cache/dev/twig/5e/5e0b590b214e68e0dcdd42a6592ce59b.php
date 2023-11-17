@@ -662,33 +662,33 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                 <div class=\"row cus-mar\">
                     <div class=\"col-lg-4\">
                         <div class=\"single-box link-area\">
-                            <a href=\"accounts-1.html\" class=\"d-flex gap-2 active\">
+                            <a href=\"/perfil\" class=\"d-flex gap-2 active\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"/assets/images/icon/dashboard-icon.png\" alt=\"icon\">
                                 </div>
-                                Dashboard
+                                Perfil
                             </a>
-                            <a href=\"accounts-2.html\" class=\"d-flex gap-2\">
+                            <a href=\"/wallet\" class=\"d-flex gap-2\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"/assets/images/icon/wallet-icon.png\" alt=\"icon\">
                                 </div>
-                                Wallet
+                                Billetera
                             </a>
-                            <a href=\"accounts-3.html\" class=\"d-flex gap-2\">
+                            <a href=\"/afiliados\" class=\"d-flex gap-2\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"/assets/images/icon/affiliate-icon.png\" alt=\"icon\">
                                 </div>
-                                Affiliate Program
+                                Afiliados
                             </a>
                             <div class=\"log-out-area mt-5\">
-                                <form action=\"#\">
+                               <a href=\"/logout\" class=\"m-0\">
                                     <button class=\"d-flex signup-btn justify-content-center m-auto py-3 gap-2\">
                                         <span class=\"icon-log\">
                                             <img src=\"/assets/images/icon/logout-icon.png\" alt=\"icon\">
                                         </span>
-                                        Signout
+                                        Cerrar sesión
                                     </button>
-                                </form>
+                                </a>
                             </div>
                         </div>
                         <div class=\"single-box text-center\">
@@ -2001,33 +2001,33 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                 <div class=\"row cus-mar\">
                     <div class=\"col-lg-4\">
                         <div class=\"single-box link-area\">
-                            <a href=\"accounts-1.html\" class=\"d-flex gap-2 active\">
+                            <a href=\"/perfil\" class=\"d-flex gap-2 active\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"/assets/images/icon/dashboard-icon.png\" alt=\"icon\">
                                 </div>
-                                Dashboard
+                                Perfil
                             </a>
-                            <a href=\"accounts-2.html\" class=\"d-flex gap-2\">
+                            <a href=\"/wallet\" class=\"d-flex gap-2\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"/assets/images/icon/wallet-icon.png\" alt=\"icon\">
                                 </div>
-                                Wallet
+                                Billetera
                             </a>
-                            <a href=\"accounts-3.html\" class=\"d-flex gap-2\">
+                            <a href=\"/afiliados\" class=\"d-flex gap-2\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"/assets/images/icon/affiliate-icon.png\" alt=\"icon\">
                                 </div>
-                                Affiliate Program
+                                Afiliados
                             </a>
                             <div class=\"log-out-area mt-5\">
-                                <form action=\"#\">
+                               <a href=\"/logout\" class=\"m-0\">
                                     <button class=\"d-flex signup-btn justify-content-center m-auto py-3 gap-2\">
                                         <span class=\"icon-log\">
                                             <img src=\"/assets/images/icon/logout-icon.png\" alt=\"icon\">
                                         </span>
-                                        Signout
+                                        Cerrar sesión
                                     </button>
-                                </form>
+                                </a>
                             </div>
                         </div>
                         <div class=\"single-box text-center\">

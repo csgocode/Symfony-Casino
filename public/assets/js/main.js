@@ -65,15 +65,6 @@ $(function ($) {
       $('.chat-main').scrollTop($('.chat-main')[0].scrollHeight);
     });
 
-    // Number Active
-    var qvalue = $(".quick-value h5");
-    $(qvalue).on('click', function (e) {
-      $(qvalue).removeClass('active');
-      $(this).addClass('active');
-      let cval = $(this).html();
-      $("#dAmount, #amount").val('$'+cval+'.00');
-    });
-
     // Sticky Header
     var fixed_top = $(".header-section");
     $(window).on("scroll", function () {
@@ -125,3 +116,12 @@ $(window).on('load', function () {
     $(".preloader").css("display", "none");
   });
 });
+
+  // Menu JQUERY
+  var qvalue = $(".quick-value h5");
+  $(qvalue).on('click', function (e) {
+    $(qvalue).removeClass('active');
+    $(this).addClass('active');
+    let cval = $(this).html();
+    $("#dAmount, #amount").val(cval);
+  });

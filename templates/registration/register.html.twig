@@ -214,7 +214,8 @@
                     <div class="form-content">
                        {{ form_errors(registrationForm) }}
 
-    {{ form_start(registrationForm) }}
+   {{ form_start(registrationForm, {'attr': {'id': 'registration-form'}}) }}
+
         {{ form_row(registrationForm.email) }}
         {{ form_row(registrationForm.plainPassword, {
             label: 'Password'
@@ -432,6 +433,8 @@
     <script src="../../assets/js/plugin/viewport.jquery.js"></script>
     <script src="../../assets/js/plugin/plugin.js"></script>
     <script src="../../assets/js/main.js"></script>
+    <!-- scripts con mati -->
+    <script src="../../assets/js/formRegisterValidator.js"></script>
 </body>
 
 </html>

@@ -266,7 +266,7 @@ class __TwigTemplate_121dcecafd8029808cc4ce7abaeda7a5 extends Template
                 </div>
                 <div class=\"col-xl-5 col-lg-6 mt-5 mt-lg-0\">
                     <div class=\"form-content\">
-                       <form method=\"post\">
+                       <form id=\"FormLogin\" method=\"post\">
     ";
         // line 216
         if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 216, $this->source); })())) {
@@ -506,6 +506,8 @@ class __TwigTemplate_121dcecafd8029808cc4ce7abaeda7a5 extends Template
     <script src=\"../../assets/js/plugin/viewport.jquery.js\"></script>
     <script src=\"../../assets/js/plugin/plugin.js\"></script>
     <script src=\"../../assets/js/main.js\"></script>
+        <!-- scripts con mati -->
+    <script src=\"../../assets/js/formLoginValidator.js\"></script>
 </body>
 
 </html>";
@@ -748,7 +750,7 @@ class __TwigTemplate_121dcecafd8029808cc4ce7abaeda7a5 extends Template
                 </div>
                 <div class=\"col-xl-5 col-lg-6 mt-5 mt-lg-0\">
                     <div class=\"form-content\">
-                       <form method=\"post\">
+                       <form id=\"FormLogin\" method=\"post\">
     {% if error %}
         <div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
@@ -975,6 +977,8 @@ class __TwigTemplate_121dcecafd8029808cc4ce7abaeda7a5 extends Template
     <script src=\"../../assets/js/plugin/viewport.jquery.js\"></script>
     <script src=\"../../assets/js/plugin/plugin.js\"></script>
     <script src=\"../../assets/js/main.js\"></script>
+        <!-- scripts con mati -->
+    <script src=\"../../assets/js/formLoginValidator.js\"></script>
 </body>
 
 </html>", "security/login.html.twig", "/home/alumno/Symf/symfony-casino/templates/security/login.html.twig");

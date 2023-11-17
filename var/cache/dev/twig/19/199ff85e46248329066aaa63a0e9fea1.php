@@ -371,7 +371,7 @@ class __TwigTemplate_2df6a3bb056859859230ef9e8a28502b extends Template
 \t\t\t\t\t\t\t</h4>
 \t\t\t\t\t\t\t";
         // line 330
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 330, $this->source); })()), 'form_start', ["attr" => ["class" => "form-horizontal"]]);
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 330, $this->source); })()), 'form_start', ["attr" => ["class" => "form-horizontal", "id" => "ContactForm"]]);
         echo "
 ";
         // line 331
@@ -787,6 +787,8 @@ class __TwigTemplate_2df6a3bb056859859230ef9e8a28502b extends Template
 \t<script src=\"assets2/js/mousemoveparallax.js\"></script>
 \t<!-- main -->
 \t<script src=\"assets2/js/main.js\"></script>
+\t<!-- mati -->
+\t<script src=\"assets/js/formContactValidator.js\"></script>
 </body>
 
 </html>";
@@ -1144,7 +1146,7 @@ class __TwigTemplate_2df6a3bb056859859230ef9e8a28502b extends Template
 \t\t\t\t\t\t\t<h4 class=\"title\">
 \t\t\t\t\t\t\t\tSend Us a Message
 \t\t\t\t\t\t\t</h4>
-\t\t\t\t\t\t\t{{ form_start(form, {'attr': {'class':'form-horizontal'}}) }}
+\t\t\t\t\t\t\t{{ form_start(form, {'attr': {'class':'form-horizontal', 'id':'ContactForm'}}) }}
 {{ form_errors(form) }}
 \t<div class=\"form-group\">
 \t\t<div class=\"col-xs-6\">
@@ -1541,6 +1543,8 @@ class __TwigTemplate_2df6a3bb056859859230ef9e8a28502b extends Template
 \t<script src=\"assets2/js/mousemoveparallax.js\"></script>
 \t<!-- main -->
 \t<script src=\"assets2/js/main.js\"></script>
+\t<!-- mati -->
+\t<script src=\"assets/js/formContactValidator.js\"></script>
 </body>
 
 </html>", "funciones/contacto.html.twig", "/home/alumno/Symf/symfony-casino/templates/funciones/contacto.html.twig");
