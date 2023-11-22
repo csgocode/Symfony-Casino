@@ -31,10 +31,41 @@ class WalletController extends AbstractController
         $user = $repositorio->find($usuarioAutenticado->getId());
         $transacciones = $transaccionesRepository->findByUser($user);
 
+        
+
         return $this->render('wallet/index.html.twig', [
             'controller_name' => 'WalletController',
             'user' => $user,
             'transacciones' => $transacciones,
         ]);
     }
+
+
+    #[Route('/wallet/payment', name: 'app_wallet_payment', methods: ['POST'])]
+    public function makePayment(Request $request)
+    {
+        // Obtener datos del formulario
+        $amount = $request->request->get('dAmount');
+        $email = $request->request->get('dEmail');
+
+
+        // Crear una nueva solicitud de pago
+        $payment_request = new PaymentRequest();
+        $payment_request->push([
+            'unit' => 'BTC',
+            'address' => '1R9NpmdVpC4eKajqutKqSSEn5hH4DEkLs',
+            'payment_reference' => uniqid('ORD-'),
+            'amount' => $amount,
+            'callback_url' => 'https://your-callback-url', 
+            'timeout' => 10,
+            'confirmations' => 3
+        ]);
+
+        return $this->redirectToRoute('ruta_a_la_pagina_de_confirmacion');
+    }
+
+
+
+
+
 }

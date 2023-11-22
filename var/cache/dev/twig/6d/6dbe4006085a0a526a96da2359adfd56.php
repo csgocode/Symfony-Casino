@@ -774,7 +774,10 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <li><h5>40</h5></li>
                                                         <li><h5>50</h5></li>
                                                     </ul>
-                                                   <form action=\"#\" id=\"depositForm\">
+                                                   <form action=\"";
+        // line 720
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_wallet_payment");
+        echo "\" id=\"depositForm\" method=\"post\">
                                                         <div class=\"col-12\">
                                                             <div class=\"single-input\">
                                                                 <label for=\"dAmount\">Depositar cantidad</label>
@@ -782,7 +785,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                             </div>
                                                             <div class=\"single-input\">
                                                                 <label for=\"dEmail\">Email</label>
-                                                                <input type=\"text\" id=\"dEmail\" placeholder=\"Correo\" value=\"";
+                                                                <input type=\"text\" id=\"dEmail\" placeholder=\"";
         // line 728
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 728, $this->source); })()), "email", [], "any", false, false, false, 728), "html", null, true);
         echo "\" readonly=\"readonly\" autocomplete=\"off\">
@@ -905,7 +908,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         </select><div class=\"nice-select\" tabindex=\"0\"><span class=\"current\">Todas</span><ul class=\"list\"><li data-value=\"0\" class=\"option selected\">Todas</li><li data-value=\"1\" class=\"option\">Completadas</li><li data-value=\"2\" class=\"option\">No Completadas</li></ul></div>
                                                     </div>
                                                     <div class=\"single-btn\">
-                                                        <button class=\"cmn-btn\">Filter</button>
+                                                        <button class=\"cmn-btn\">Filtrar</button>
                                                     </div>
                                                 </div>
                                                <div class=\"table-responsive mt-4\">
@@ -917,7 +920,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                                 <th scope=\"col\">Moneda</th>
                                                                 <th scope=\"col\">Cantidad</th>
                                                                 <th scope=\"col\">Autorización</th>
-                                                                <th scope=\"col\">Completada</th>
+                                                                <th scope=\"col\">Estado</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -1485,7 +1488,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
 
     public function getDebugInfo()
     {
-        return array (  1327 => 1231,  1316 => 1223,  960 => 869,  950 => 865,  946 => 864,  942 => 863,  937 => 861,  933 => 860,  930 => 859,  926 => 858,  873 => 808,  806 => 744,  787 => 728,  720 => 664,  636 => 583,  632 => 582,  566 => 519,  555 => 511,  43 => 1,);
+        return array (  1330 => 1231,  1319 => 1223,  963 => 869,  953 => 865,  949 => 864,  945 => 863,  940 => 861,  936 => 860,  933 => 859,  929 => 858,  876 => 808,  809 => 744,  790 => 728,  779 => 720,  720 => 664,  636 => 583,  632 => 582,  566 => 519,  555 => 511,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -2209,7 +2212,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <li><h5>40</h5></li>
                                                         <li><h5>50</h5></li>
                                                     </ul>
-                                                   <form action=\"#\" id=\"depositForm\">
+                                                   <form action=\"{{ path('app_wallet_payment') }}\" id=\"depositForm\" method=\"post\">
                                                         <div class=\"col-12\">
                                                             <div class=\"single-input\">
                                                                 <label for=\"dAmount\">Depositar cantidad</label>
@@ -2217,7 +2220,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                             </div>
                                                             <div class=\"single-input\">
                                                                 <label for=\"dEmail\">Email</label>
-                                                                <input type=\"text\" id=\"dEmail\" placeholder=\"Correo\" value=\"{{user.email}}\" readonly=\"readonly\" autocomplete=\"off\">
+                                                                <input type=\"text\" id=\"dEmail\" placeholder=\"{{user.email}}\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
                                                                 <button class=\"cmn-btn d-center w-100\">Depositar</button>
@@ -2331,7 +2334,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         </select><div class=\"nice-select\" tabindex=\"0\"><span class=\"current\">Todas</span><ul class=\"list\"><li data-value=\"0\" class=\"option selected\">Todas</li><li data-value=\"1\" class=\"option\">Completadas</li><li data-value=\"2\" class=\"option\">No Completadas</li></ul></div>
                                                     </div>
                                                     <div class=\"single-btn\">
-                                                        <button class=\"cmn-btn\">Filter</button>
+                                                        <button class=\"cmn-btn\">Filtrar</button>
                                                     </div>
                                                 </div>
                                                <div class=\"table-responsive mt-4\">
@@ -2343,7 +2346,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                                 <th scope=\"col\">Moneda</th>
                                                                 <th scope=\"col\">Cantidad</th>
                                                                 <th scope=\"col\">Autorización</th>
-                                                                <th scope=\"col\">Completada</th>
+                                                                <th scope=\"col\">Estado</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>

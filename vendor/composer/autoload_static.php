@@ -577,6 +577,16 @@ class ComposerStaticInit76b111b9cd8edcf616b313b6a3d197be
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'E' => 
+        array (
+            'ExplorerCash' => 
+            array (
+                0 => __DIR__ . '/..' . '/explorer-cash/api-php/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'App\\Controller\\ControladorCasinoController' => __DIR__ . '/../..' . '/src/Controller/ControladorCasinoController.php',
         'App\\Controller\\PerfilController' => __DIR__ . '/../..' . '/src/Controller/PerfilController.php',
@@ -584,11 +594,13 @@ class ComposerStaticInit76b111b9cd8edcf616b313b6a3d197be
         'App\\Controller\\SecurityController' => __DIR__ . '/../..' . '/src/Controller/SecurityController.php',
         'App\\Controller\\WalletController' => __DIR__ . '/../..' . '/src/Controller/WalletController.php',
         'App\\Entity\\Contacto' => __DIR__ . '/../..' . '/src/Entity/Contacto.php',
+        'App\\Entity\\Transacciones' => __DIR__ . '/../..' . '/src/Entity/Transacciones.php',
         'App\\Entity\\Usuario' => __DIR__ . '/../..' . '/src/Entity/Usuario.php',
         'App\\Form\\ContactFormType' => __DIR__ . '/../..' . '/src/Form/ContactFormType.php',
         'App\\Form\\RegistrationFormType' => __DIR__ . '/../..' . '/src/Form/RegistrationFormType.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'App\\Repository\\ContactoRepository' => __DIR__ . '/../..' . '/src/Repository/ContactoRepository.php',
+        'App\\Repository\\TransaccionesRepository' => __DIR__ . '/../..' . '/src/Repository/TransaccionesRepository.php',
         'App\\Repository\\UsuarioRepository' => __DIR__ . '/../..' . '/src/Repository/UsuarioRepository.php',
         'App\\Security\\AppCustomAuthenticator' => __DIR__ . '/../..' . '/src/Security/AppCustomAuthenticator.php',
         'App\\Service\\CoinbaseApiService' => __DIR__ . '/../..' . '/src/Service/CoinbaseApiService.php',
@@ -1893,6 +1905,8 @@ class ComposerStaticInit76b111b9cd8edcf616b313b6a3d197be
         'Egulias\\EmailValidator\\Warning\\QuotedString' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/QuotedString.php',
         'Egulias\\EmailValidator\\Warning\\TLD' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/TLD.php',
         'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/Warning.php',
+        'ExplorerCash\\Api' => __DIR__ . '/..' . '/explorer-cash/api-php/src/ExplorerCash/Api.php',
+        'ExplorerCash\\PaymentRequest' => __DIR__ . '/..' . '/explorer-cash/api-php/src/ExplorerCash/PaymentRequest.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
         'GuzzleHttp\\ClientInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/ClientInterface.php',
         'GuzzleHttp\\Cookie\\CookieJar' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Cookie/CookieJar.php',
@@ -6332,6 +6346,7 @@ class ComposerStaticInit76b111b9cd8edcf616b313b6a3d197be
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit76b111b9cd8edcf616b313b6a3d197be::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit76b111b9cd8edcf616b313b6a3d197be::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit76b111b9cd8edcf616b313b6a3d197be::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit76b111b9cd8edcf616b313b6a3d197be::$classMap;
 
         }, null, ClassLoader::class);

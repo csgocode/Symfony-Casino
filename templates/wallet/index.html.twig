@@ -717,7 +717,7 @@
                                                         <li><h5>40</h5></li>
                                                         <li><h5>50</h5></li>
                                                     </ul>
-                                                   <form action="#" id="depositForm">
+                                                   <form action="{{ path('app_wallet_payment') }}" id="depositForm" method="post">
                                                         <div class="col-12">
                                                             <div class="single-input">
                                                                 <label for="dAmount">Depositar cantidad</label>
@@ -725,7 +725,7 @@
                                                             </div>
                                                             <div class="single-input">
                                                                 <label for="dEmail">Email</label>
-                                                                <input type="text" id="dEmail" placeholder="Correo" value="{{user.email}}" readonly="readonly" autocomplete="off">
+                                                                <input type="text" id="dEmail" placeholder="{{user.email}}" readonly="readonly" autocomplete="off">
                                                             </div>
                                                             <div class="btn-area text-center mt-3">
                                                                 <button class="cmn-btn d-center w-100">Depositar</button>
@@ -839,7 +839,7 @@
                                                         </select><div class="nice-select" tabindex="0"><span class="current">Todas</span><ul class="list"><li data-value="0" class="option selected">Todas</li><li data-value="1" class="option">Completadas</li><li data-value="2" class="option">No Completadas</li></ul></div>
                                                     </div>
                                                     <div class="single-btn">
-                                                        <button class="cmn-btn">Filter</button>
+                                                        <button class="cmn-btn">Filtrar</button>
                                                     </div>
                                                 </div>
                                                <div class="table-responsive mt-4">
@@ -851,7 +851,7 @@
                                                                 <th scope="col">Moneda</th>
                                                                 <th scope="col">Cantidad</th>
                                                                 <th scope="col">Autorización</th>
-                                                                <th scope="col">Completada</th>
+                                                                <th scope="col">Estado</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>

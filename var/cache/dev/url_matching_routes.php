@@ -24,6 +24,7 @@ return [
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
         '/wallet' => [[['_route' => 'app_wallet', '_controller' => 'App\\Controller\\WalletController::walletPerfil'], null, null, null, false, false, null]],
+        '/wallet/payment' => [[['_route' => 'app_wallet_payment', '_controller' => 'App\\Controller\\WalletController::makePayment'], null, ['POST' => 0], null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

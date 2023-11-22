@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13f43dbd1c8fbd7d5a189ae101ae5113",
+    "content-hash": "79253b1101603940d960ef32ea5e8931",
     "packages": [
         {
             "name": "coinbase/coinbase-commerce",
@@ -1434,6 +1434,40 @@
                 }
             ],
             "time": "2023-10-06T06:47:41+00:00"
+        },
+        {
+            "name": "explorer-cash/api-php",
+            "version": "1.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/explorer-cash/api-php.git",
+                "reference": "39ebe6690a560134639ca64e6ce36180f833290d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/explorer-cash/api-php/zipball/39ebe6690a560134639ca64e6ce36180f833290d",
+                "reference": "39ebe6690a560134639ca64e6ce36180f833290d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ExplorerCash": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "explorer.cash",
+                    "email": "support@explorer.cash"
+                }
+            ],
+            "description": "PHP API binding for explorer.cash Blockchain API service",
+            "support": {
+                "issues": "https://github.com/explorer-cash/api-php/issues",
+                "source": "https://github.com/explorer-cash/api-php/tree/1.9.3"
+            },
+            "time": "2020-09-06T14:37:42+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

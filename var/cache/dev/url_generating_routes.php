@@ -37,4 +37,5 @@ return [
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
     'app_wallet' => [[], ['_controller' => 'App\\Controller\\WalletController::walletPerfil'], [], [['text', '/wallet']], [], [], []],
+    'app_wallet_payment' => [[], ['_controller' => 'App\\Controller\\WalletController::makePayment'], [], [['text', '/wallet/payment']], [], [], []],
 ];
