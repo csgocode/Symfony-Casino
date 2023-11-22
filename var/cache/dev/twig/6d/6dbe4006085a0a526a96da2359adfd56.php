@@ -633,7 +633,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
         echo "</h6>
                             <p>Última sesión: ";
         // line 583
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 583, $this->source); })()), "lastLogin", [], "any", false, false, false, 583), "Y-m-d"), "html", null, true);
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 583, $this->source); })()), "lastLogin", [], "any", false, false, false, 583), "d-m-Y g:sA"), "html", null, true);
         echo "</p>
                         </div>
                     </div>
@@ -885,129 +885,82 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                             <div class=\"transaction-box px-3 py-3\">
                                                 <div class=\"top-filter d-flex gap-3 align-items-end\">
                                                     <div class=\"single-filter\">
-                                                        <p>Month</p>
-                                                        <input type=\"text\" placeholder=\"2023/01\">
+                                                        <p>Fecha mes/año</p>
+                                                        <input type=\"text\" placeholder=\"05/2023\">
                                                     </div>
                                                     <div class=\"single-filter\">
-                                                        <p>Type</p>
+                                                        <p>Tipo</p>
                                                         <select>
-                                                            <option value=\"0\">All</option>
-                                                            <option value=\"1\">Type 1</option>
-                                                            <option value=\"2\">Type 2</option>
-                                                            <option value=\"3\">Type 3</option>
-                                                        </select><div class=\"nice-select\" tabindex=\"0\"><span class=\"current\">All</span><ul class=\"list\"><li data-value=\"0\" class=\"option selected\">All</li><li data-value=\"1\" class=\"option\">Type 1</li><li data-value=\"2\" class=\"option\">Type 2</li><li data-value=\"3\" class=\"option\">Type 3</li></ul></div>
+                                                            <option value=\"0\">Todas</option>
+                                                            <option value=\"1\">Depósito</option>
+                                                            <option value=\"2\">Retirada</option>
+                                                        </select><div class=\"nice-select\" tabindex=\"0\"><span class=\"current\">Todas</span><ul class=\"list\"><li data-value=\"0\" class=\"option selected\">Todas</li><li data-value=\"1\" class=\"option\">Depósito</li><li data-value=\"2\" class=\"option\">Retirada</li></ul></div>
                                                     </div>
                                                     <div class=\"single-filter\">
-                                                        <p>Currency</p>
+                                                        <p>Transacciones</p>
                                                         <select>
-                                                            <option value=\"0\">All</option>
-                                                            <option value=\"1\">Currency 1</option>
-                                                            <option value=\"2\">Currency 2</option>
-                                                            <option value=\"3\">Currency 3</option>
-                                                        </select><div class=\"nice-select\" tabindex=\"0\"><span class=\"current\">All</span><ul class=\"list\"><li data-value=\"0\" class=\"option selected\">All</li><li data-value=\"1\" class=\"option\">Currency 1</li><li data-value=\"2\" class=\"option\">Currency 2</li><li data-value=\"3\" class=\"option\">Currency 3</li></ul></div>
+                                                            <option value=\"0\">Todas</option>
+                                                            <option value=\"1\">Completadas</option>
+                                                            <option value=\"2\">No Completadas</option>
+                                                        </select><div class=\"nice-select\" tabindex=\"0\"><span class=\"current\">Todas</span><ul class=\"list\"><li data-value=\"0\" class=\"option selected\">Todas</li><li data-value=\"1\" class=\"option\">Completadas</li><li data-value=\"2\" class=\"option\">No Completadas</li></ul></div>
                                                     </div>
                                                     <div class=\"single-btn\">
                                                         <button class=\"cmn-btn\">Filter</button>
                                                     </div>
                                                 </div>
-                                                <div class=\"table-responsive mt-4\">
+                                               <div class=\"table-responsive mt-4\">
                                                     <table class=\"table\">
                                                         <thead>
                                                             <tr>
-                                                                <th scope=\"col\">Date/Time</th>
-                                                                <th scope=\"col\">Type</th>
-                                                                <th scope=\"col\">Currency</th>
-                                                                <th scope=\"col\">Amount</th>
+                                                                <th scope=\"col\">Fecha transacción</th>
+                                                                <th scope=\"col\">Tipo</th>
+                                                                <th scope=\"col\">Moneda</th>
+                                                                <th scope=\"col\">Cantidad</th>
+                                                                <th scope=\"col\">Autorización</th>
+                                                                <th scope=\"col\">Completada</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Deposit</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Withdrawal</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Deposit</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Withdrawal</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Referral</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Deposit</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
+                                                            ";
+        // line 858
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["transacciones"]) || array_key_exists("transacciones", $context) ? $context["transacciones"] : (function () { throw new RuntimeError('Variable "transacciones" does not exist.', 858, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["transaccion"]) {
+            // line 859
+            echo "                                                                <tr>
+                                                                    <td style=\"color: white; font-weight: bold;\">";
+            // line 860
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "FechaInicio", [], "any", false, false, false, 860), "Y-m-d H:i:s"), "html", null, true);
+            echo "</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">";
+            // line 861
+            echo (((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 861) == 1)) ? ("Depósito") : ((((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 861) == 2)) ? ("Retirada") : ("Referido"))));
+            echo "</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">EUR</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">";
+            // line 863
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "CantidadEUR", [], "any", false, false, false, 863), "html", null, true);
+            echo "</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">";
+            // line 864
+            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Autorizacion", [], "any", false, false, false, 864)) ? ("Autorizada") : ("En espera"));
+            echo "</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">";
+            // line 865
+            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Completada", [], "any", false, false, false, 865)) ? ("Completada") : ("En espera"));
+            echo "</td>
+                                                                    
+                                                                </tr>
+                                                            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['transaccion'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 869
+        echo "                                                        </tbody>
                                                     </table>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -1359,8 +1312,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                     <div class=\"head-area py-4 text-center\">
                         <h5>Hola,</h5>
                         <p class=\"email-id\">";
-        // line 1295
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1295, $this->source); })()), "email", [], "any", false, false, false, 1295), "html", null, true);
+        // line 1223
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1223, $this->source); })()), "email", [], "any", false, false, false, 1223), "html", null, true);
         echo "</p>
                     </div>
                     <div class=\"cash-top\">
@@ -1370,8 +1323,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                             </div>
                             <div class=\"info-area\">
                                 <h5>";
-        // line 1303
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1303, $this->source); })()), "dinero", [], "any", false, false, false, 1303), "html", null, true);
+        // line 1231
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1231, $this->source); })()), "dinero", [], "any", false, false, false, 1231), "html", null, true);
         echo " EUR</h5>
                                 <span>Balance</span>
                             </div>
@@ -1532,7 +1485,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
 
     public function getDebugInfo()
     {
-        return array (  1374 => 1303,  1363 => 1295,  873 => 808,  806 => 744,  787 => 728,  720 => 664,  636 => 583,  632 => 582,  566 => 519,  555 => 511,  43 => 1,);
+        return array (  1327 => 1231,  1316 => 1223,  960 => 869,  950 => 865,  946 => 864,  942 => 863,  937 => 861,  933 => 860,  930 => 859,  926 => 858,  873 => 808,  806 => 744,  787 => 728,  720 => 664,  636 => 583,  632 => 582,  566 => 519,  555 => 511,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -2119,7 +2072,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                     <div class=\"col-lg-12\">
                         <div class=\"d-flex flex-wrap gap-3 gap-md-0 justify-content-between\">
                             <h6>Hola, {{user.nombre}}</h6>
-                            <p>Última sesión: {{user.lastLogin|date('Y-m-d')}}</p>
+                            <p>Última sesión: {{user.lastLogin|date('d-m-Y g:sA')}}</p>
                         </div>
                     </div>
                 </div>
@@ -2358,129 +2311,57 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                             <div class=\"transaction-box px-3 py-3\">
                                                 <div class=\"top-filter d-flex gap-3 align-items-end\">
                                                     <div class=\"single-filter\">
-                                                        <p>Month</p>
-                                                        <input type=\"text\" placeholder=\"2023/01\">
+                                                        <p>Fecha mes/año</p>
+                                                        <input type=\"text\" placeholder=\"05/2023\">
                                                     </div>
                                                     <div class=\"single-filter\">
-                                                        <p>Type</p>
+                                                        <p>Tipo</p>
                                                         <select>
-                                                            <option value=\"0\">All</option>
-                                                            <option value=\"1\">Type 1</option>
-                                                            <option value=\"2\">Type 2</option>
-                                                            <option value=\"3\">Type 3</option>
-                                                        </select><div class=\"nice-select\" tabindex=\"0\"><span class=\"current\">All</span><ul class=\"list\"><li data-value=\"0\" class=\"option selected\">All</li><li data-value=\"1\" class=\"option\">Type 1</li><li data-value=\"2\" class=\"option\">Type 2</li><li data-value=\"3\" class=\"option\">Type 3</li></ul></div>
+                                                            <option value=\"0\">Todas</option>
+                                                            <option value=\"1\">Depósito</option>
+                                                            <option value=\"2\">Retirada</option>
+                                                        </select><div class=\"nice-select\" tabindex=\"0\"><span class=\"current\">Todas</span><ul class=\"list\"><li data-value=\"0\" class=\"option selected\">Todas</li><li data-value=\"1\" class=\"option\">Depósito</li><li data-value=\"2\" class=\"option\">Retirada</li></ul></div>
                                                     </div>
                                                     <div class=\"single-filter\">
-                                                        <p>Currency</p>
+                                                        <p>Transacciones</p>
                                                         <select>
-                                                            <option value=\"0\">All</option>
-                                                            <option value=\"1\">Currency 1</option>
-                                                            <option value=\"2\">Currency 2</option>
-                                                            <option value=\"3\">Currency 3</option>
-                                                        </select><div class=\"nice-select\" tabindex=\"0\"><span class=\"current\">All</span><ul class=\"list\"><li data-value=\"0\" class=\"option selected\">All</li><li data-value=\"1\" class=\"option\">Currency 1</li><li data-value=\"2\" class=\"option\">Currency 2</li><li data-value=\"3\" class=\"option\">Currency 3</li></ul></div>
+                                                            <option value=\"0\">Todas</option>
+                                                            <option value=\"1\">Completadas</option>
+                                                            <option value=\"2\">No Completadas</option>
+                                                        </select><div class=\"nice-select\" tabindex=\"0\"><span class=\"current\">Todas</span><ul class=\"list\"><li data-value=\"0\" class=\"option selected\">Todas</li><li data-value=\"1\" class=\"option\">Completadas</li><li data-value=\"2\" class=\"option\">No Completadas</li></ul></div>
                                                     </div>
                                                     <div class=\"single-btn\">
                                                         <button class=\"cmn-btn\">Filter</button>
                                                     </div>
                                                 </div>
-                                                <div class=\"table-responsive mt-4\">
+                                               <div class=\"table-responsive mt-4\">
                                                     <table class=\"table\">
                                                         <thead>
                                                             <tr>
-                                                                <th scope=\"col\">Date/Time</th>
-                                                                <th scope=\"col\">Type</th>
-                                                                <th scope=\"col\">Currency</th>
-                                                                <th scope=\"col\">Amount</th>
+                                                                <th scope=\"col\">Fecha transacción</th>
+                                                                <th scope=\"col\">Tipo</th>
+                                                                <th scope=\"col\">Moneda</th>
+                                                                <th scope=\"col\">Cantidad</th>
+                                                                <th scope=\"col\">Autorización</th>
+                                                                <th scope=\"col\">Completada</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Deposit</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Withdrawal</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Deposit</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Withdrawal</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Referral</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope=\"row\">
-                                                                    <p>2023-01-07  16-33-53</p>
-                                                                </th>
-                                                                <td>
-                                                                    <p>Deposit</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>BTC</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p>0.005210</p>
-                                                                </td>
-                                                            </tr>
+                                                            {% for transaccion in transacciones %}
+                                                                <tr>
+                                                                    <td style=\"color: white; font-weight: bold;\">{{ transaccion.FechaInicio|date('Y-m-d H:i:s') }}</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">{{ transaccion.Tipo == 1 ? 'Depósito' : (transaccion.Tipo == 2 ? 'Retirada' : 'Referido') }}</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">EUR</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">{{ transaccion.CantidadEUR }}</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">{{ transaccion.Autorizacion ? 'Autorizada' : 'En espera' }}</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">{{ transaccion.Completada ? 'Completada' : 'En espera' }}</td>
+                                                                    
+                                                                </tr>
+                                                            {% endfor %}
                                                         </tbody>
                                                     </table>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>

@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UsuarioRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
@@ -101,6 +103,14 @@ class Usuario implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $telefono = null;
+
+    #[ORM\OneToMany(mappedBy: 'userid', targetEntity: Transacciones::class)]
+    private Collection $transacciones;
+
+    public function __construct()
+    {
+        $this->transacciones = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -456,6 +466,36 @@ class Usuario implements UserInterface, PasswordAuthenticatedUserInterface
     public function setTelefono(?string $telefono): static
     {
         $this->telefono = $telefono;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Transacciones>
+     */
+    public function getTransacciones(): Collection
+    {
+        return $this->transacciones;
+    }
+
+    public function addTransaccione(Transacciones $transaccione): static
+    {
+        if (!$this->transacciones->contains($transaccione)) {
+            $this->transacciones->add($transaccione);
+            $transaccione->setUserid($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTransaccione(Transacciones $transaccione): static
+    {
+        if ($this->transacciones->removeElement($transaccione)) {
+            // set the owning side to null (unless already changed)
+            if ($transaccione->getUserid() === $this) {
+                $transaccione->setUserid(null);
+            }
+        }
 
         return $this;
     }
