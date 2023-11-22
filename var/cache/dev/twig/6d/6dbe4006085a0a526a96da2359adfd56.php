@@ -549,8 +549,11 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                 </div>
                                 <div class=\"main-area user-content\">
                                     <div class=\"head-area py-4 text-center\">
-                                        <h5>Hello,</h5>
-                                        <p class=\"email-id\">x***9@bunlets.com</p>
+                                        <h5>Hola,</h5>
+                                        <p class=\"email-id\">";
+        // line 511
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 511, $this->source); })()), "email", [], "any", false, false, false, 511), "html", null, true);
+        echo "</p>
                                     </div>
                                     <div class=\"cash-top\">
                                         <div class=\"cash-point d-flex gap-3 align-items-center\">
@@ -558,7 +561,10 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                 <img src=\"assets/images/icon/cash-icon.png\" alt=\"icon\">
                                             </div>
                                             <div class=\"info-area\">
-                                                <h5>\$150.00</h5>
+                                                <h5>";
+        // line 519
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 519, $this->source); })()), "dinero", [], "any", false, false, false, 519), "html", null, true);
+        echo " EUR</h5>
                                                 <span>Balance</span>
                                             </div>
                                         </div>
@@ -569,12 +575,12 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <img src=\"assets/images/icon/cash-icon.png\" alt=\"icon\">
                                                     </div>
                                                     <div class=\"info-area\">
-                                                        <h5>50</h5>
-                                                        <span>Points</span>
+                                                        <h5>0</h5>
+                                                        <span>Puntos Royal</span>
                                                     </div>
                                                 </div>
                                                 <div class=\"btn-area\">
-                                                    <a href=\"javascript:void(0)\">Exchange</a>
+                                                    <a href=\"javascript:void(0)\">Canjear</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -585,23 +591,23 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                 <span class=\"icon-item d-center\">
                                                     <img src=\"assets/images/icon/user-6.png\" alt=\"icon\">
                                                 </span>
-                                                <span>My Account</span>
+                                                <span>Mi cuenta</span>
                                             </div>
                                             <div class=\"icon-arrow d-center\">
                                                 <i class=\"icon-c-arrow-single\"></i>
                                             </div>
                                         </a>
                                         <div class=\"btn-area mt-5 d-flex gap-4\">
-                                            <a href=\"javascript:void(0)\" class=\"cmn-btn\">Deposit</a>
-                                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Withdraw</a>
+                                            <a href=\"javascript:void(0)\" class=\"cmn-btn\">Depositar</a>
+                                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Retirar</a>
                                         </div>
                                     </div>
                                     <div class=\"bottom-area\">
-                                        <a href=\"javascript:void(0)\" class=\"d-flex justify-content-center py-3 gap-2\">
+                                        <a href=\"/logout\" class=\"d-flex justify-content-center py-3 gap-2\">
                                             <div class=\"icon-log\">
                                                 <img src=\"assets/images/icon/logout-icon.png\" alt=\"icon\">
                                             </div>
-                                            Signout
+                                            Cerrar sesión
                                         </a>
                                     </div>
                                 </div>
@@ -621,8 +627,14 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                 <div class=\"row\">
                     <div class=\"col-lg-12\">
                         <div class=\"d-flex flex-wrap gap-3 gap-md-0 justify-content-between\">
-                            <h6>Hello,Dana Grant!</h6>
-                            <p>Last session start: 12 may 2023,09:26</p>
+                            <h6>Hola, ";
+        // line 582
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 582, $this->source); })()), "nombre", [], "any", false, false, false, 582), "html", null, true);
+        echo "</h6>
+                            <p>Última sesión: ";
+        // line 583
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 583, $this->source); })()), "lastLogin", [], "any", false, false, false, 583), "Y-m-d"), "html", null, true);
+        echo "</p>
                         </div>
                     </div>
                 </div>
@@ -638,33 +650,33 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                 <div class=\"row cus-mar\">
                     <div class=\"col-lg-4\">
                         <div class=\"single-box link-area\">
-                            <a href=\"accounts-1.html\" class=\"d-flex gap-2\">
+                            <a href=\"/perfil\" class=\"d-flex gap-2\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"assets/images/icon/dashboard-icon.png\" alt=\"icon\">
                                 </div>
-                                Dashboard
+                                Panel de control
                             </a>
-                            <a href=\"accounts-2.html\" class=\"d-flex gap-2 active\">
+                            <a href=\"/wallet\" class=\"d-flex gap-2 active\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"assets/images/icon/wallet-icon.png\" alt=\"icon\">
                                 </div>
-                                Wallet
+                                Billetera
                             </a>
-                            <a href=\"accounts-3.html\" class=\"d-flex gap-2\">
+                            <a href=\"/afiliados\" class=\"d-flex gap-2\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"assets/images/icon/affiliate-icon.png\" alt=\"icon\">
                                 </div>
-                                Affiliate Program
+                                Afiliados
                             </a>
                             <div class=\"log-out-area mt-5\">
-                                <form action=\"#\">
+                                <a href=\"/logout\">
                                     <button class=\"d-flex signup-btn justify-content-center m-auto py-3 gap-2\">
                                         <span class=\"icon-log\">
                                             <img src=\"assets/images/icon/logout-icon.png\" alt=\"icon\">
                                         </span>
-                                        Signout
+                                        Cerrar
                                     </button>
-                                </form>
+                                </a>
                             </div>
                         </div>
                         <div class=\"single-box text-center\">
@@ -687,13 +699,13 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                 <div class=\"col-lg-12\">
                                     <ul class=\"nav mb-sm-4 mb-2 p-0 dashboard-nav border-0\" role=\"tablist\">
                                         <li class=\"nav-item\" role=\"presentation\">
-                                            <button class=\"nav-link active\" id=\"deposit-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#deposit\" type=\"button\" role=\"tab\" aria-controls=\"deposit\" aria-selected=\"true\">deposit</button>
+                                            <button class=\"nav-link active\" id=\"deposit-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#deposit\" type=\"button\" role=\"tab\" aria-controls=\"deposit\" aria-selected=\"true\">Depositar</button>
                                         </li>
                                         <li class=\"nav-item\" role=\"presentation\">
-                                            <button class=\"nav-link\" id=\"withdraw-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#withdraw\" type=\"button\" role=\"tab\" aria-controls=\"withdraw\" aria-selected=\"false\">withdraw</button>
+                                            <button class=\"nav-link\" id=\"withdraw-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#withdraw\" type=\"button\" role=\"tab\" aria-controls=\"withdraw\" aria-selected=\"false\">Retirar</button>
                                         </li>
                                         <li class=\"nav-item\" role=\"presentation\">
-                                            <button class=\"nav-link\" id=\"transaction-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#transaction\" type=\"button\" role=\"tab\" aria-controls=\"transaction\" aria-selected=\"false\">transaction history</button>
+                                            <button class=\"nav-link\" id=\"transaction-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#transaction\" type=\"button\" role=\"tab\" aria-controls=\"transaction\" aria-selected=\"false\">Transacciones</button>
                                         </li>
                                     </ul>
                                     <div class=\"tab-content p-0\">
@@ -701,24 +713,19 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                             <div class=\"deposit-box\">
                                                 <div class=\"banalce-box\">
                                                     <div class=\"banalce-head px-3 d-center justify-content-between\">
-                                                        <h6>Banalce</h6>
+                                                        <h6>Balance</h6>
                                                         <div class=\"right d-center gap-2\">
-                                                            <h6>\$150.00</h6>
+                                                            <h6>";
+        // line 664
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 664, $this->source); })()), "dinero", [], "any", false, false, false, 664), "html", null, true);
+        echo "€</h6>
                                                             <select>
-                                                                <option value=\"0\">USD</option>
-                                                                <option value=\"1\">BTC</option>
-                                                                <option value=\"2\">ETH</option>
+                                                                <option value=\"0\">EUR</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class=\"card-area px-3 py-3 d-flex flex-wrap\">
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" checked=\"checked\" name=\"dcardSelect\" id=\"dneteller\">
-                                                            <label for=\"dneteller\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-1.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
+                                                       
                                                         <div class=\"single-card\">
                                                             <input type=\"radio\" name=\"dcardSelect\" id=\"dmastercard\">
                                                             <label for=\"dmastercard\">
@@ -726,20 +733,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                                 <img src=\"assets/images/paymsystem-2.png\" alt=\"image\">
                                                             </label>
                                                         </div>
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" name=\"dcardSelect\" id=\"dskrill\">
-                                                            <label for=\"dskrill\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-3.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" name=\"dcardSelect\" id=\"decopayz\">
-                                                            <label for=\"decopayz\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-4.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
+                                                        
                                                         <div class=\"single-card\">
                                                             <input type=\"radio\" name=\"dcardSelect\" id=\"dbitcoin\">
                                                             <label for=\"dbitcoin\">
@@ -771,8 +765,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                     </div>
                                                 </div>
                                                 <div class=\"pay-details pt-4\">
-                                                    <h6>Neteller</h6>
-                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Deposit sum <span class=\"mdtxt\">Instant | Min: 5 • Max: 6,000</span></h6>
+                                                    <h6>Sistema de pagos</h6>
+                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Depositar cantdad <span class=\"mdtxt\">Instantáneo | Mínimo: 5 EUR • Máximo: 6.000 EUR</span></h6>
                                                     <ul class=\"quick-value d-flex gap-2 mb-3\">
                                                         <li><h5>10</h5></li>
                                                         <li><h5 class=\"active\">20</h5></li>
@@ -788,7 +782,10 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                             </div>
                                                             <div class=\"single-input\">
                                                                 <label for=\"dEmail\">Email</label>
-                                                                <input type=\"text\" id=\"dEmail\" placeholder=\"Correo\" autocomplete=\"off\">
+                                                                <input type=\"text\" id=\"dEmail\" placeholder=\"Correo\" value=\"";
+        // line 728
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 728, $this->source); })()), "email", [], "any", false, false, false, 728), "html", null, true);
+        echo "\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
                                                                 <button class=\"cmn-btn d-center w-100\">Depositar</button>
@@ -802,45 +799,27 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                             <div class=\"deposit-box\">
                                                 <div class=\"banalce-box\">
                                                     <div class=\"banalce-head px-3 d-center justify-content-between\">
-                                                        <h6>Banalce</h6>
+                                                        <h6>Balance</h6>
                                                         <div class=\"right d-center gap-2\">
-                                                            <h6>\$150.00</h6>
+                                                            <h6>";
+        // line 744
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 744, $this->source); })()), "dinero", [], "any", false, false, false, 744), "html", null, true);
+        echo "</h6>
                                                             <select>
-                                                                <option value=\"0\">USD</option>
-                                                                <option value=\"1\">BTC</option>
-                                                                <option value=\"2\">ETH</option>
+                                                                <option value=\"0\">EUR</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class=\"card-area px-3 py-3 d-flex flex-wrap\">
+                                                      
                                                         <div class=\"single-card\">
-                                                            <input type=\"radio\" checked=\"checked\" name=\"cardSelect\" id=\"neteller\">
-                                                            <label for=\"neteller\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-1.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" name=\"cardSelect\" id=\"mastercard\">
+                                                            <input type=\"radio\" checked=\"checked\" name=\"cardSelect\" id=\"mastercard\">
                                                             <label for=\"mastercard\">
                                                                 <span class=\"wrapper\"></span>
                                                                 <img src=\"assets/images/paymsystem-2.png\" alt=\"image\">
                                                             </label>
                                                         </div>
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" name=\"cardSelect\" id=\"skrill\">
-                                                            <label for=\"skrill\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-3.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" name=\"cardSelect\" id=\"ecopayz\">
-                                                            <label for=\"ecopayz\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-4.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
+                
                                                         <div class=\"single-card\">
                                                             <input type=\"radio\" name=\"cardSelect\" id=\"bitcoin\">
                                                             <label for=\"bitcoin\">
@@ -872,8 +851,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                     </div>
                                                 </div>
                                                 <div class=\"pay-details pt-4\">
-                                                    <h6>Neteller</h6>
-                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Deposit sum <span class=\"mdtxt\">Instant | Min: 5 • Max: 6,000</span></h6>
+                                                    <h6>Sistema de pagos - Casino Royal</h6>
+                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Depositar cantidad<span class=\"mdtxt\">Instantáneo | Mínimo: 5 EUR • Max: 6.000 EUR</span></h6>
                                                     <ul class=\"quick-value d-flex gap-2 mb-3\">
                                                         <li><h5>10</h5></li>
                                                         <li><h5 class=\"active\">20</h5></li>
@@ -889,7 +868,10 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                             </div>
                                                             <div class=\"single-input\">
                                                                 <label for=\"email\">Email</label>
-                                                                <input type=\"text\" id=\"email\" placeholder=\"Enter neteller email address\" autocomplete=\"off\">
+                                                                <input type=\"text\" id=\"email\" placeholder=\"";
+        // line 808
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 808, $this->source); })()), "email", [], "any", false, false, false, 808), "html", null, true);
+        echo "\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
                                                                 <button class=\"cmn-btn d-center w-100\">Withdraw</button>
@@ -1375,8 +1357,11 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                 </div>
                 <div class=\"main-area user-content\">
                     <div class=\"head-area py-4 text-center\">
-                        <h5>Hello,</h5>
-                        <p class=\"email-id\">x***9@bunlets.com</p>
+                        <h5>Hola,</h5>
+                        <p class=\"email-id\">";
+        // line 1295
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1295, $this->source); })()), "email", [], "any", false, false, false, 1295), "html", null, true);
+        echo "</p>
                     </div>
                     <div class=\"cash-top\">
                         <div class=\"cash-point d-flex gap-3 align-items-center\">
@@ -1384,7 +1369,10 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                 <img src=\"assets/images/icon/cash-icon.png\" alt=\"icon\">
                             </div>
                             <div class=\"info-area\">
-                                <h5>\$150.00</h5>
+                                <h5>";
+        // line 1303
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1303, $this->source); })()), "dinero", [], "any", false, false, false, 1303), "html", null, true);
+        echo " EUR</h5>
                                 <span>Balance</span>
                             </div>
                         </div>
@@ -1411,23 +1399,23 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                 <span class=\"icon-item d-center\">
                                     <img src=\"assets/images/icon/user-6.png\" alt=\"icon\">
                                 </span>
-                                <span>My Account</span>
+                                <span>Mi cuenta</span>
                             </div>
                             <div class=\"icon-arrow d-center\">
                                 <i class=\"icon-c-arrow-single\"></i>
                             </div>
                         </a>
                         <div class=\"btn-area mt-5 d-flex gap-4\">
-                            <a href=\"javascript:void(0)\" class=\"cmn-btn\">Deposit</a>
-                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Withdraw</a>
+                            <a href=\"javascript:void(0)\" class=\"cmn-btn\">Depositar</a>
+                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Retirar</a>
                         </div>
                     </div>
                     <div class=\"bottom-area\">
-                        <a href=\"javascript:void(0)\" class=\"d-flex justify-content-center py-3 gap-2\">
+                        <a href=\"/logout\" class=\"d-flex justify-content-center py-3 gap-2\">
                             <div class=\"icon-log\">
                                 <img src=\"assets/images/icon/logout-icon.png\" alt=\"icon\">
                             </div>
-                            Signout
+                            Cerrar sesión
                         </a>
                     </div>
                 </div>
@@ -1537,9 +1525,14 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
         return "wallet/index.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  1374 => 1303,  1363 => 1295,  873 => 808,  806 => 744,  787 => 728,  720 => 664,  636 => 583,  632 => 582,  566 => 519,  555 => 511,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -2053,8 +2046,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                 </div>
                                 <div class=\"main-area user-content\">
                                     <div class=\"head-area py-4 text-center\">
-                                        <h5>Hello,</h5>
-                                        <p class=\"email-id\">x***9@bunlets.com</p>
+                                        <h5>Hola,</h5>
+                                        <p class=\"email-id\">{{user.email}}</p>
                                     </div>
                                     <div class=\"cash-top\">
                                         <div class=\"cash-point d-flex gap-3 align-items-center\">
@@ -2062,7 +2055,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                 <img src=\"assets/images/icon/cash-icon.png\" alt=\"icon\">
                                             </div>
                                             <div class=\"info-area\">
-                                                <h5>\$150.00</h5>
+                                                <h5>{{user.dinero}} EUR</h5>
                                                 <span>Balance</span>
                                             </div>
                                         </div>
@@ -2073,12 +2066,12 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <img src=\"assets/images/icon/cash-icon.png\" alt=\"icon\">
                                                     </div>
                                                     <div class=\"info-area\">
-                                                        <h5>50</h5>
-                                                        <span>Points</span>
+                                                        <h5>0</h5>
+                                                        <span>Puntos Royal</span>
                                                     </div>
                                                 </div>
                                                 <div class=\"btn-area\">
-                                                    <a href=\"javascript:void(0)\">Exchange</a>
+                                                    <a href=\"javascript:void(0)\">Canjear</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2089,23 +2082,23 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                 <span class=\"icon-item d-center\">
                                                     <img src=\"assets/images/icon/user-6.png\" alt=\"icon\">
                                                 </span>
-                                                <span>My Account</span>
+                                                <span>Mi cuenta</span>
                                             </div>
                                             <div class=\"icon-arrow d-center\">
                                                 <i class=\"icon-c-arrow-single\"></i>
                                             </div>
                                         </a>
                                         <div class=\"btn-area mt-5 d-flex gap-4\">
-                                            <a href=\"javascript:void(0)\" class=\"cmn-btn\">Deposit</a>
-                                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Withdraw</a>
+                                            <a href=\"javascript:void(0)\" class=\"cmn-btn\">Depositar</a>
+                                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Retirar</a>
                                         </div>
                                     </div>
                                     <div class=\"bottom-area\">
-                                        <a href=\"javascript:void(0)\" class=\"d-flex justify-content-center py-3 gap-2\">
+                                        <a href=\"/logout\" class=\"d-flex justify-content-center py-3 gap-2\">
                                             <div class=\"icon-log\">
                                                 <img src=\"assets/images/icon/logout-icon.png\" alt=\"icon\">
                                             </div>
-                                            Signout
+                                            Cerrar sesión
                                         </a>
                                     </div>
                                 </div>
@@ -2125,8 +2118,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                 <div class=\"row\">
                     <div class=\"col-lg-12\">
                         <div class=\"d-flex flex-wrap gap-3 gap-md-0 justify-content-between\">
-                            <h6>Hello,Dana Grant!</h6>
-                            <p>Last session start: 12 may 2023,09:26</p>
+                            <h6>Hola, {{user.nombre}}</h6>
+                            <p>Última sesión: {{user.lastLogin|date('Y-m-d')}}</p>
                         </div>
                     </div>
                 </div>
@@ -2142,33 +2135,33 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                 <div class=\"row cus-mar\">
                     <div class=\"col-lg-4\">
                         <div class=\"single-box link-area\">
-                            <a href=\"accounts-1.html\" class=\"d-flex gap-2\">
+                            <a href=\"/perfil\" class=\"d-flex gap-2\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"assets/images/icon/dashboard-icon.png\" alt=\"icon\">
                                 </div>
-                                Dashboard
+                                Panel de control
                             </a>
-                            <a href=\"accounts-2.html\" class=\"d-flex gap-2 active\">
+                            <a href=\"/wallet\" class=\"d-flex gap-2 active\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"assets/images/icon/wallet-icon.png\" alt=\"icon\">
                                 </div>
-                                Wallet
+                                Billetera
                             </a>
-                            <a href=\"accounts-3.html\" class=\"d-flex gap-2\">
+                            <a href=\"/afiliados\" class=\"d-flex gap-2\">
                                 <div class=\"icon-box d-center\">
                                     <img src=\"assets/images/icon/affiliate-icon.png\" alt=\"icon\">
                                 </div>
-                                Affiliate Program
+                                Afiliados
                             </a>
                             <div class=\"log-out-area mt-5\">
-                                <form action=\"#\">
+                                <a href=\"/logout\">
                                     <button class=\"d-flex signup-btn justify-content-center m-auto py-3 gap-2\">
                                         <span class=\"icon-log\">
                                             <img src=\"assets/images/icon/logout-icon.png\" alt=\"icon\">
                                         </span>
-                                        Signout
+                                        Cerrar
                                     </button>
-                                </form>
+                                </a>
                             </div>
                         </div>
                         <div class=\"single-box text-center\">
@@ -2191,13 +2184,13 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                 <div class=\"col-lg-12\">
                                     <ul class=\"nav mb-sm-4 mb-2 p-0 dashboard-nav border-0\" role=\"tablist\">
                                         <li class=\"nav-item\" role=\"presentation\">
-                                            <button class=\"nav-link active\" id=\"deposit-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#deposit\" type=\"button\" role=\"tab\" aria-controls=\"deposit\" aria-selected=\"true\">deposit</button>
+                                            <button class=\"nav-link active\" id=\"deposit-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#deposit\" type=\"button\" role=\"tab\" aria-controls=\"deposit\" aria-selected=\"true\">Depositar</button>
                                         </li>
                                         <li class=\"nav-item\" role=\"presentation\">
-                                            <button class=\"nav-link\" id=\"withdraw-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#withdraw\" type=\"button\" role=\"tab\" aria-controls=\"withdraw\" aria-selected=\"false\">withdraw</button>
+                                            <button class=\"nav-link\" id=\"withdraw-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#withdraw\" type=\"button\" role=\"tab\" aria-controls=\"withdraw\" aria-selected=\"false\">Retirar</button>
                                         </li>
                                         <li class=\"nav-item\" role=\"presentation\">
-                                            <button class=\"nav-link\" id=\"transaction-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#transaction\" type=\"button\" role=\"tab\" aria-controls=\"transaction\" aria-selected=\"false\">transaction history</button>
+                                            <button class=\"nav-link\" id=\"transaction-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#transaction\" type=\"button\" role=\"tab\" aria-controls=\"transaction\" aria-selected=\"false\">Transacciones</button>
                                         </li>
                                     </ul>
                                     <div class=\"tab-content p-0\">
@@ -2205,24 +2198,16 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                             <div class=\"deposit-box\">
                                                 <div class=\"banalce-box\">
                                                     <div class=\"banalce-head px-3 d-center justify-content-between\">
-                                                        <h6>Banalce</h6>
+                                                        <h6>Balance</h6>
                                                         <div class=\"right d-center gap-2\">
-                                                            <h6>\$150.00</h6>
+                                                            <h6>{{user.dinero}}€</h6>
                                                             <select>
-                                                                <option value=\"0\">USD</option>
-                                                                <option value=\"1\">BTC</option>
-                                                                <option value=\"2\">ETH</option>
+                                                                <option value=\"0\">EUR</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class=\"card-area px-3 py-3 d-flex flex-wrap\">
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" checked=\"checked\" name=\"dcardSelect\" id=\"dneteller\">
-                                                            <label for=\"dneteller\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-1.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
+                                                       
                                                         <div class=\"single-card\">
                                                             <input type=\"radio\" name=\"dcardSelect\" id=\"dmastercard\">
                                                             <label for=\"dmastercard\">
@@ -2230,20 +2215,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                                 <img src=\"assets/images/paymsystem-2.png\" alt=\"image\">
                                                             </label>
                                                         </div>
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" name=\"dcardSelect\" id=\"dskrill\">
-                                                            <label for=\"dskrill\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-3.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" name=\"dcardSelect\" id=\"decopayz\">
-                                                            <label for=\"decopayz\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-4.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
+                                                        
                                                         <div class=\"single-card\">
                                                             <input type=\"radio\" name=\"dcardSelect\" id=\"dbitcoin\">
                                                             <label for=\"dbitcoin\">
@@ -2275,8 +2247,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                     </div>
                                                 </div>
                                                 <div class=\"pay-details pt-4\">
-                                                    <h6>Neteller</h6>
-                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Deposit sum <span class=\"mdtxt\">Instant | Min: 5 • Max: 6,000</span></h6>
+                                                    <h6>Sistema de pagos</h6>
+                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Depositar cantdad <span class=\"mdtxt\">Instantáneo | Mínimo: 5 EUR • Máximo: 6.000 EUR</span></h6>
                                                     <ul class=\"quick-value d-flex gap-2 mb-3\">
                                                         <li><h5>10</h5></li>
                                                         <li><h5 class=\"active\">20</h5></li>
@@ -2292,7 +2264,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                             </div>
                                                             <div class=\"single-input\">
                                                                 <label for=\"dEmail\">Email</label>
-                                                                <input type=\"text\" id=\"dEmail\" placeholder=\"Correo\" autocomplete=\"off\">
+                                                                <input type=\"text\" id=\"dEmail\" placeholder=\"Correo\" value=\"{{user.email}}\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
                                                                 <button class=\"cmn-btn d-center w-100\">Depositar</button>
@@ -2306,45 +2278,24 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                             <div class=\"deposit-box\">
                                                 <div class=\"banalce-box\">
                                                     <div class=\"banalce-head px-3 d-center justify-content-between\">
-                                                        <h6>Banalce</h6>
+                                                        <h6>Balance</h6>
                                                         <div class=\"right d-center gap-2\">
-                                                            <h6>\$150.00</h6>
+                                                            <h6>{{user.dinero}}</h6>
                                                             <select>
-                                                                <option value=\"0\">USD</option>
-                                                                <option value=\"1\">BTC</option>
-                                                                <option value=\"2\">ETH</option>
+                                                                <option value=\"0\">EUR</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class=\"card-area px-3 py-3 d-flex flex-wrap\">
+                                                      
                                                         <div class=\"single-card\">
-                                                            <input type=\"radio\" checked=\"checked\" name=\"cardSelect\" id=\"neteller\">
-                                                            <label for=\"neteller\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-1.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" name=\"cardSelect\" id=\"mastercard\">
+                                                            <input type=\"radio\" checked=\"checked\" name=\"cardSelect\" id=\"mastercard\">
                                                             <label for=\"mastercard\">
                                                                 <span class=\"wrapper\"></span>
                                                                 <img src=\"assets/images/paymsystem-2.png\" alt=\"image\">
                                                             </label>
                                                         </div>
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" name=\"cardSelect\" id=\"skrill\">
-                                                            <label for=\"skrill\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-3.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
-                                                        <div class=\"single-card\">
-                                                            <input type=\"radio\" name=\"cardSelect\" id=\"ecopayz\">
-                                                            <label for=\"ecopayz\">
-                                                                <span class=\"wrapper\"></span>
-                                                                <img src=\"assets/images/paymsystem-4.png\" alt=\"image\">
-                                                            </label>
-                                                        </div>
+                
                                                         <div class=\"single-card\">
                                                             <input type=\"radio\" name=\"cardSelect\" id=\"bitcoin\">
                                                             <label for=\"bitcoin\">
@@ -2376,8 +2327,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                     </div>
                                                 </div>
                                                 <div class=\"pay-details pt-4\">
-                                                    <h6>Neteller</h6>
-                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Deposit sum <span class=\"mdtxt\">Instant | Min: 5 • Max: 6,000</span></h6>
+                                                    <h6>Sistema de pagos - Casino Royal</h6>
+                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Depositar cantidad<span class=\"mdtxt\">Instantáneo | Mínimo: 5 EUR • Max: 6.000 EUR</span></h6>
                                                     <ul class=\"quick-value d-flex gap-2 mb-3\">
                                                         <li><h5>10</h5></li>
                                                         <li><h5 class=\"active\">20</h5></li>
@@ -2393,7 +2344,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                             </div>
                                                             <div class=\"single-input\">
                                                                 <label for=\"email\">Email</label>
-                                                                <input type=\"text\" id=\"email\" placeholder=\"Enter neteller email address\" autocomplete=\"off\">
+                                                                <input type=\"text\" id=\"email\" placeholder=\"{{user.email}}\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
                                                                 <button class=\"cmn-btn d-center w-100\">Withdraw</button>
@@ -2879,8 +2830,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                 </div>
                 <div class=\"main-area user-content\">
                     <div class=\"head-area py-4 text-center\">
-                        <h5>Hello,</h5>
-                        <p class=\"email-id\">x***9@bunlets.com</p>
+                        <h5>Hola,</h5>
+                        <p class=\"email-id\">{{user.email}}</p>
                     </div>
                     <div class=\"cash-top\">
                         <div class=\"cash-point d-flex gap-3 align-items-center\">
@@ -2888,7 +2839,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                 <img src=\"assets/images/icon/cash-icon.png\" alt=\"icon\">
                             </div>
                             <div class=\"info-area\">
-                                <h5>\$150.00</h5>
+                                <h5>{{user.dinero}} EUR</h5>
                                 <span>Balance</span>
                             </div>
                         </div>
@@ -2915,23 +2866,23 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                 <span class=\"icon-item d-center\">
                                     <img src=\"assets/images/icon/user-6.png\" alt=\"icon\">
                                 </span>
-                                <span>My Account</span>
+                                <span>Mi cuenta</span>
                             </div>
                             <div class=\"icon-arrow d-center\">
                                 <i class=\"icon-c-arrow-single\"></i>
                             </div>
                         </a>
                         <div class=\"btn-area mt-5 d-flex gap-4\">
-                            <a href=\"javascript:void(0)\" class=\"cmn-btn\">Deposit</a>
-                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Withdraw</a>
+                            <a href=\"javascript:void(0)\" class=\"cmn-btn\">Depositar</a>
+                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Retirar</a>
                         </div>
                     </div>
                     <div class=\"bottom-area\">
-                        <a href=\"javascript:void(0)\" class=\"d-flex justify-content-center py-3 gap-2\">
+                        <a href=\"/logout\" class=\"d-flex justify-content-center py-3 gap-2\">
                             <div class=\"icon-log\">
                                 <img src=\"assets/images/icon/logout-icon.png\" alt=\"icon\">
                             </div>
-                            Signout
+                            Cerrar sesión
                         </a>
                     </div>
                 </div>
