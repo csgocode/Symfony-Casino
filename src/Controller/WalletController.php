@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Transacciones;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\Persistence\ManagerRegistry;
@@ -25,12 +26,10 @@ class WalletController extends AbstractController
     #[Route('/wallet', name: 'app_wallet')]
     public function walletPerfil(ManagerRegistry $doctrine, TransaccionesRepository $transaccionesRepository)
     {
-        
-    
-        $transacciones = $transaccionesRepository->findAll();
         $usuarioAutenticado = $this->security->getUser();
         $repositorio = $doctrine->getRepository(Usuario::class);
         $user = $repositorio->find($usuarioAutenticado->getId());
+        $transacciones = $transaccionesRepository->findByUser($user);
 
         return $this->render('wallet/index.html.twig', [
             'controller_name' => 'WalletController',
