@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/arafat-font.css">
     <link rel="stylesheet" href="assets/css/plugin/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 
 <body>
@@ -717,18 +718,18 @@
                                                         <li><h5>40</h5></li>
                                                         <li><h5>50</h5></li>
                                                     </ul>
-                                                   <form action="{{ path('app_wallet_payment') }}" id="depositForm" method="post">
+                                                   <form action="{{ path('recarga_procesar') }}" method="POST" id="depositForm">
                                                         <div class="col-12">
                                                             <div class="single-input">
                                                                 <label for="dAmount">Depositar cantidad</label>
-                                                                <input type="text" id="dAmount" placeholder="Escribe la cantidad" value="20" autocomplete="off">
+                                                                <input type="number" name="amount" id="dAmount" placeholder="Escribe la cantidad" min="5" max="6000" value="20" required autocomplete="off">
                                                             </div>
                                                             <div class="single-input">
                                                                 <label for="dEmail">Email</label>
-                                                                <input type="text" id="dEmail" placeholder="{{user.email}}" readonly="readonly" autocomplete="off">
+                                                                <input type="email" id="dEmail" value="{{ user.email }}" readonly="readonly">
                                                             </div>
                                                             <div class="btn-area text-center mt-3">
-                                                                <button class="cmn-btn d-center w-100">Depositar</button>
+                                                                <button type="submit" class="cmn-btn d-center w-100">Depositar</button>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -1364,7 +1365,7 @@
     <script src="assets/js/plugin/wow.min.js"></script>
     <script src="assets/js/plugin/plugin.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/validadorDeposito.js"></script>
+
 </body>
 
 </html>

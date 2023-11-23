@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'c0290a2b7df5c6f04de1a22e28648dd885203d6e',
+        'reference' => '86a8b91fe5b117a8a71d71b04c7b68a8cfb26c2d',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'c0290a2b7df5c6f04de1a22e28648dd885203d6e',
+            'reference' => '86a8b91fe5b117a8a71d71b04c7b68a8cfb26c2d',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -619,6 +619,15 @@
             'install_path' => __DIR__ . '/../sebastian/version',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'stripe/stripe-php' => array(
+            'pretty_version' => 'v13.4.0',
+            'version' => '13.4.0.0',
+            'reference' => 'ff0a56c75ff50b50ed97c45c02dfaa2dd341c5b1',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../stripe/stripe-php',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'symfony/asset' => array(
             'pretty_version' => 'v6.1.11',

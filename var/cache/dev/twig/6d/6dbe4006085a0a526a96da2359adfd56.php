@@ -60,6 +60,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
     <link rel=\"stylesheet\" href=\"assets/css/arafat-font.css\">
     <link rel=\"stylesheet\" href=\"assets/css/plugin/animate.css\">
     <link rel=\"stylesheet\" href=\"assets/css/style.css\">
+    <script src=\"https://js.stripe.com/v3/\"></script>
 </head>
 
 <body>
@@ -551,8 +552,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                     <div class=\"head-area py-4 text-center\">
                                         <h5>Hola,</h5>
                                         <p class=\"email-id\">";
-        // line 511
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 511, $this->source); })()), "email", [], "any", false, false, false, 511), "html", null, true);
+        // line 512
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 512, $this->source); })()), "email", [], "any", false, false, false, 512), "html", null, true);
         echo "</p>
                                     </div>
                                     <div class=\"cash-top\">
@@ -562,8 +563,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                             </div>
                                             <div class=\"info-area\">
                                                 <h5>";
-        // line 519
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 519, $this->source); })()), "dinero", [], "any", false, false, false, 519), "html", null, true);
+        // line 520
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 520, $this->source); })()), "dinero", [], "any", false, false, false, 520), "html", null, true);
         echo " EUR</h5>
                                                 <span>Balance</span>
                                             </div>
@@ -628,12 +629,12 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                     <div class=\"col-lg-12\">
                         <div class=\"d-flex flex-wrap gap-3 gap-md-0 justify-content-between\">
                             <h6>Hola, ";
-        // line 582
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 582, $this->source); })()), "nombre", [], "any", false, false, false, 582), "html", null, true);
+        // line 583
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 583, $this->source); })()), "nombre", [], "any", false, false, false, 583), "html", null, true);
         echo "</h6>
                             <p>Última sesión: ";
-        // line 583
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 583, $this->source); })()), "lastLogin", [], "any", false, false, false, 583), "d-m-Y g:sA"), "html", null, true);
+        // line 584
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 584, $this->source); })()), "lastLogin", [], "any", false, false, false, 584), "d-m-Y g:sA"), "html", null, true);
         echo "</p>
                         </div>
                     </div>
@@ -716,8 +717,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <h6>Balance</h6>
                                                         <div class=\"right d-center gap-2\">
                                                             <h6>";
-        // line 664
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 664, $this->source); })()), "dinero", [], "any", false, false, false, 664), "html", null, true);
+        // line 665
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 665, $this->source); })()), "dinero", [], "any", false, false, false, 665), "html", null, true);
         echo "€</h6>
                                                             <select>
                                                                 <option value=\"0\">EUR</option>
@@ -775,23 +776,23 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <li><h5>50</h5></li>
                                                     </ul>
                                                    <form action=\"";
-        // line 720
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_wallet_payment");
-        echo "\" id=\"depositForm\" method=\"post\">
+        // line 721
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("recarga_procesar");
+        echo "\" method=\"POST\" id=\"depositForm\">
                                                         <div class=\"col-12\">
                                                             <div class=\"single-input\">
                                                                 <label for=\"dAmount\">Depositar cantidad</label>
-                                                                <input type=\"text\" id=\"dAmount\" placeholder=\"Escribe la cantidad\" value=\"20\" autocomplete=\"off\">
+                                                                <input type=\"number\" name=\"amount\" id=\"dAmount\" placeholder=\"Escribe la cantidad\" min=\"5\" max=\"6000\" value=\"20\" required autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"single-input\">
                                                                 <label for=\"dEmail\">Email</label>
-                                                                <input type=\"text\" id=\"dEmail\" placeholder=\"";
-        // line 728
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 728, $this->source); })()), "email", [], "any", false, false, false, 728), "html", null, true);
-        echo "\" readonly=\"readonly\" autocomplete=\"off\">
+                                                                <input type=\"email\" id=\"dEmail\" value=\"";
+        // line 729
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 729, $this->source); })()), "email", [], "any", false, false, false, 729), "html", null, true);
+        echo "\" readonly=\"readonly\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
-                                                                <button class=\"cmn-btn d-center w-100\">Depositar</button>
+                                                                <button type=\"submit\" class=\"cmn-btn d-center w-100\">Depositar</button>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -805,8 +806,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <h6>Balance</h6>
                                                         <div class=\"right d-center gap-2\">
                                                             <h6>";
-        // line 744
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 744, $this->source); })()), "dinero", [], "any", false, false, false, 744), "html", null, true);
+        // line 745
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 745, $this->source); })()), "dinero", [], "any", false, false, false, 745), "html", null, true);
         echo "</h6>
                                                             <select>
                                                                 <option value=\"0\">EUR</option>
@@ -872,8 +873,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                             <div class=\"single-input\">
                                                                 <label for=\"email\">Email</label>
                                                                 <input type=\"text\" id=\"email\" placeholder=\"";
-        // line 808
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 808, $this->source); })()), "email", [], "any", false, false, false, 808), "html", null, true);
+        // line 809
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 809, $this->source); })()), "email", [], "any", false, false, false, 809), "html", null, true);
         echo "\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
@@ -925,32 +926,32 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         </thead>
                                                         <tbody>
                                                             ";
-        // line 858
+        // line 859
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["transacciones"]) || array_key_exists("transacciones", $context) ? $context["transacciones"] : (function () { throw new RuntimeError('Variable "transacciones" does not exist.', 858, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["transacciones"]) || array_key_exists("transacciones", $context) ? $context["transacciones"] : (function () { throw new RuntimeError('Variable "transacciones" does not exist.', 859, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["transaccion"]) {
-            // line 859
+            // line 860
             echo "                                                                <tr>
                                                                     <td style=\"color: white; font-weight: bold;\">";
-            // line 860
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "FechaInicio", [], "any", false, false, false, 860), "Y-m-d H:i:s"), "html", null, true);
+            // line 861
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "FechaInicio", [], "any", false, false, false, 861), "Y-m-d H:i:s"), "html", null, true);
             echo "</td>
                                                                     <td style=\"color: white; font-weight: bold;\">";
-            // line 861
-            echo (((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 861) == 1)) ? ("Depósito") : ((((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 861) == 2)) ? ("Retirada") : ("Referido"))));
+            // line 862
+            echo (((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 862) == 1)) ? ("Depósito") : ((((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 862) == 2)) ? ("Retirada") : ("Referido"))));
             echo "</td>
                                                                     <td style=\"color: white; font-weight: bold;\">EUR</td>
                                                                     <td style=\"color: white; font-weight: bold;\">";
-            // line 863
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "CantidadEUR", [], "any", false, false, false, 863), "html", null, true);
-            echo "</td>
-                                                                    <td style=\"color: white; font-weight: bold;\">";
             // line 864
-            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Autorizacion", [], "any", false, false, false, 864)) ? ("Autorizada") : ("En espera"));
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "CantidadEUR", [], "any", false, false, false, 864), "html", null, true);
             echo "</td>
                                                                     <td style=\"color: white; font-weight: bold;\">";
             // line 865
-            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Completada", [], "any", false, false, false, 865)) ? ("Completada") : ("En espera"));
+            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Autorizacion", [], "any", false, false, false, 865)) ? ("Autorizada") : ("En espera"));
+            echo "</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">";
+            // line 866
+            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Completada", [], "any", false, false, false, 866)) ? ("Completada") : ("En espera"));
             echo "</td>
                                                                     
                                                                 </tr>
@@ -959,7 +960,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['transaccion'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 869
+        // line 870
         echo "                                                        </tbody>
                                                     </table>
                                                 </div>
@@ -1315,8 +1316,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                     <div class=\"head-area py-4 text-center\">
                         <h5>Hola,</h5>
                         <p class=\"email-id\">";
-        // line 1223
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1223, $this->source); })()), "email", [], "any", false, false, false, 1223), "html", null, true);
+        // line 1224
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1224, $this->source); })()), "email", [], "any", false, false, false, 1224), "html", null, true);
         echo "</p>
                     </div>
                     <div class=\"cash-top\">
@@ -1326,8 +1327,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                             </div>
                             <div class=\"info-area\">
                                 <h5>";
-        // line 1231
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1231, $this->source); })()), "dinero", [], "any", false, false, false, 1231), "html", null, true);
+        // line 1232
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1232, $this->source); })()), "dinero", [], "any", false, false, false, 1232), "html", null, true);
         echo " EUR</h5>
                                 <span>Balance</span>
                             </div>
@@ -1464,7 +1465,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
     <script src=\"assets/js/plugin/wow.min.js\"></script>
     <script src=\"assets/js/plugin/plugin.js\"></script>
     <script src=\"assets/js/main.js\"></script>
-    <script src=\"assets/js/validadorDeposito.js\"></script>
+
 </body>
 
 </html>";
@@ -1488,7 +1489,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
 
     public function getDebugInfo()
     {
-        return array (  1330 => 1231,  1319 => 1223,  963 => 869,  953 => 865,  949 => 864,  945 => 863,  940 => 861,  936 => 860,  933 => 859,  929 => 858,  876 => 808,  809 => 744,  790 => 728,  779 => 720,  720 => 664,  636 => 583,  632 => 582,  566 => 519,  555 => 511,  43 => 1,);
+        return array (  1331 => 1232,  1320 => 1224,  964 => 870,  954 => 866,  950 => 865,  946 => 864,  941 => 862,  937 => 861,  934 => 860,  930 => 859,  877 => 809,  810 => 745,  791 => 729,  780 => 721,  721 => 665,  637 => 584,  633 => 583,  567 => 520,  556 => 512,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -1513,6 +1514,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
     <link rel=\"stylesheet\" href=\"assets/css/arafat-font.css\">
     <link rel=\"stylesheet\" href=\"assets/css/plugin/animate.css\">
     <link rel=\"stylesheet\" href=\"assets/css/style.css\">
+    <script src=\"https://js.stripe.com/v3/\"></script>
 </head>
 
 <body>
@@ -2212,18 +2214,18 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <li><h5>40</h5></li>
                                                         <li><h5>50</h5></li>
                                                     </ul>
-                                                   <form action=\"{{ path('app_wallet_payment') }}\" id=\"depositForm\" method=\"post\">
+                                                   <form action=\"{{ path('recarga_procesar') }}\" method=\"POST\" id=\"depositForm\">
                                                         <div class=\"col-12\">
                                                             <div class=\"single-input\">
                                                                 <label for=\"dAmount\">Depositar cantidad</label>
-                                                                <input type=\"text\" id=\"dAmount\" placeholder=\"Escribe la cantidad\" value=\"20\" autocomplete=\"off\">
+                                                                <input type=\"number\" name=\"amount\" id=\"dAmount\" placeholder=\"Escribe la cantidad\" min=\"5\" max=\"6000\" value=\"20\" required autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"single-input\">
                                                                 <label for=\"dEmail\">Email</label>
-                                                                <input type=\"text\" id=\"dEmail\" placeholder=\"{{user.email}}\" readonly=\"readonly\" autocomplete=\"off\">
+                                                                <input type=\"email\" id=\"dEmail\" value=\"{{ user.email }}\" readonly=\"readonly\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
-                                                                <button class=\"cmn-btn d-center w-100\">Depositar</button>
+                                                                <button type=\"submit\" class=\"cmn-btn d-center w-100\">Depositar</button>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -2859,7 +2861,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
     <script src=\"assets/js/plugin/wow.min.js\"></script>
     <script src=\"assets/js/plugin/plugin.js\"></script>
     <script src=\"assets/js/main.js\"></script>
-    <script src=\"assets/js/validadorDeposito.js\"></script>
+
 </body>
 
 </html>", "wallet/index.html.twig", "/home/alumno/Symf/symfony-casino/templates/wallet/index.html.twig");

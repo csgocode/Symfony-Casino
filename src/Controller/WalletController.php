@@ -9,10 +9,12 @@ use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use App\Entity\Usuario;
-use CoinbaseCommerce\ApiClient;
 use Symfony\Component\Security\Core\Security;
-use CoinbaseCommerce\Resources\Checkout;
 use App\Repository\TransaccionesRepository;
+use Stripe\Stripe;
+use Stripe\Checkout\Session as StripeSession;
+
+
 
 class WalletController extends AbstractController
 {
@@ -41,27 +43,31 @@ class WalletController extends AbstractController
     }
 
 
-    #[Route('/wallet/payment', name: 'app_wallet_payment', methods: ['POST'])]
-    public function makePayment(Request $request)
+    #[Route('/wallet/recarga', name: 'recarga_procesar', methods: ['POST'])]
+    public function procesar(Request $request): Response
     {
-        // Obtener datos del formulario
-        $amount = $request->request->get('dAmount');
-        $email = $request->request->get('dEmail');
+        $monto = $request->request->get('amount');
 
+        Stripe::setApiKey($_ENV['STRIPE_SECRET_KEY']);
 
-        // Crear una nueva solicitud de pago
-        $payment_request = new PaymentRequest();
-        $payment_request->push([
-            'unit' => 'BTC',
-            'address' => '1R9NpmdVpC4eKajqutKqSSEn5hH4DEkLs',
-            'payment_reference' => uniqid('ORD-'),
-            'amount' => $amount,
-            'callback_url' => 'https://your-callback-url', 
-            'timeout' => 10,
-            'confirmations' => 3
+        $session = StripeSession::create([
+            'payment_method_types' => ['card'],
+            'line_items' => [[
+                'price_data' => [
+                    'currency' => 'eur',
+                    'product_data' => [
+                        'name' => 'Recarga Casino Royal',
+                    ],
+                    'unit_amount' => $monto * 150, // 100->formato(moneda) 50->comision(0,50eur comision)
+                ],
+                'quantity' => 1,
+            ]],
+            'mode' => 'payment',
+            'success_url' => 'https://royalcasino.es/wallet/recarga/exito',
+            'cancel_url' => 'https://royalcasino.es/wallet/recarga/cancelado',
         ]);
 
-        return $this->redirectToRoute('ruta_a_la_pagina_de_confirmacion');
+        return $this->redirect($session->url, 303);
     }
 
 
