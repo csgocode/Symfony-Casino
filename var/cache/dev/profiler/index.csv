@@ -48,3 +48,10 @@ f42b33,127.0.0.1,GET,http://localhost:8082/wallet,1707902018,,200
 9b4fab,127.0.0.1,GET,http://localhost:8082/wallet,1707902787,,200
 60e08d,127.0.0.1,GET,http://localhost:8082/wallet,1707902937,,200
 43180c,127.0.0.1,GET,http://localhost:8082/wallet,1707903709,,200
+70d7b4,127.0.0.1,POST,http://localhost:8082/payment/create/BTC/100,1707903737,,302
+3ee837,127.0.0.1,GET,http://localhost:8080/,1707912956,,200
+89f20f,127.0.0.1,GET,http://localhost:8080/perfil,1707912971,,200
+d2f569,127.0.0.1,GET,http://localhost:8080/usuario/verificar,1707912972,,200
+25b443,127.0.0.1,GET,http://localhost:8080/wallet,1707912976,,200
+f998bd,127.0.0.1,POST,http://localhost:8080/payment/create/BTC/6000,1707912986,,302
+999d4c,127.0.0.1,POST,http://localhost:8080/wallet/recarga,1707912997,,303
