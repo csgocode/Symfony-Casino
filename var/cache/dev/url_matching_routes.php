@@ -20,11 +20,13 @@ return [
         '/checkBannedUsers' => [[['_route' => 'bannedUsers', '_controller' => 'App\\Controller\\ControladorCasinoController::checkBannedUsers'], null, null, null, false, false, null]],
         '/usuario/nuevo' => [[['_route' => 'newUser', '_controller' => 'App\\Controller\\ControladorCasinoController::nuevo'], null, null, null, false, false, null]],
         '/perfil' => [[['_route' => 'app_perfil_propio', '_controller' => 'App\\Controller\\PerfilController::perfilPropio'], null, null, null, false, false, null]],
+        '/payment/callback' => [[['_route' => 'payment_callback', '_controller' => 'App\\Controller\\PlisioPaymentController::paymentCallback'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
         '/wallet' => [[['_route' => 'app_wallet', '_controller' => 'App\\Controller\\WalletController::walletPerfil'], null, null, null, false, false, null]],
         '/wallet/recarga' => [[['_route' => 'recarga_procesar', '_controller' => 'App\\Controller\\WalletController::procesar'], null, ['POST' => 0], null, false, false, null]],
+        '/usuario/verificar' => [[['_route' => 'app_usuario_verificar', '_controller' => 'App\\Controller\\PerfilController::verificarEstado'], null, ['GET' => 0], null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
@@ -58,9 +60,12 @@ return [
                     .'|verificar/([^/]++)(*:387)'
                     .'|denegar/([^/]++)(*:411)'
                 .')'
-                .'|/perfil/(?'
-                    .'|verificacion/([^/]++)(*:452)'
-                    .'|([^/]++)(*:468)'
+                .'|/p(?'
+                    .'|erfil/(?'
+                        .'|verificacion/([^/]++)(*:455)'
+                        .'|([^/]++)(*:471)'
+                    .')'
+                    .'|ayment/create/([^/]++)/([^/]++)(*:511)'
                 .')'
             .')/?$}sDu',
     ],
@@ -81,9 +86,10 @@ return [
         350 => [[['_route' => 'unbanUser', '_controller' => 'App\\Controller\\ControladorCasinoController::desbanear'], ['id'], null, null, false, true, null]],
         387 => [[['_route' => 'verifyAdminUser', '_controller' => 'App\\Controller\\ControladorCasinoController::verificarUserAdm'], ['id'], null, null, false, true, null]],
         411 => [[['_route' => 'verifyDenegar', '_controller' => 'App\\Controller\\ControladorCasinoController::denegarVerificacion'], ['id'], null, null, false, true, null]],
-        452 => [[['_route' => 'verifyUser', '_controller' => 'App\\Controller\\ControladorCasinoController::verifyUser'], ['id'], null, null, false, true, null]],
-        468 => [
-            [['_route' => 'app_perfil', '_controller' => 'App\\Controller\\PerfilController::perfilUser'], ['id'], null, null, false, true, null],
+        455 => [[['_route' => 'verifyUser', '_controller' => 'App\\Controller\\ControladorCasinoController::verifyUser'], ['id'], null, null, false, true, null]],
+        471 => [[['_route' => 'app_perfil', '_controller' => 'App\\Controller\\PerfilController::perfilUser'], ['id'], null, null, false, true, null]],
+        511 => [
+            [['_route' => 'payment_create', '_controller' => 'App\\Controller\\PlisioPaymentController::createPayment'], ['crypto', 'cantidad'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

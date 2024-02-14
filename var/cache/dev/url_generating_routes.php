@@ -33,9 +33,12 @@ return [
     'verifyUser' => [['id'], ['_controller' => 'App\\Controller\\ControladorCasinoController::verifyUser'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/perfil/verificacion']], [], [], []],
     'app_perfil' => [['id'], ['_controller' => 'App\\Controller\\PerfilController::perfilUser'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/perfil']], [], [], []],
     'app_perfil_propio' => [[], ['_controller' => 'App\\Controller\\PerfilController::perfilPropio'], [], [['text', '/perfil']], [], [], []],
+    'payment_create' => [['crypto', 'cantidad'], ['_controller' => 'App\\Controller\\PlisioPaymentController::createPayment'], [], [['variable', '/', '[^/]++', 'cantidad', true], ['variable', '/', '[^/]++', 'crypto', true], ['text', '/payment/create']], [], [], []],
+    'payment_callback' => [[], ['_controller' => 'App\\Controller\\PlisioPaymentController::paymentCallback'], [], [['text', '/payment/callback']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
     'app_wallet' => [[], ['_controller' => 'App\\Controller\\WalletController::walletPerfil'], [], [['text', '/wallet']], [], [], []],
     'recarga_procesar' => [[], ['_controller' => 'App\\Controller\\WalletController::procesar'], [], [['text', '/wallet/recarga']], [], [], []],
+    'app_usuario_verificar' => [[], ['_controller' => 'App\\Controller\\PerfilController::verificarEstado'], [], [['text', '/usuario/verificar']], [], [], []],
 ];

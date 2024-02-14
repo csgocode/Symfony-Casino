@@ -686,13 +686,15 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                             </div>
                             <h5 class=\"my-3\">Need Help?</h5>
                             <p>Have questions or concerns regrading your account?Our experts are here to help!.</p>
-                            <a href=\"sign-up.html\" class=\"cmn-btn mt-5\">Chat with US</a>
+                            <a href=\"#b_77y70llb_22\" id=\"chat\" class=\"cmn-btn mt-5\">Chatea con Soporte</a>
                         </div>
                     </div>
                     <div class=\"col-lg-8\">
+                    <div class=\"elfsight-app-f7b3cf75-7c22-4e77-9a53-dfad5e5ff99f\" data-elfsight-app-lazy></div>
                         <div class=\"single-box\">
                             <div class=\"row gaming-top-info\">
                                 <div class=\"col-lg-6 mb-3\">
+                                
                                     <div class=\"head-area\">
                                         <h4>Wallet</h4>
                                     </div>
@@ -717,8 +719,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <h6>Balance</h6>
                                                         <div class=\"right d-center gap-2\">
                                                             <h6>";
-        // line 665
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 665, $this->source); })()), "dinero", [], "any", false, false, false, 665), "html", null, true);
+        // line 667
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 667, $this->source); })()), "dinero", [], "any", false, false, false, 667), "html", null, true);
         echo "€</h6>
                                                             <select>
                                                                 <option value=\"0\">EUR</option>
@@ -766,30 +768,32 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                     </div>
                                                 </div>
                                                 <div class=\"pay-details pt-4\">
-                                                    <h6>Sistema de pagos</h6>
+                                                    <h6>Sistema de pagos (0,50 EUR comisión)</h6>
                                                     <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Depositar cantdad <span class=\"mdtxt\">Instantáneo | Mínimo: 5 EUR • Máximo: 6.000 EUR</span></h6>
                                                     <ul class=\"quick-value d-flex gap-2 mb-3\">
-                                                        <li><h5>10</h5></li>
-                                                        <li><h5 class=\"active\">20</h5></li>
-                                                        <li><h5>30</h5></li>
-                                                        <li><h5>40</h5></li>
-                                                        <li><h5>50</h5></li>
+                                                        <li><h5>20</h5></li>
+                                                        <li><h5 class=\"active\">50</h5></li>
+                                                        <li><h5>100</h5></li>
+                                                        <li><h5>500</h5></li>
+                                                        <li><h5>2000</h5></li>
                                                     </ul>
                                                    <form action=\"";
-        // line 721
+        // line 723
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("recarga_procesar");
         echo "\" method=\"POST\" id=\"depositForm\">
                                                         <div class=\"col-12\">
                                                             <div class=\"single-input\">
-                                                                <label for=\"dAmount\">Depositar cantidad</label>
-                                                                <input type=\"number\" name=\"amount\" id=\"dAmount\" placeholder=\"Escribe la cantidad\" min=\"5\" max=\"6000\" value=\"20\" required autocomplete=\"off\">
-                                                            </div>
-                                                            <div class=\"single-input\">
-                                                                <label for=\"dEmail\">Email</label>
-                                                                <input type=\"email\" id=\"dEmail\" value=\"";
-        // line 729
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 729, $this->source); })()), "email", [], "any", false, false, false, 729), "html", null, true);
-        echo "\" readonly=\"readonly\">
+                                                                <label for=\"dAmount\">Depositar cantidad - <span id=\"rangeValue\">20</span> EUR</label>
+                                                               <div class=\"range-slider\">
+    <input type=\"range\" name=\"amount\" id=\"dAmount\" min=\"5\" max=\"6000\" value=\"20\" class=\"multirange\" data-drag-middle=\"true\">
+</div>
+  </div>
+                                                             <div class=\"single-input\">
+                                                                <label for=\"email\">Email</label>
+                                                                <input type=\"text\" id=\"email\" placeholder=\"";
+        // line 733
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 733, $this->source); })()), "email", [], "any", false, false, false, 733), "html", null, true);
+        echo "\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
                                                                 <button type=\"submit\" class=\"cmn-btn d-center w-100\">Depositar</button>
@@ -806,8 +810,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <h6>Balance</h6>
                                                         <div class=\"right d-center gap-2\">
                                                             <h6>";
-        // line 745
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 745, $this->source); })()), "dinero", [], "any", false, false, false, 745), "html", null, true);
+        // line 749
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 749, $this->source); })()), "dinero", [], "any", false, false, false, 749), "html", null, true);
         echo "</h6>
                                                             <select>
                                                                 <option value=\"0\">EUR</option>
@@ -856,7 +860,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                 </div>
                                                 <div class=\"pay-details pt-4\">
                                                     <h6>Sistema de pagos - Casino Royal</h6>
-                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Depositar cantidad<span class=\"mdtxt\">Instantáneo | Mínimo: 5 EUR • Max: 6.000 EUR</span></h6>
+                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Retirar cantidad<span class=\"mdtxt\">| Instantáneo - SEPA o retiro directo a tarjeta</span></h6>
                                                     <ul class=\"quick-value d-flex gap-2 mb-3\">
                                                         <li><h5>10</h5></li>
                                                         <li><h5 class=\"active\">20</h5></li>
@@ -873,8 +877,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                             <div class=\"single-input\">
                                                                 <label for=\"email\">Email</label>
                                                                 <input type=\"text\" id=\"email\" placeholder=\"";
-        // line 809
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 809, $this->source); })()), "email", [], "any", false, false, false, 809), "html", null, true);
+        // line 813
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 813, $this->source); })()), "email", [], "any", false, false, false, 813), "html", null, true);
         echo "\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
@@ -926,32 +930,32 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         </thead>
                                                         <tbody>
                                                             ";
-        // line 859
+        // line 863
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["transacciones"]) || array_key_exists("transacciones", $context) ? $context["transacciones"] : (function () { throw new RuntimeError('Variable "transacciones" does not exist.', 859, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["transacciones"]) || array_key_exists("transacciones", $context) ? $context["transacciones"] : (function () { throw new RuntimeError('Variable "transacciones" does not exist.', 863, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["transaccion"]) {
-            // line 860
+            // line 864
             echo "                                                                <tr>
                                                                     <td style=\"color: white; font-weight: bold;\">";
-            // line 861
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "FechaInicio", [], "any", false, false, false, 861), "Y-m-d H:i:s"), "html", null, true);
-            echo "</td>
-                                                                    <td style=\"color: white; font-weight: bold;\">";
-            // line 862
-            echo (((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 862) == 1)) ? ("Depósito") : ((((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 862) == 2)) ? ("Retirada") : ("Referido"))));
-            echo "</td>
-                                                                    <td style=\"color: white; font-weight: bold;\">EUR</td>
-                                                                    <td style=\"color: white; font-weight: bold;\">";
-            // line 864
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "CantidadEUR", [], "any", false, false, false, 864), "html", null, true);
-            echo "</td>
-                                                                    <td style=\"color: white; font-weight: bold;\">";
             // line 865
-            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Autorizacion", [], "any", false, false, false, 865)) ? ("Autorizada") : ("En espera"));
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "FechaInicio", [], "any", false, false, false, 865), "Y-m-d H:i:s"), "html", null, true);
             echo "</td>
                                                                     <td style=\"color: white; font-weight: bold;\">";
             // line 866
-            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Completada", [], "any", false, false, false, 866)) ? ("Completada") : ("En espera"));
+            echo (((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 866) == 1)) ? ("Depósito") : ((((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 866) == 2)) ? ("Retirada") : ("Referido"))));
+            echo "</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">EUR</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">";
+            // line 868
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "CantidadEUR", [], "any", false, false, false, 868), "html", null, true);
+            echo "</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">";
+            // line 869
+            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Autorizacion", [], "any", false, false, false, 869)) ? ("Autorizada") : ("En espera"));
+            echo "</td>
+                                                                    <td style=\"color: white; font-weight: bold;\">";
+            // line 870
+            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Completada", [], "any", false, false, false, 870)) ? ("Completada") : ("En espera"));
             echo "</td>
                                                                     
                                                                 </tr>
@@ -960,7 +964,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['transaccion'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 870
+        // line 874
         echo "                                                        </tbody>
                                                     </table>
                                                 </div>
@@ -1316,8 +1320,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                     <div class=\"head-area py-4 text-center\">
                         <h5>Hola,</h5>
                         <p class=\"email-id\">";
-        // line 1224
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1224, $this->source); })()), "email", [], "any", false, false, false, 1224), "html", null, true);
+        // line 1228
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1228, $this->source); })()), "email", [], "any", false, false, false, 1228), "html", null, true);
         echo "</p>
                     </div>
                     <div class=\"cash-top\">
@@ -1327,8 +1331,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                             </div>
                             <div class=\"info-area\">
                                 <h5>";
-        // line 1232
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1232, $this->source); })()), "dinero", [], "any", false, false, false, 1232), "html", null, true);
+        // line 1236
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1236, $this->source); })()), "dinero", [], "any", false, false, false, 1236), "html", null, true);
         echo " EUR</h5>
                                 <span>Balance</span>
                             </div>
@@ -1451,6 +1455,13 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
         </div>
     </footer>
     <!-- Footer Area End -->
+    <!-- Start of LiveAgent integration script: Chat button: Botón burbuja 84 -->
+<script type=\"text/javascript\">
+(function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.defer=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
+'https://casinoroyal.ladesk.com/scripts/track.js',
+function(e){ LiveAgent.createButton('77y70llb', e); });
+</script>
+<!-- End of LiveAgent integration script -->
 
     <!--==================================================================-->
     <script src=\"assets/js/jquery.min.js\"></script>
@@ -1465,6 +1476,12 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
     <script src=\"assets/js/plugin/wow.min.js\"></script>
     <script src=\"assets/js/plugin/plugin.js\"></script>
     <script src=\"assets/js/main.js\"></script>
+    <script src=\"assets/js/procesarPagos.js\"></script>
+    <script src=\"assets/js/jQueryRange.js\"></script>
+    <script src=\"assets/js/RangeConfigurar.js\"></script>
+    <script src=\"assets/js/botonesLiveChat.js\"></script>
+    <script src=\"https://static.elfsight.com/platform/platform.js\" data-use-service-core defer></script>
+
 
 </body>
 
@@ -1489,7 +1506,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
 
     public function getDebugInfo()
     {
-        return array (  1331 => 1232,  1320 => 1224,  964 => 870,  954 => 866,  950 => 865,  946 => 864,  941 => 862,  937 => 861,  934 => 860,  930 => 859,  877 => 809,  810 => 745,  791 => 729,  780 => 721,  721 => 665,  637 => 584,  633 => 583,  567 => 520,  556 => 512,  43 => 1,);
+        return array (  1335 => 1236,  1324 => 1228,  968 => 874,  958 => 870,  954 => 869,  950 => 868,  945 => 866,  941 => 865,  938 => 864,  934 => 863,  881 => 813,  814 => 749,  795 => 733,  782 => 723,  723 => 667,  637 => 584,  633 => 583,  567 => 520,  556 => 512,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -2128,13 +2145,15 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                             </div>
                             <h5 class=\"my-3\">Need Help?</h5>
                             <p>Have questions or concerns regrading your account?Our experts are here to help!.</p>
-                            <a href=\"sign-up.html\" class=\"cmn-btn mt-5\">Chat with US</a>
+                            <a href=\"#b_77y70llb_22\" id=\"chat\" class=\"cmn-btn mt-5\">Chatea con Soporte</a>
                         </div>
                     </div>
                     <div class=\"col-lg-8\">
+                    <div class=\"elfsight-app-f7b3cf75-7c22-4e77-9a53-dfad5e5ff99f\" data-elfsight-app-lazy></div>
                         <div class=\"single-box\">
                             <div class=\"row gaming-top-info\">
                                 <div class=\"col-lg-6 mb-3\">
+                                
                                     <div class=\"head-area\">
                                         <h4>Wallet</h4>
                                     </div>
@@ -2205,24 +2224,26 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                     </div>
                                                 </div>
                                                 <div class=\"pay-details pt-4\">
-                                                    <h6>Sistema de pagos</h6>
+                                                    <h6>Sistema de pagos (0,50 EUR comisión)</h6>
                                                     <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Depositar cantdad <span class=\"mdtxt\">Instantáneo | Mínimo: 5 EUR • Máximo: 6.000 EUR</span></h6>
                                                     <ul class=\"quick-value d-flex gap-2 mb-3\">
-                                                        <li><h5>10</h5></li>
-                                                        <li><h5 class=\"active\">20</h5></li>
-                                                        <li><h5>30</h5></li>
-                                                        <li><h5>40</h5></li>
-                                                        <li><h5>50</h5></li>
+                                                        <li><h5>20</h5></li>
+                                                        <li><h5 class=\"active\">50</h5></li>
+                                                        <li><h5>100</h5></li>
+                                                        <li><h5>500</h5></li>
+                                                        <li><h5>2000</h5></li>
                                                     </ul>
                                                    <form action=\"{{ path('recarga_procesar') }}\" method=\"POST\" id=\"depositForm\">
                                                         <div class=\"col-12\">
                                                             <div class=\"single-input\">
-                                                                <label for=\"dAmount\">Depositar cantidad</label>
-                                                                <input type=\"number\" name=\"amount\" id=\"dAmount\" placeholder=\"Escribe la cantidad\" min=\"5\" max=\"6000\" value=\"20\" required autocomplete=\"off\">
-                                                            </div>
-                                                            <div class=\"single-input\">
-                                                                <label for=\"dEmail\">Email</label>
-                                                                <input type=\"email\" id=\"dEmail\" value=\"{{ user.email }}\" readonly=\"readonly\">
+                                                                <label for=\"dAmount\">Depositar cantidad - <span id=\"rangeValue\">20</span> EUR</label>
+                                                               <div class=\"range-slider\">
+    <input type=\"range\" name=\"amount\" id=\"dAmount\" min=\"5\" max=\"6000\" value=\"20\" class=\"multirange\" data-drag-middle=\"true\">
+</div>
+  </div>
+                                                             <div class=\"single-input\">
+                                                                <label for=\"email\">Email</label>
+                                                                <input type=\"text\" id=\"email\" placeholder=\"{{user.email}}\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
                                                                 <button type=\"submit\" class=\"cmn-btn d-center w-100\">Depositar</button>
@@ -2286,7 +2307,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                 </div>
                                                 <div class=\"pay-details pt-4\">
                                                     <h6>Sistema de pagos - Casino Royal</h6>
-                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Depositar cantidad<span class=\"mdtxt\">Instantáneo | Mínimo: 5 EUR • Max: 6.000 EUR</span></h6>
+                                                    <h6 class=\"d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3\">Retirar cantidad<span class=\"mdtxt\">| Instantáneo - SEPA o retiro directo a tarjeta</span></h6>
                                                     <ul class=\"quick-value d-flex gap-2 mb-3\">
                                                         <li><h5>10</h5></li>
                                                         <li><h5 class=\"active\">20</h5></li>
@@ -2847,6 +2868,13 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
         </div>
     </footer>
     <!-- Footer Area End -->
+    <!-- Start of LiveAgent integration script: Chat button: Botón burbuja 84 -->
+<script type=\"text/javascript\">
+(function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.defer=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
+'https://casinoroyal.ladesk.com/scripts/track.js',
+function(e){ LiveAgent.createButton('77y70llb', e); });
+</script>
+<!-- End of LiveAgent integration script -->
 
     <!--==================================================================-->
     <script src=\"assets/js/jquery.min.js\"></script>
@@ -2861,6 +2889,12 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
     <script src=\"assets/js/plugin/wow.min.js\"></script>
     <script src=\"assets/js/plugin/plugin.js\"></script>
     <script src=\"assets/js/main.js\"></script>
+    <script src=\"assets/js/procesarPagos.js\"></script>
+    <script src=\"assets/js/jQueryRange.js\"></script>
+    <script src=\"assets/js/RangeConfigurar.js\"></script>
+    <script src=\"assets/js/botonesLiveChat.js\"></script>
+    <script src=\"https://static.elfsight.com/platform/platform.js\" data-use-service-core defer></script>
+
 
 </body>
 

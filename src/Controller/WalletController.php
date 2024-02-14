@@ -58,7 +58,7 @@ class WalletController extends AbstractController
                     'product_data' => [
                         'name' => 'Recarga Casino Royal',
                     ],
-                    'unit_amount' => $monto * 150, // 100->formato(moneda) 50->comision(0,50eur comision)
+                    'unit_amount' => $monto * 100 + 50, // 100->formato(moneda) 50->comision(0,50eur comision)
                 ],
                 'quantity' => 1,
             ]],

@@ -632,13 +632,15 @@
                             </div>
                             <h5 class="my-3">Need Help?</h5>
                             <p>Have questions or concerns regrading your account?Our experts are here to help!.</p>
-                            <a href="sign-up.html" class="cmn-btn mt-5">Chat with US</a>
+                            <a href="#b_77y70llb_22" id="chat" class="cmn-btn mt-5">Chatea con Soporte</a>
                         </div>
                     </div>
                     <div class="col-lg-8">
+                    <div class="elfsight-app-f7b3cf75-7c22-4e77-9a53-dfad5e5ff99f" data-elfsight-app-lazy></div>
                         <div class="single-box">
                             <div class="row gaming-top-info">
                                 <div class="col-lg-6 mb-3">
+                                
                                     <div class="head-area">
                                         <h4>Wallet</h4>
                                     </div>
@@ -709,24 +711,26 @@
                                                     </div>
                                                 </div>
                                                 <div class="pay-details pt-4">
-                                                    <h6>Sistema de pagos</h6>
+                                                    <h6>Sistema de pagos (0,50 EUR comisión)</h6>
                                                     <h6 class="d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3">Depositar cantdad <span class="mdtxt">Instantáneo | Mínimo: 5 EUR • Máximo: 6.000 EUR</span></h6>
                                                     <ul class="quick-value d-flex gap-2 mb-3">
-                                                        <li><h5>10</h5></li>
-                                                        <li><h5 class="active">20</h5></li>
-                                                        <li><h5>30</h5></li>
-                                                        <li><h5>40</h5></li>
-                                                        <li><h5>50</h5></li>
+                                                        <li><h5>20</h5></li>
+                                                        <li><h5 class="active">50</h5></li>
+                                                        <li><h5>100</h5></li>
+                                                        <li><h5>500</h5></li>
+                                                        <li><h5>2000</h5></li>
                                                     </ul>
                                                    <form action="{{ path('recarga_procesar') }}" method="POST" id="depositForm">
                                                         <div class="col-12">
                                                             <div class="single-input">
-                                                                <label for="dAmount">Depositar cantidad</label>
-                                                                <input type="number" name="amount" id="dAmount" placeholder="Escribe la cantidad" min="5" max="6000" value="20" required autocomplete="off">
-                                                            </div>
-                                                            <div class="single-input">
-                                                                <label for="dEmail">Email</label>
-                                                                <input type="email" id="dEmail" value="{{ user.email }}" readonly="readonly">
+                                                                <label for="dAmount">Depositar cantidad - <span id="rangeValue">20</span> EUR</label>
+                                                               <div class="range-slider">
+    <input type="range" name="amount" id="dAmount" min="5" max="6000" value="20" class="multirange" data-drag-middle="true">
+</div>
+  </div>
+                                                             <div class="single-input">
+                                                                <label for="email">Email</label>
+                                                                <input type="text" id="email" placeholder="{{user.email}}" readonly="readonly" autocomplete="off">
                                                             </div>
                                                             <div class="btn-area text-center mt-3">
                                                                 <button type="submit" class="cmn-btn d-center w-100">Depositar</button>
@@ -790,7 +794,7 @@
                                                 </div>
                                                 <div class="pay-details pt-4">
                                                     <h6>Sistema de pagos - Casino Royal</h6>
-                                                    <h6 class="d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3">Depositar cantidad<span class="mdtxt">Instantáneo | Mínimo: 5 EUR • Max: 6.000 EUR</span></h6>
+                                                    <h6 class="d-flex flex-wrap gap-3 gap-sm-2 mt-3 mb-3">Retirar cantidad<span class="mdtxt">| Instantáneo - SEPA o retiro directo a tarjeta</span></h6>
                                                     <ul class="quick-value d-flex gap-2 mb-3">
                                                         <li><h5>10</h5></li>
                                                         <li><h5 class="active">20</h5></li>
@@ -1351,6 +1355,13 @@
         </div>
     </footer>
     <!-- Footer Area End -->
+    <!-- Start of LiveAgent integration script: Chat button: Botón burbuja 84 -->
+<script type="text/javascript">
+(function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.defer=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
+'https://casinoroyal.ladesk.com/scripts/track.js',
+function(e){ LiveAgent.createButton('77y70llb', e); });
+</script>
+<!-- End of LiveAgent integration script -->
 
     <!--==================================================================-->
     <script src="assets/js/jquery.min.js"></script>
@@ -1365,6 +1376,12 @@
     <script src="assets/js/plugin/wow.min.js"></script>
     <script src="assets/js/plugin/plugin.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/procesarPagos.js"></script>
+    <script src="assets/js/jQueryRange.js"></script>
+    <script src="assets/js/RangeConfigurar.js"></script>
+    <script src="assets/js/botonesLiveChat.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
 
 </body>
 

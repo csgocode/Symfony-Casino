@@ -3,6 +3,9 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,6 +19,23 @@ class PerfilController extends AbstractController
     public function __construct(Security $security)
     {
         $this->security = $security;
+    }
+
+    #[Route('/usuario/verificar', name: 'app_usuario_verificar', methods: ['GET'])]
+    public function verificarEstado(ManagerRegistry $doctrine): JsonResponse
+    {
+        // Obtener el usuario autenticado
+        $usuarioAutenticado = $this->security->getUser();
+
+        if (!$usuarioAutenticado) {
+            return new JsonResponse(['error' => 'Usuario no autenticado'], JsonResponse::HTTP_UNAUTHORIZED);
+        }
+
+        $deniedVerify = $usuarioAutenticado->getDeniedVerify();
+
+        $showAlert = is_null($deniedVerify) ? true : false;
+
+        return new JsonResponse(['showAlert' => $showAlert]);
     }
 
 

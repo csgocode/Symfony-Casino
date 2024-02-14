@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controller\\ControladorCasinoController' => $baseDir . '/src/Controller/ControladorCasinoController.php',
     'App\\Controller\\PerfilController' => $baseDir . '/src/Controller/PerfilController.php',
+    'App\\Controller\\PlisioPaymentController' => $baseDir . '/src/Controller/PlisioPaymentController.php',
     'App\\Controller\\RegistrationController' => $baseDir . '/src/Controller/RegistrationController.php',
     'App\\Controller\\SecurityController' => $baseDir . '/src/Controller/SecurityController.php',
     'App\\Controller\\WalletController' => $baseDir . '/src/Controller/WalletController.php',

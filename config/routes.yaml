@@ -1,3 +1,9 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+
+# configAJAX
+app_usuario_verificar:
+    path: /usuario/verificar
+    controller: App\Controller\PerfilController::verificarEstado
+    methods: GET

@@ -595,6 +595,7 @@ class ComposerStaticInit76b111b9cd8edcf616b313b6a3d197be
     public static $classMap = array (
         'App\\Controller\\ControladorCasinoController' => __DIR__ . '/../..' . '/src/Controller/ControladorCasinoController.php',
         'App\\Controller\\PerfilController' => __DIR__ . '/../..' . '/src/Controller/PerfilController.php',
+        'App\\Controller\\PlisioPaymentController' => __DIR__ . '/../..' . '/src/Controller/PlisioPaymentController.php',
         'App\\Controller\\RegistrationController' => __DIR__ . '/../..' . '/src/Controller/RegistrationController.php',
         'App\\Controller\\SecurityController' => __DIR__ . '/../..' . '/src/Controller/SecurityController.php',
         'App\\Controller\\WalletController' => __DIR__ . '/../..' . '/src/Controller/WalletController.php',

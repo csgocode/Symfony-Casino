@@ -657,6 +657,30 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
 
     <!-- Account Section start -->
     <section class=\"account-section\">
+    <div id=\"alertDiv\" style=\"display:none;\">¡Alerta! Tu cuenta necesita verificación.</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const verificarEstado = () => {
+        fetch('/usuario/verificar')
+            .then(response => response.json())
+            .then(data => {
+                if (data.showAlert) {
+                    document.getElementById('alertDiv').style.display = 'block';
+                } else {
+                    document.getElementById('alertDiv').style.display = 'none';
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    };
+
+    // Verificar inmediatamente al cargar la página
+    verificarEstado();
+
+    // Luego, verificar cada 20 segundos
+    setInterval(verificarEstado, 20000);
+});
+</script>
+
         <div class=\"overlay pb-120\">
             <div class=\"container profile-area\">
                 <div class=\"row cus-mar\">
@@ -711,8 +735,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                             </div>
                                             <div class=\"info-area\">
                                                 <h5 class=\"m-0\">";
-        // line 653
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 653, $this->source); })()), "dinero", [], "any", false, false, false, 653), "html", null, true);
+        // line 677
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 677, $this->source); })()), "dinero", [], "any", false, false, false, 677), "html", null, true);
         echo " €</h5>
                                                 <span>Dinero disponible</span>
                                             </div>
@@ -734,8 +758,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                             </div>
                                             <div class=\"info-area\">
                                                 <h5 class=\"m-0\">";
-        // line 673
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 673, $this->source); })()), "dineroafiliados", [], "any", false, false, false, 673), "html", null, true);
+        // line 697
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 697, $this->source); })()), "dineroafiliados", [], "any", false, false, false, 697), "html", null, true);
         echo " €</h5>
                                                 <span>Dinero afiliados</span>
                                             </div>
@@ -764,8 +788,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                         <div class=\"form-group\">
                                             <label for=\"fname\">Nombre</label>
                                             <input type=\"text\" id=\"fname\" placeholder=\"Nombre\" value=\"";
-        // line 700
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 700, $this->source); })()), "nombre", [], "any", false, false, false, 700), "html", null, true);
+        // line 724
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 724, $this->source); })()), "nombre", [], "any", false, false, false, 724), "html", null, true);
         echo "\" autocomplete=\"off\">
                                         </div>
                                     </div>
@@ -773,8 +797,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                         <div class=\"form-group\">
                                             <label for=\"fname\">Apellidos</label>
                                             <input type=\"text\" id=\"lname\" placeholder=\"Apellidos\" value=\"";
-        // line 706
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 706, $this->source); })()), "apellidos", [], "any", false, false, false, 706), "html", null, true);
+        // line 730
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 730, $this->source); })()), "apellidos", [], "any", false, false, false, 730), "html", null, true);
         echo "\" autocomplete=\"off\">
                                         </div>
                                     </div>
@@ -782,8 +806,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                         <div class=\"form-group\">
                                             <label for=\"birth\">Fecha de nacimiento</label>
                                             <input type=\"text\" id=\"birth\" placeholder=\"Fecha de nacimiento\" value=\"";
-        // line 712
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 712, $this->source); })()), "fechanacimiento", [], "any", false, false, false, 712), "d-m-Y"), "html", null, true);
+        // line 736
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 736, $this->source); })()), "fechanacimiento", [], "any", false, false, false, 736), "d-m-Y"), "html", null, true);
         echo "\" autocomplete=\"off\">
                                         </div>
                                     </div>
@@ -791,8 +815,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                         <div class=\"form-group\">
                                             <label for=\"gender\">Sexo</label>
                                             <input type=\"text\" id=\"gender\" placeholder=\"Sexo\" value=\"";
-        // line 718
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 718, $this->source); })()), "sexo", [], "any", false, false, false, 718), "html", null, true);
+        // line 742
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 742, $this->source); })()), "sexo", [], "any", false, false, false, 742), "html", null, true);
         echo "\" autocomplete=\"off\">
                                         </div>
                                     </div>
@@ -800,8 +824,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                         <div class=\"form-group\">
                                             <label for=\"country\">Pais</label>
                                             <input type=\"text\" id=\"country\" placeholder=\"Pais\" value=\"";
-        // line 724
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 724, $this->source); })()), "pais", [], "any", false, false, false, 724), "html", null, true);
+        // line 748
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 748, $this->source); })()), "pais", [], "any", false, false, false, 748), "html", null, true);
         echo "\" autocomplete=\"off\">
                                         </div>
                                     </div>
@@ -809,8 +833,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                         <div class=\"form-group\">
                                             <label for=\"City\">Ciudad</label>
                                             <input type=\"text\" id=\"City\" placeholder=\"Ciudad\" value=\"";
-        // line 730
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 730, $this->source); })()), "ciudad", [], "any", false, false, false, 730), "html", null, true);
+        // line 754
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 754, $this->source); })()), "ciudad", [], "any", false, false, false, 754), "html", null, true);
         echo "\" autocomplete=\"off\">
                                         </div>
                                     </div>
@@ -818,8 +842,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                         <div class=\"form-group\">
                                             <label for=\"address\">Dirección de facturación</label>
                                             <input type=\"text\" id=\"address\" placeholder=\"Dirección\" value=\"";
-        // line 736
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 736, $this->source); })()), "direccion", [], "any", false, false, false, 736), "html", null, true);
+        // line 760
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 760, $this->source); })()), "direccion", [], "any", false, false, false, 760), "html", null, true);
         echo "\" autocomplete=\"off\">
                                         </div>
                                     </div>
@@ -827,8 +851,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                         <div class=\"form-group\">
                                             <label for=\"postcode\">Código Postal</label>
                                             <input type=\"text\" id=\"postcode\" placeholder=\"Código Postal\" value=\"";
-        // line 742
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 742, $this->source); })()), "CP", [], "any", false, false, false, 742), "html", null, true);
+        // line 766
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 766, $this->source); })()), "CP", [], "any", false, false, false, 766), "html", null, true);
         echo "\" autocomplete=\"off\">
                                         </div>
                                     </div>
@@ -850,8 +874,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                         <div class=\"form-group\">
                                             <label for=\"number\">Teléfono</label>
                                             <input type=\"text\" id=\"number\" placeholder=\"Teléfono\" value=\"";
-        // line 762
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 762, $this->source); })()), "telefono", [], "any", false, false, false, 762), "html", null, true);
+        // line 786
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 786, $this->source); })()), "telefono", [], "any", false, false, false, 786), "html", null, true);
         echo "\" autocomplete=\"off\">
                                         </div>
                                     </div>
@@ -859,8 +883,8 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
                                         <div class=\"form-group\">
                                             <label for=\"email\">Correo</label>
                                             <input type=\"text\" id=\"email\" placeholder=\"Correo\" value=\"";
-        // line 768
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 768, $this->source); })()), "email", [], "any", false, false, false, 768), "html", null, true);
+        // line 792
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 792, $this->source); })()), "email", [], "any", false, false, false, 792), "html", null, true);
         echo "\" autocomplete=\"off\">
                                         </div>
                                     </div>
@@ -1392,7 +1416,7 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
 
     public function getDebugInfo()
     {
-        return array (  863 => 768,  854 => 762,  831 => 742,  822 => 736,  813 => 730,  804 => 724,  795 => 718,  786 => 712,  777 => 706,  768 => 700,  738 => 673,  715 => 653,  648 => 589,  644 => 588,  236 => 182,  231 => 179,  223 => 176,  220 => 175,  218 => 174,  43 => 1,);
+        return array (  887 => 792,  878 => 786,  855 => 766,  846 => 760,  837 => 754,  828 => 748,  819 => 742,  810 => 736,  801 => 730,  792 => 724,  762 => 697,  739 => 677,  648 => 589,  644 => 588,  236 => 182,  231 => 179,  223 => 176,  220 => 175,  218 => 174,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -1996,6 +2020,30 @@ class __TwigTemplate_ddc2650932705aa72052f32fe66e95e5 extends Template
 
     <!-- Account Section start -->
     <section class=\"account-section\">
+    <div id=\"alertDiv\" style=\"display:none;\">¡Alerta! Tu cuenta necesita verificación.</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const verificarEstado = () => {
+        fetch('/usuario/verificar')
+            .then(response => response.json())
+            .then(data => {
+                if (data.showAlert) {
+                    document.getElementById('alertDiv').style.display = 'block';
+                } else {
+                    document.getElementById('alertDiv').style.display = 'none';
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    };
+
+    // Verificar inmediatamente al cargar la página
+    verificarEstado();
+
+    // Luego, verificar cada 20 segundos
+    setInterval(verificarEstado, 20000);
+});
+</script>
+
         <div class=\"overlay pb-120\">
             <div class=\"container profile-area\">
                 <div class=\"row cus-mar\">
