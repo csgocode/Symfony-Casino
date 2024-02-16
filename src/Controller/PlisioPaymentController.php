@@ -33,8 +33,8 @@ class PlisioPaymentController extends AbstractController
                 'api_key' => $this->plisioApiKey,
                 'currency' => strtoupper($crypto),
                 'source_currency' => 'EUR',
-                'source_amount' => $cantidad, // Este valor debería ser dinámico según tu caso de uso
-                'order_number' => uniqid(), // Asegúrate de que este valor sea único para cada pedido
+                'source_amount' => $cantidad,
+                'order_number' => uniqid(),
                 'order_name' => 'Test Order',
                 'email' => 'customer@example.com',
                 'callback_url' => 'https://casinoroyal.es/payment/callback',

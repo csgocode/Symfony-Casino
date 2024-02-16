@@ -279,7 +279,8 @@
                                                     <div class="icon-box">
                                                         <img src="/assets/images/icon/search-icon-2.png" alt="icon">
                                                     </div>
-                                                    <p>Info Juego</p>
+                                                    <p><button id="Juego1">Info Juego</button></p>
+
                                                 </div>
                                                 <div class="single">
                                                     <div class="icon-box">
@@ -326,7 +327,7 @@
                                                     <div class="icon-box">
                                                         <img src="/assets/images/icon/search-icon-2.png" alt="icon">
                                                     </div>
-                                                    <p>Info Juego</p>
+                                                    <p><button id="Juego2">Info Juego</button></p>
                                                 </div>
                                                 <div class="single">
                                                     <div class="icon-box">
@@ -373,7 +374,7 @@
                                                     <div class="icon-box">
                                                         <img src="/assets/images/icon/search-icon-2.png" alt="icon">
                                                     </div>
-                                                    <p>Info Juego</p>
+                                                    <p><button id="Juego3">Info Juego</button></p>
                                                 </div>
                                                 <div class="single">
                                                     <div class="icon-box">
@@ -688,6 +689,26 @@
     <script src="/assets/js/plugin/viewport.jquery.js"></script>
     <script src="/assets/js/plugin/plugin.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        tippy('#Juego1', {
+        animation: 'fade',
+        content: 'Royal Escape es un juego donde tendrás que escapar de los malos.',
+        });
+        tippy('#Juego2', {
+        animation: 'fade',
+        content: 'En Desactiva la Bomba tendrás que competir con otros jugadores para desactivar una bomba.',
+        });
+        tippy('#Juego3', {
+        animation: 'fade',
+        content: '¡Sheila necesita tu ayuda! Juega a este gran juego simulando Flappy Birds.',
+        });
+    });
+    </script>
+
 </body>
 
 </html>

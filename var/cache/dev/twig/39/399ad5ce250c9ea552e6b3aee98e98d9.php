@@ -321,7 +321,8 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
                                                     <div class=\"icon-box\">
                                                         <img src=\"/assets/images/icon/search-icon-2.png\" alt=\"icon\">
                                                     </div>
-                                                    <p>Info Juego</p>
+                                                    <p><button id=\"Juego1\">Info Juego</button></p>
+
                                                 </div>
                                                 <div class=\"single\">
                                                     <div class=\"icon-box\">
@@ -333,7 +334,7 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
                                             <p class=\"mdtxt mt-4 mb-4 prize-pool text-center w-100\">Jackpot: <span class=\"lgtxt\">0.90 <i class=\"fab fa-btc\"></i></span></p>
                                             <div class=\"btn-area mb-3\">
                                                 <a href=\"";
-        // line 293
+        // line 294
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("game_royalv2");
         echo "\" class=\"w-100 text-center cmn-btn justify-content-center\">Jugar ahora</a>
                                             </div>
@@ -371,7 +372,7 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
                                                     <div class=\"icon-box\">
                                                         <img src=\"/assets/images/icon/search-icon-2.png\" alt=\"icon\">
                                                     </div>
-                                                    <p>Info Juego</p>
+                                                    <p><button id=\"Juego2\">Info Juego</button></p>
                                                 </div>
                                                 <div class=\"single\">
                                                     <div class=\"icon-box\">
@@ -383,7 +384,7 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
                                             <p class=\"mdtxt mt-4 mb-4 prize-pool text-center w-100\">Jackpot: <span class=\"lgtxt\">0.10 <i class=\"fab fa-btc\"></i></span></p>
                                             <div class=\"btn-area mb-3\">
                                                 <a href=\"";
-        // line 340
+        // line 341
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("game_bomba");
         echo "\" class=\"w-100 text-center cmn-btn justify-content-center\">Jugar Ahora</a>
                                             </div>
@@ -421,7 +422,7 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
                                                     <div class=\"icon-box\">
                                                         <img src=\"/assets/images/icon/search-icon-2.png\" alt=\"icon\">
                                                     </div>
-                                                    <p>Info Juego</p>
+                                                    <p><button id=\"Juego3\">Info Juego</button></p>
                                                 </div>
                                                 <div class=\"single\">
                                                     <div class=\"icon-box\">
@@ -433,7 +434,7 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
                                             <p class=\"mdtxt mt-4 mb-4 prize-pool text-center w-100\">Jackpot: <span class=\"lgtxt\">1.27 <i class=\"fab fa-btc\"></i></span></p>
                                             <div class=\"btn-area mb-3\">
                                                 <a href=\"";
-        // line 387
+        // line 388
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("game_sheila");
         echo "\" class=\"w-100 text-center cmn-btn justify-content-center\">Jugar Ahora</a>
                                             </div>
@@ -515,7 +516,7 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
                             </div>
                             <div class=\"btn-area\">
                                 <a href=\"";
-        // line 466
+        // line 467
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_afiliated");
         echo "\" class=\"cmn-btn\">Saber más</a>
                             </div>
@@ -742,6 +743,26 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
     <script src=\"/assets/js/plugin/viewport.jquery.js\"></script>
     <script src=\"/assets/js/plugin/plugin.js\"></script>
     <script src=\"/assets/js/main.js\"></script>
+    <script src=\"https://unpkg.com/@popperjs/core@2\"></script>
+    <script src=\"https://unpkg.com/tippy.js@6\"></script>
+    <link rel=\"stylesheet\" href=\"https://unpkg.com/tippy.js@6/dist/tippy.css\">
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        tippy('#Juego1', {
+        animation: 'fade',
+        content: 'Royal Escape es un juego donde tendrás que escapar de los malos.',
+        });
+        tippy('#Juego2', {
+        animation: 'fade',
+        content: 'En Desactiva la Bomba tendrás que competir con otros jugadores para desactivar una bomba.',
+        });
+        tippy('#Juego3', {
+        animation: 'fade',
+        content: '¡Sheila necesita tu ayuda! Juega a este gran juego simulando Flappy Birds.',
+        });
+    });
+    </script>
+
 </body>
 
 </html>";
@@ -765,7 +786,7 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
 
     public function getDebugInfo()
     {
-        return array (  519 => 466,  437 => 387,  387 => 340,  337 => 293,  43 => 1,);
+        return array (  520 => 467,  438 => 388,  388 => 341,  338 => 294,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -1051,7 +1072,8 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
                                                     <div class=\"icon-box\">
                                                         <img src=\"/assets/images/icon/search-icon-2.png\" alt=\"icon\">
                                                     </div>
-                                                    <p>Info Juego</p>
+                                                    <p><button id=\"Juego1\">Info Juego</button></p>
+
                                                 </div>
                                                 <div class=\"single\">
                                                     <div class=\"icon-box\">
@@ -1098,7 +1120,7 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
                                                     <div class=\"icon-box\">
                                                         <img src=\"/assets/images/icon/search-icon-2.png\" alt=\"icon\">
                                                     </div>
-                                                    <p>Info Juego</p>
+                                                    <p><button id=\"Juego2\">Info Juego</button></p>
                                                 </div>
                                                 <div class=\"single\">
                                                     <div class=\"icon-box\">
@@ -1145,7 +1167,7 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
                                                     <div class=\"icon-box\">
                                                         <img src=\"/assets/images/icon/search-icon-2.png\" alt=\"icon\">
                                                     </div>
-                                                    <p>Info Juego</p>
+                                                    <p><button id=\"Juego3\">Info Juego</button></p>
                                                 </div>
                                                 <div class=\"single\">
                                                     <div class=\"icon-box\">
@@ -1460,8 +1482,28 @@ class __TwigTemplate_5c8f0838c9f09062635069b62daf0bae extends Template
     <script src=\"/assets/js/plugin/viewport.jquery.js\"></script>
     <script src=\"/assets/js/plugin/plugin.js\"></script>
     <script src=\"/assets/js/main.js\"></script>
+    <script src=\"https://unpkg.com/@popperjs/core@2\"></script>
+    <script src=\"https://unpkg.com/tippy.js@6\"></script>
+    <link rel=\"stylesheet\" href=\"https://unpkg.com/tippy.js@6/dist/tippy.css\">
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        tippy('#Juego1', {
+        animation: 'fade',
+        content: 'Royal Escape es un juego donde tendrás que escapar de los malos.',
+        });
+        tippy('#Juego2', {
+        animation: 'fade',
+        content: 'En Desactiva la Bomba tendrás que competir con otros jugadores para desactivar una bomba.',
+        });
+        tippy('#Juego3', {
+        animation: 'fade',
+        content: '¡Sheila necesita tu ayuda! Juega a este gran juego simulando Flappy Birds.',
+        });
+    });
+    </script>
+
 </body>
 
-</html>", "gaming/juegos.html.twig", "/home/alumno/Symf/CasinoV2/templates/gaming/juegos.html.twig");
+</html>", "gaming/juegos.html.twig", "/home/alumno/Symf/symfony-casino/templates/gaming/juegos.html.twig");
     }
 }

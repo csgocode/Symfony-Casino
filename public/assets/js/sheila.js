@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const gameContainer = document.getElementById('gameContainer');
     const bird = document.getElementById('bird');
     let birdLeft = 220;
     let birdBottom = 100;

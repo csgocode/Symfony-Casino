@@ -1,17 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Mapeo de los IDs de los botones a los códigos de criptomoneda
     const cryptoMapping = {
         "dbitcoin": "BTC",
         "dlitecoin": "LTC",
         "deth": "ETH",
-        "dripple": "XRP" // Asumiendo que "dripple" se refiere a Ripple y su código es XRP
+        "dripple": "XRP"
     };
 
-    // Listener para el formulario de depósito
     document.getElementById("depositForm").addEventListener("submit", function(e) {
-        e.preventDefault(); // Previene el envío estándar del formulario
-
-        // Obtiene el método de pago seleccionado y la cantidad
+        e.preventDefault();
         const selectedPaymentMethod = document.querySelector('input[name="dcardSelect"]:checked').id;
         const amount = document.getElementById("dAmount").value;
 

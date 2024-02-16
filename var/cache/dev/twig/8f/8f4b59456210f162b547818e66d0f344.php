@@ -705,6 +705,7 @@ class __TwigTemplate_e0c1c1c12fe2d3432fde5a80d94aa8e0 extends Template
                                                         <button class=\"copy-text\">
                                                             <img src=\"/assets/images/icon/copy-icon.png\" class=\"max-un\" alt=\"icon\">
                                                         </button>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -729,8 +730,8 @@ class __TwigTemplate_e0c1c1c12fe2d3432fde5a80d94aa8e0 extends Template
                                                         <img src=\"/assets/images/icon/earning-icon-1.png\" class=\"max-un\" alt=\"icon\">
                                                     </div>
                                                     <h6 class=\"mt-3 mb-2\">";
-        // line 680
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 680, $this->source); })()), "dineroafiliados", [], "any", false, false, false, 680), "html", null, true);
+        // line 681
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 681, $this->source); })()), "dineroafiliados", [], "any", false, false, false, 681), "html", null, true);
         echo " EUR</h6>
                                                     <p class=\"mdtxt\">¡Dinero ganado! </p>
                                                 </div>
@@ -776,40 +777,40 @@ class __TwigTemplate_e0c1c1c12fe2d3432fde5a80d94aa8e0 extends Template
             </thead>
             <tbody>
                 ";
-        // line 724
+        // line 725
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["afiliados"]) || array_key_exists("afiliados", $context) ? $context["afiliados"] : (function () { throw new RuntimeError('Variable "afiliados" does not exist.', 724, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["afiliados"]) || array_key_exists("afiliados", $context) ? $context["afiliados"] : (function () { throw new RuntimeError('Variable "afiliados" does not exist.', 725, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["afiliado"]) {
-            // line 725
+            // line 726
             echo "                    <tr>
                         <th scope=\"row\">
                             <p>";
-            // line 727
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["afiliado"], "fechaRegistro", [], "any", false, false, false, 727), "d M"), "html", null, true);
+            // line 728
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["afiliado"], "fechaRegistro", [], "any", false, false, false, 728), "d M"), "html", null, true);
             echo "</p>
                         </th>
                         <td>
                             <p>";
-            // line 730
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["afiliado"], "level", [], "any", false, false, false, 730), "html", null, true);
+            // line 731
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["afiliado"], "level", [], "any", false, false, false, 731), "html", null, true);
             echo "</p>
                         </td>
                         <td>
                             <p>";
-            // line 733
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["afiliado"], "invitadoUser", [], "any", false, false, false, 733), "username", [], "any", false, false, false, 733), "html", null, true);
+            // line 734
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["afiliado"], "invitadoUser", [], "any", false, false, false, 734), "username", [], "any", false, false, false, 734), "html", null, true);
             echo "</p>
                         </td>
                         <td>
                             <p>";
-            // line 736
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["afiliado"], "afiliadoUser", [], "any", false, false, false, 736), "dineroafiliados", [], "any", false, false, false, 736), "html", null, true);
+            // line 737
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["afiliado"], "afiliadoUser", [], "any", false, false, false, 737), "dineroafiliados", [], "any", false, false, false, 737), "html", null, true);
             echo " EUR</p>
                         </td>
                         <td>
                             <p>";
-            // line 739
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["afiliado"], "invitadoUser", [], "any", false, false, false, 739), "email", [], "any", false, false, false, 739), "html", null, true);
+            // line 740
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["afiliado"], "invitadoUser", [], "any", false, false, false, 740), "email", [], "any", false, false, false, 740), "html", null, true);
             echo "</p>
                         </td>
                     </tr>
@@ -818,7 +819,7 @@ class __TwigTemplate_e0c1c1c12fe2d3432fde5a80d94aa8e0 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['afiliado'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 743
+        // line 744
         echo "            </tbody>
         </table>
     </div>
@@ -1314,6 +1315,7 @@ class __TwigTemplate_e0c1c1c12fe2d3432fde5a80d94aa8e0 extends Template
     <script src=\"/assets/js/plugin/wow.min.js\"></script>
     <script src=\"/assets/js/plugin/plugin.js\"></script>
     <script src=\"/assets/js/main.js\"></script>
+    <script src=\"/assets/js/copyAfi.js\"></script>
 </body>
 
 </html>";
@@ -1337,7 +1339,7 @@ class __TwigTemplate_e0c1c1c12fe2d3432fde5a80d94aa8e0 extends Template
 
     public function getDebugInfo()
     {
-        return array (  822 => 743,  812 => 739,  806 => 736,  800 => 733,  794 => 730,  788 => 727,  784 => 725,  780 => 724,  733 => 680,  703 => 653,  630 => 583,  626 => 582,  43 => 1,);
+        return array (  823 => 744,  813 => 740,  807 => 737,  801 => 734,  795 => 731,  789 => 728,  785 => 726,  781 => 725,  734 => 681,  703 => 653,  630 => 583,  626 => 582,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -1998,6 +2000,7 @@ class __TwigTemplate_e0c1c1c12fe2d3432fde5a80d94aa8e0 extends Template
                                                         <button class=\"copy-text\">
                                                             <img src=\"/assets/images/icon/copy-icon.png\" class=\"max-un\" alt=\"icon\">
                                                         </button>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2579,8 +2582,9 @@ class __TwigTemplate_e0c1c1c12fe2d3432fde5a80d94aa8e0 extends Template
     <script src=\"/assets/js/plugin/wow.min.js\"></script>
     <script src=\"/assets/js/plugin/plugin.js\"></script>
     <script src=\"/assets/js/main.js\"></script>
+    <script src=\"/assets/js/copyAfi.js\"></script>
 </body>
 
-</html>", "afiliate/index.html.twig", "/home/alumno/Symf/CasinoV2/templates/afiliate/index.html.twig");
+</html>", "afiliate/index.html.twig", "/home/alumno/Symf/symfony-casino/templates/afiliate/index.html.twig");
     }
 }

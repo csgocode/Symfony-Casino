@@ -2729,6 +2729,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <script src=\"/assets/js/main.js\"></script>
 </body>
 
-</html>", "perfil/perfilmain.html.twig", "/home/alumno/Symf/CasinoV2/templates/perfil/perfilmain.html.twig");
+</html>", "perfil/perfilmain.html.twig", "/home/alumno/Symf/symfony-casino/templates/perfil/perfilmain.html.twig");
     }
 }

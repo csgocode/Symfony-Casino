@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Usuario;
+use App\Entity\Afiliados;
 use App\Form\RegistrationFormType;
 use App\Security\AppCustomAuthenticator;
 use Doctrine\ORM\EntityManagerInterface;
@@ -21,15 +22,31 @@ class RegistrationController extends AbstractController
         $user = new Usuario();
         $form = $this->createForm(RegistrationFormType::class, $user);
         $form->handleRequest($request);
+        $referidoUsername = $request->query->get('i');
+        $referidoUser = null;
+        if ($referidoUsername) {
+            $referidoUser = $entityManager->getRepository(Usuario::class)->findOneBy(['username' => $referidoUsername]);
+        }
+
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // encode the plain password
             $user->setPassword(
                 $userPasswordHasher->hashPassword(
                     $user,
                     $form->get('plainPassword')->getData()
                 )
             );
+
+            if ($referidoUser) {
+                $afiliado = new Afiliados();
+                $afiliado->setInvitadoUser($referidoUser); // Usuario que invitó
+                $afiliado->setAfiliadoUser($user); // Nuevo usuario registrado
+                $afiliado->setFechaRegistro(new \DateTime()); // Fecha actual
+                $afiliado->setLevel(1); // O cualquier lógica de niveles que tengas
+                
+                $entityManager->persist($afiliado);
+            }
+
 
             $user->setDinero(0);
             $user->setDineroRetenido(0);
@@ -41,7 +58,6 @@ class RegistrationController extends AbstractController
             $user->setisAdmin(false);
             $entityManager->persist($user);
             $entityManager->flush();
-            // do anything else you need here, like send an email
 
             return $userAuthenticator->authenticateUser(
                 $user,

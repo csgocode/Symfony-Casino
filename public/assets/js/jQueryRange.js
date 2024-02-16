@@ -1,7 +1,5 @@
 (function($) {
     "use strict";
-
-    // Verifica si el navegador soporta el atributo "multiple" para inputs de tipo rango
     var supportsMultiple = HTMLInputElement && "valueLow" in HTMLInputElement.prototype;
 
     var multirange = function($input) {
