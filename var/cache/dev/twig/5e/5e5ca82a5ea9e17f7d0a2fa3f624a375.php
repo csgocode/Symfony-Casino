@@ -2406,6 +2406,6 @@ $context["attrvalue"] === false)) {
         {%- endif -%}
     {%- endfor -%}
 {%- endblock attributes -%}
-", "form_div_layout.html.twig", "/home/alumno/Symf/symfony-casino/vendor/symfony/twig-bridge/Resources/views/Form/form_div_layout.html.twig");
+", "form_div_layout.html.twig", "/home/alumno/Symf/CasinoV2/vendor/symfony/twig-bridge/Resources/views/Form/form_div_layout.html.twig");
     }
 }

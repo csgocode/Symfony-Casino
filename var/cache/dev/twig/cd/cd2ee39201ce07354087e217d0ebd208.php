@@ -174,6 +174,6 @@ class __TwigTemplate_cc887b671f00a7dbfffe2b14d9c98f5e extends Template
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/open.html.twig", "/home/alumno/Symf/symfony-casino/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
+", "@WebProfiler/Profiler/open.html.twig", "/home/alumno/Symf/CasinoV2/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
     }
 }

@@ -107,9 +107,13 @@ class Usuario implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(mappedBy: 'userid', targetEntity: Transacciones::class)]
     private Collection $transacciones;
 
+    #[ORM\OneToMany(mappedBy: 'invitadoUser', targetEntity: Afiliados::class)]
+    private Collection $afiliados;
+
     public function __construct()
     {
         $this->transacciones = new ArrayCollection();
+        $this->afiliados = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -494,6 +498,36 @@ class Usuario implements UserInterface, PasswordAuthenticatedUserInterface
             // set the owning side to null (unless already changed)
             if ($transaccione->getUserid() === $this) {
                 $transaccione->setUserid(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Afiliados>
+     */
+    public function getAfiliados(): Collection
+    {
+        return $this->afiliados;
+    }
+
+    public function addAfiliado(Afiliados $afiliado): static
+    {
+        if (!$this->afiliados->contains($afiliado)) {
+            $this->afiliados->add($afiliado);
+            $afiliado->setInvitadoUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAfiliado(Afiliados $afiliado): static
+    {
+        if ($this->afiliados->removeElement($afiliado)) {
+            // set the owning side to null (unless already changed)
+            if ($afiliado->getInvitadoUser() === $this) {
+                $afiliado->setInvitadoUser(null);
             }
         }
 

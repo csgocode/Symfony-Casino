@@ -1543,6 +1543,6 @@ $context["voter_detail"], "vote", [], "array", false, false, false, 423) == twig
         </div>
     {% endif %}
 {% endblock %}
-", "@Security/Collector/security.html.twig", "/home/alumno/Symf/symfony-casino/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
+", "@Security/Collector/security.html.twig", "/home/alumno/Symf/CasinoV2/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
     }
 }

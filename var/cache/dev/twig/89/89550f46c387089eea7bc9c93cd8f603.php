@@ -135,6 +135,6 @@ class __TwigTemplate_fbf7ec36695425d64899ff612fac47c3 extends Template
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/bag.html.twig", "/home/alumno/Symf/symfony-casino/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/bag.html.twig");
+", "@WebProfiler/Profiler/bag.html.twig", "/home/alumno/Symf/CasinoV2/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/bag.html.twig");
     }
 }

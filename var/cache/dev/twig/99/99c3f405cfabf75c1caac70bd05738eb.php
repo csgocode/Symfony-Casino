@@ -99,6 +99,6 @@ class __TwigTemplate_e73a5e559fba9c00571626ff64e01982 extends Template
 .container.body_default {
     border-top: 8px solid #aaaaaa;
 }
-", "@email/zurb_2/notification/local.css", "/home/alumno/Symf/symfony-casino/vendor/symfony/twig-bridge/Resources/views/Email/zurb_2/notification/local.css");
+", "@email/zurb_2/notification/local.css", "/home/alumno/Symf/CasinoV2/vendor/symfony/twig-bridge/Resources/views/Email/zurb_2/notification/local.css");
     }
 }

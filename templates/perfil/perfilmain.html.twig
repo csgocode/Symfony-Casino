@@ -597,29 +597,7 @@
 
     <!-- Account Section start -->
     <section class="account-section">
-    <div id="alertDiv" style="display:none;">¡Alerta! Tu cuenta necesita verificación.</div>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const verificarEstado = () => {
-        fetch('/usuario/verificar')
-            .then(response => response.json())
-            .then(data => {
-                if (data.showAlert) {
-                    document.getElementById('alertDiv').style.display = 'block';
-                } else {
-                    document.getElementById('alertDiv').style.display = 'none';
-                }
-            })
-            .catch(error => console.error('Error:', error));
-    };
-
-    // Verificar inmediatamente al cargar la página
-    verificarEstado();
-
-    // Luego, verificar cada 20 segundos
-    setInterval(verificarEstado, 20000);
-});
-</script>
+    
 
         <div class="overlay pb-120">
             <div class="container profile-area">
@@ -707,7 +685,31 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </div>
                             </div>
                         </div>
+                         <div class="alert alert-danger" id="alertDiv" style="display:none;">Por motivos de seguridad y normas legislativas, tu cuenta necesita pasar por una verificación KYC.<br><a href="/perfil/verificacion/{{user.id}}">Verificar cuenta ahora</a></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const verificarEstado = () => {
+        fetch('/usuario/verificar')
+            .then(response => response.json())
+            .then(data => {
+                if (data.showAlert) {
+                    document.getElementById('alertDiv').style.display = 'block';
+                } else {
+                    document.getElementById('alertDiv').style.display = 'none';
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    };
+
+    // Verificar inmediatamente al cargar la página
+    verificarEstado();
+
+    // Luego, verificar cada 20 segundos
+    setInterval(verificarEstado, 20000);
+});
+</script>
                         <div class="single-box">
+                       
                             <form action="#">
                                 <div class="row">
                                     <div class="col-lg-12">
