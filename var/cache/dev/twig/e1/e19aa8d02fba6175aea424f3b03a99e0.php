@@ -189,6 +189,6 @@ class __TwigTemplate_0b4afd071e93342566f8260584a093ac extends Template
 .timeline-graph .timeline-period {
     stroke-width: 0;
 }
-", "@WebProfiler/Collector/time.css.twig", "/home/alumno/Symf/CasinoV2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.css.twig");
+", "@WebProfiler/Collector/time.css.twig", "/home/alumno/Symf/CasinoV3/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.css.twig");
     }
 }

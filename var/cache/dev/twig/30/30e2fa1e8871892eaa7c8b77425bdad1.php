@@ -121,6 +121,6 @@ class __TwigTemplate_68120511bdd62eae9534e8c820e4b2ac extends Template
 {% block body %}
 <h1>Nuevo usuario</h1>
 {{ form(formulario) }}
-{% endblock %}", "checks/newUser.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/newUser.html.twig");
+{% endblock %}", "checks/newUser.html.twig", "/home/alumno/Symf/CasinoV3/templates/checks/newUser.html.twig");
     }
 }

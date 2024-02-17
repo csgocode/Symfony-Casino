@@ -820,6 +820,6 @@ class __TwigTemplate_5c687590bc5ee65026986d7c1603c8e4 extends Template
     <script src=\"../../assets/js/main.js\"></script>
 </body>
 
-</html>", "funciones/verificarID.html.twig", "/home/alumno/Symf/symfony-casino/templates/funciones/verificarID.html.twig");
+</html>", "funciones/verificarID.html.twig", "/home/alumno/Symf/CasinoV3/templates/funciones/verificarID.html.twig");
     }
 }

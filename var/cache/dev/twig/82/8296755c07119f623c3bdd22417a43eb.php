@@ -48,7 +48,7 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Dooplo - Gaming HTML Template</title>
+    <title>CasinoRoyal: Tu casino blockchain de confianza</title>
 
     <link rel=\"shortcut icon\" href=\"../../assets/images/fav.png\" type=\"image/x-icon\">
     <link rel=\"stylesheet\" href=\"../../assets/css/bootstrap.min.css\">
@@ -82,8 +82,8 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
             <div class=\"container\">
                 <nav class=\"navbar w-100 navbar-expand-lg\">
                     <a href=\"index.html\" class=\"navbar-brand d-flex align-items-center gap-2\">
-                        <img src=\"assets/images/fav.png\" class=\"logo\" alt=\"logo\">
-                        <img src=\"assets/images/logo-alt.png\" class=\"logo-alt\" alt=\"logo-alt\">
+                        
+                        <img src=\"assets/images/logo-alt.png\" height=\"300px\" width=\"230px\" height=\"300px\" width=\"230px\" class=\"logo-alt\" alt=\"logo-alt\">
                     </a>
                     <button class=\"navbar-toggler collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbar-content\">
                         <i class=\"fas fa-bars\"></i>
@@ -253,7 +253,7 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
             <div class=\"row justify-content-between\">
                 <div class=\"col-xl-6 col-lg-6\">
                     <div class=\"section-text\">
-                        <h3 class=\"mb-3\">Cripto Casino</h3>
+                        <h3 class=\"mb-3\">Casino Royal</h3>
                         <p>¡Multiplica tu dinero! El truco está en depositar todo tu dinero en nuestro casino.</p>
                     </div>
                     <div class=\"dooplo-info cus-mar\">
@@ -456,7 +456,7 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
                         <div class=\"col-xl-12 cus-mar d-flex flex-wrap align-items-center justify-content-center justify-content-md-between top-area\">
                             <div class=\"single-box d-flex flex-wrap gap-md-5 gap-3 align-items-center justify-content-center justify-content-md-start\">
                                 <a href=\"index.html\">
-                                    <img src=\"assets/images/logo.png\" class=\"logo\" alt=\"logo\">
+                                    <img src=\"assets/images/logo.png\" height=\"300px\" width=\"230px\" class=\"logo\" alt=\"logo\">
                                 </a>
                                 <ul class=\"items gap-3 d-flex flex-wrap align-items-center justify-content-md-start justify-content-center\">
                                     <li><a href=\"index-4.html\">Home</a></li>
@@ -551,7 +551,7 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Dooplo - Gaming HTML Template</title>
+    <title>CasinoRoyal: Tu casino blockchain de confianza</title>
 
     <link rel=\"shortcut icon\" href=\"../../assets/images/fav.png\" type=\"image/x-icon\">
     <link rel=\"stylesheet\" href=\"../../assets/css/bootstrap.min.css\">
@@ -585,8 +585,8 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
             <div class=\"container\">
                 <nav class=\"navbar w-100 navbar-expand-lg\">
                     <a href=\"index.html\" class=\"navbar-brand d-flex align-items-center gap-2\">
-                        <img src=\"assets/images/fav.png\" class=\"logo\" alt=\"logo\">
-                        <img src=\"assets/images/logo-alt.png\" class=\"logo-alt\" alt=\"logo-alt\">
+                        
+                        <img src=\"assets/images/logo-alt.png\" height=\"300px\" width=\"230px\" height=\"300px\" width=\"230px\" class=\"logo-alt\" alt=\"logo-alt\">
                     </a>
                     <button class=\"navbar-toggler collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbar-content\">
                         <i class=\"fas fa-bars\"></i>
@@ -744,7 +744,7 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
             <div class=\"row justify-content-between\">
                 <div class=\"col-xl-6 col-lg-6\">
                     <div class=\"section-text\">
-                        <h3 class=\"mb-3\">Cripto Casino</h3>
+                        <h3 class=\"mb-3\">Casino Royal</h3>
                         <p>¡Multiplica tu dinero! El truco está en depositar todo tu dinero en nuestro casino.</p>
                     </div>
                     <div class=\"dooplo-info cus-mar\">
@@ -921,7 +921,7 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
                         <div class=\"col-xl-12 cus-mar d-flex flex-wrap align-items-center justify-content-center justify-content-md-between top-area\">
                             <div class=\"single-box d-flex flex-wrap gap-md-5 gap-3 align-items-center justify-content-center justify-content-md-start\">
                                 <a href=\"index.html\">
-                                    <img src=\"assets/images/logo.png\" class=\"logo\" alt=\"logo\">
+                                    <img src=\"assets/images/logo.png\" height=\"300px\" width=\"230px\" class=\"logo\" alt=\"logo\">
                                 </a>
                                 <ul class=\"items gap-3 d-flex flex-wrap align-items-center justify-content-md-start justify-content-center\">
                                     <li><a href=\"index-4.html\">Home</a></li>
@@ -982,6 +982,6 @@ class __TwigTemplate_ccdd32c5c29916b33eb1d26a04af27a5 extends Template
     <script src=\"../../assets/js/formRegisterValidator.js\"></script>
 </body>
 
-</html>", "registration/register.html.twig", "/home/alumno/Symf/symfony-casino/templates/registration/register.html.twig");
+</html>", "registration/register.html.twig", "/home/alumno/Symf/CasinoV3/templates/registration/register.html.twig");
     }
 }

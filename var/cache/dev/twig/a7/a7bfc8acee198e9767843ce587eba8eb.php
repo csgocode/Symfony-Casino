@@ -336,6 +336,6 @@ $context["usuario"], "estaVerificado", [], "any", false, false, false, 59) ==  -
 
     </body>
 </html>
-", "checks/checkAllUsers.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/checkAllUsers.html.twig");
+", "checks/checkAllUsers.html.twig", "/home/alumno/Symf/CasinoV3/templates/checks/checkAllUsers.html.twig");
     }
 }

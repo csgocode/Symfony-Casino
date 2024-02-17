@@ -154,6 +154,6 @@ class __TwigTemplate_fde1ff741a3ce02d035583c9528b0b73 extends Template
     </ul>
 </div>
 {% endblock %}
-", "plisio_payment/index.html.twig", "/home/alumno/Symf/symfony-casino/templates/plisio_payment/index.html.twig");
+", "plisio_payment/index.html.twig", "/home/alumno/Symf/CasinoV3/templates/plisio_payment/index.html.twig");
     }
 }

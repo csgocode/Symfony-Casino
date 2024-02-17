@@ -135,6 +135,6 @@ class __TwigTemplate_4290223f78261955a672caa3291d838c extends Template
 <p>Estas en la ficha del usuario: {{usuario.id}} - {{usuario.nombre}} {{usuario.apellidos}}</p><hr>
 <p>¿Estás seguro que quieres quitarle el baneo? El usuario fue baneado por: {{usuario.razonbaneo}}</p>
 {{ form(formulario) }}
-{% endblock %}", "checks/desbanear.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/desbanear.html.twig");
+{% endblock %}", "checks/desbanear.html.twig", "/home/alumno/Symf/CasinoV3/templates/checks/desbanear.html.twig");
     }
 }

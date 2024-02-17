@@ -447,6 +447,6 @@ class __TwigTemplate_6400229e38dabeccd85c439dd3623ad0 extends Template
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "/home/alumno/Symf/CasinoV2/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "/home/alumno/Symf/CasinoV3/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
     }
 }

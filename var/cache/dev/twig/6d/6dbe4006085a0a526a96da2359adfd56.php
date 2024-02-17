@@ -48,7 +48,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Dooplo - Gaming HTML Template</title>
+    <title>CasinoRoyal: Tu casino blockchain de confianza</title>
 
     <link rel=\"shortcut icon\" href=\"assets/images/fav.png\" type=\"image/x-icon\">
     <link rel=\"stylesheet\" href=\"assets/css/bootstrap.min.css\">
@@ -71,556 +71,11 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
         </div>
     </div>
     <!-- end preloader -->
-
-    <!-- header-section start -->
-    <header class=\"header-section header-menu\">
-        <nav class=\"navbar navbar-expand-lg p-0\">
-            <div class=\"container\">
-                <nav class=\"navbar w-100 navbar-expand-lg\">
-                    <a href=\"index.html\" class=\"navbar-brand d-flex align-items-center gap-2\">
-                        <img src=\"assets/images/fav.png\" class=\"logo\" alt=\"logo\">
-                        <img src=\"assets/images/logo-alt.png\" class=\"logo-alt\" alt=\"logo-alt\">
-                    </a>
-                    <button class=\"navbar-toggler collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbar-content\">
-                        <i class=\"fas fa-bars\"></i>
-                    </button>
-                    <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbar-content\">
-                        <ul class=\"navbar-nav gap-3 py-4 py-lg-0 m-auto align-self-center\">
-                            <li class=\"dropdown show-dropdown\">
-                                <a class=\"dropdown-toggle dropdown-nav\" href=\"javascript:void(0)\">Home</a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a class=\"dropdown-item\" href=\"index.html\">Home One</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"index-2.html\">Home Two</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"index-3.html\">Home Three</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"index-4.html\">Home Four</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"index-5.html\">Home Five</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class=\"dropdown-nav\" href=\"play-as-you-go.html\">Play</a>
-                            </li>
-                            <li class=\"dropdown show-dropdown\">
-                                <a class=\"dropdown-toggle dropdown-nav\" href=\"javascript:void(0)\">games</a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a class=\"dropdown-item\" href=\"games.html\">games</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"games-details.html\">games Details</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class=\"dropdown-nav\" href=\"matchfinders.html\">Matchfinders</a>
-                            </li>
-                            <li>
-                                <a class=\"dropdown-nav\" href=\"leaderboard.html\">leaderboard</a>
-                            </li>
-                            <li class=\"dropdown show-dropdown\">
-                                <a class=\"dropdown-toggle dropdown-nav active\" href=\"javascript:void(0)\">Pages</a>
-                                <ul class=\"dropdown-menu\">
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"about-us.html\">About</a>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">tournament</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"tournament.html\">tournament</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"tournament-details.html\">tournament Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">accounts</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"accounts-1.html\">accounts one</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"accounts-2.html\">accounts two</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"accounts-3.html\">accounts three</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"affiliate.html\">affiliate</a>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">careers</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"careers.html\">careers</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"careers-details.html\">careers Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"community.html\">community</a>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"features.html\">features</a>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">help center</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"help-center.html\">help center one</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"help-center-2.html\">help center two</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"help-center-3.html\">help center three</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">group finder</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"group-finder.html\">group finder</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"group-details.html\">group Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">profile</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"public-profile.html\">public profile</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"private-profile.html\">private profile</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"privacy-policy.html\">privacy policy</a>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"terms-conditions.html\">terms conditions</a>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"how-works.html\">how works</a>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"error.html\">404</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=\"dropdown show-dropdown\">
-                                <a class=\"dropdown-toggle dropdown-nav\" href=\"javascript:void(0)\">shop</a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a class=\"dropdown-item\" href=\"shop.html\">shop</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"shop-details.html\">shop details one</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"shop-details-2.html\">shop details two</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"shop-details-3.html\">shop details three</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"shop-cart.html\">shop cart</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"calculate-shipping-1.html\">shipping one</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"calculate-shipping-2.html\">shipping two</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"checkout.html\">checkout</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class=\"right-area position-relative d-flex gap-3 gap-xxl-5 align-items-center\">
-                            <div class=\"single-item form-search-area\">
-                                <div class=\"form-search-btn cmn-head dot\">
-                                    <div class=\"icon-area d-center\">
-                                        <img src=\"assets/images/icon/search-icon.png\" alt=\"Icon\">
-                                    </div>
-                                </div>
-                                <div class=\"main-area px-2 py-2 py-sm-4 px-sm-4 form-search-content\">
-                                    <form action=\"#\" class=\"search-form\">
-                                        <input type=\"text\" placeholder=\"Enter Keywords.......\">
-                                        <button class=\"cmn-btn\">Search</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class=\"btn-area d-block d-lg-none d-flex gap-3 align-items-center\">
-                                <a href=\"sign-in.html\">Sign In</a>
-                                <a href=\"sign-up.html\" class=\"cmn-btn\">Sign up</a>
-                            </div>
-                            <div class=\"single-item d-none d-lg-block shop-cart-area\">
-                                <div class=\"shop-cart-btn cmn-head dot\">
-                                    <img src=\"assets/images/icon/cart-icon.png\" class=\"cart-icon max-un\" alt=\"icon\">
-                                    <div class=\"abs-area\">
-                                        <span class=\"d-center\">3</span>
-                                    </div>
-                                </div>
-                                <div class=\"main-area px-4 py-4 shop-cart-content\">
-                                    <div class=\"head-area mb-4\">
-                                        <h6>Shopping Cart <span>3</span></h6>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex align-items-center\">
-                                                <div class=\"img-area d-center\">
-                                                    <img src=\"assets/images/products-image-9.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <h6 class=\"m-0\">Esports Black Shirt</h6>
-                                                    <p class=\"mdtxt prize-area mt-2\">\$ 19.99 USD X 01</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex align-items-center\">
-                                                <div class=\"img-area d-center\">
-                                                    <img src=\"assets/images/products-image-10.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <h6 class=\"m-0\">Esports Black Shirt</h6>
-                                                    <p class=\"mdtxt prize-area mt-2\">\$ 19.99 USD X 01</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex align-items-center\">
-                                                <div class=\"img-area d-center\">
-                                                    <img src=\"assets/images/products-image-11.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <h6 class=\"m-0\">Esports Black Shirt</h6>
-                                                    <p class=\"mdtxt prize-area mt-2\">\$ 19.99 USD X 01</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class=\"total-cart-area mt-5 py-3 d-flex justify-content-between\">
-                                            <span>Total:</span>
-                                            <span>\$64.99</span>
-                                        </li>
-                                        <li class=\"d-center\">
-                                            <div class=\"acc-btn-area\">
-                                                <div class=\"btn-area mt-4 d-flex text-nowrap gap-4\">
-                                                    <a href=\"javascript:void(0)\" class=\"cmn-btn\">Shopping cart</a>
-                                                    <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Go to checkout</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class=\"single-item d-none d-lg-block chat-area\">
-                                <div class=\"chat-btn cmn-head position-relative\">
-                                    <img src=\"assets/images/icon/chat-icon.png\" class=\"chat-icon max-un\" alt=\"icon\">
-                                    <div class=\"abs-area\">
-                                        <span class=\"d-center\">3</span>
-                                    </div>
-                                </div>
-                                <div class=\"main-area chat-content\">
-                                    <div class=\"chat-item text-nowrap\">
-                                        <div class=\"chat-top-side\">
-                                            <div class=\"chat-form\">
-                                                <form action=\"#\">
-                                                    <div class=\"form-group py-1 input-area d-flex align-items-center\">
-                                                        <input type=\"text\" placeholder=\"Search\">
-                                                        <img src=\"assets/images/icon/search-icon.png\" alt=\"icon\">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <ul>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-1.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status orange\"></span>
-                                                            offline
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-2.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-3.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status orange\"></span>
-                                                            offline
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-4.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-5.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status orange\"></span>
-                                                            offline
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-6.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-7.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-8.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-9.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-10.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status orange\"></span>
-                                                            offline
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class=\"main\">
-                                            <div class=\"d-flex px-3 py-2 align-items-center gap-3\">
-                                                <img src=\"assets/images/leaderboard-img-1.png\" alt=\"image\">
-                                                <div>
-                                                    <p>Chat with Vincent Porter</p>
-                                                </div>
-                                            </div>
-                                            <ul class=\"chat-main\">
-                                                <li class=\"you\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"status green\"></span>
-                                                        <p>Dana</p>
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        Which game you play now?
-                                                    </p>
-                                                </li>
-                                                <li class=\"me\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                        <p>Dana</p>
-                                                        <span class=\"status blue\"></span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        I play Stronghold Kingdoms
-                                                    </p>
-                                                </li>
-                                                <li class=\"me\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                        <p>Dana</p>
-                                                        <span class=\"status blue\"></span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        OK
-                                                    </p>
-                                                </li>
-                                                <li class=\"you\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"status green\"></span>
-                                                        <p>Dana</p>
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        Which game you play now?
-                                                    </p>
-                                                </li>
-                                                <li class=\"me\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                        <p>Dana</p>
-                                                        <span class=\"status blue\"></span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        I play Stronghold Kingdoms
-                                                    </p>
-                                                </li>
-                                                <li class=\"me\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                        <p>Dana</p>
-                                                        <span class=\"status blue\"></span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        OK
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                            <div class=\"chat-footer text-right text-end\">
-                                                <form action=\"#\">
-                                                    <textarea cols=\"10\" rows=\"2\" placeholder=\"Type your message\"></textarea>
-                                                    <div class=\"upload-send px-2 d-flex justify-content-between\">
-                                                        <label for=\"files\">
-                                                            <img src=\"assets/images/icon/upload-img.png\" alt=\"icon\">
-                                                        </label>
-                                                        <input type=\"file\" id=\"files\" class=\"d-none\">
-                                                        <button type=\"submit\">Send</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=\"single-item d-none d-lg-block notifications-area\">
-                                <div class=\"notifications-btn cmn-head dot\">
-                                    <img src=\"assets/images/icon/nofify-icon.png\" class=\"bell-icon max-un\" alt=\"icon\">
-                                    <div class=\"abs-area notify\">
-                                        <span class=\"d-center\">3</span>
-                                    </div>
-                                </div>
-                                <div class=\"main-area px-4 py-4 notifications-content\">
-                                    <div class=\"head-area d-flex justify-content-between\">
-                                        <h5>Notifications</h5>
-                                        <span class=\"mdtxt\">Mark all as Read</span>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex\">
-                                                <div class=\"img-area\">
-                                                    <img src=\"assets/images/leaderboard-img-1.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <p><b>Nick Grissom</b> posted a comment on your <span>status update</span></p>
-                                                    <p class=\"mdtxt time-area mt-2\">2 minutes ago</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex\">
-                                                <div class=\"img-area\">
-                                                    <img src=\"assets/images/leaderboard-img-1.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <p><b>Nick Grissom</b> posted a comment on your <span>status update</span></p>
-                                                    <p class=\"mdtxt time-area mt-2\">2 minutes ago</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex\">
-                                                <div class=\"img-area\">
-                                                    <img src=\"assets/images/leaderboard-img-1.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <p><b>Nick Grissom</b> posted a comment on your <span>status update</span></p>
-                                                    <p class=\"mdtxt time-area mt-2\">2 minutes ago</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class=\"d-center\">
-                                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">View all Notifications</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class=\"single-item d-none d-lg-block user-area\">
-                                <div class=\"profile-area d-flex align-items-center\">
-                                    <span class=\"user-profile cmn-head d-flex gap-2 align-items-center\">
-                                        <img src=\"assets/images/leaderboard-img-1.png\" alt=\"User\">
-                                        <i class=\"icon-d-arrow-thin\"></i>
-                                    </span>
-                                </div>
-                                <div class=\"main-area user-content\">
-                                    <div class=\"head-area py-4 text-center\">
-                                        <h5>Hola,</h5>
-                                        <p class=\"email-id\">";
-        // line 512
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 512, $this->source); })()), "email", [], "any", false, false, false, 512), "html", null, true);
-        echo "</p>
-                                    </div>
-                                    <div class=\"cash-top\">
-                                        <div class=\"cash-point d-flex gap-3 align-items-center\">
-                                            <div class=\"img-area d-center\">
-                                                <img src=\"assets/images/icon/cash-icon.png\" alt=\"icon\">
-                                            </div>
-                                            <div class=\"info-area\">
-                                                <h5>";
-        // line 520
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 520, $this->source); })()), "dinero", [], "any", false, false, false, 520), "html", null, true);
-        echo " EUR</h5>
-                                                <span>Balance</span>
-                                            </div>
-                                        </div>
-                                        <div class=\"cash-point\">
-                                            <div class=\"d-flex justify-content-between\">
-                                                <div class=\"d-flex gap-3\">
-                                                    <div class=\"img-area d-center\">
-                                                        <img src=\"assets/images/icon/cash-icon.png\" alt=\"icon\">
-                                                    </div>
-                                                    <div class=\"info-area\">
-                                                        <h5>0</h5>
-                                                        <span>Puntos Royal</span>
-                                                    </div>
-                                                </div>
-                                                <div class=\"btn-area\">
-                                                    <a href=\"javascript:void(0)\">Canjear</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=\"acc-btn-area py-4 px-4\">
-                                        <a href=\"javascript:void(0)\" class=\"account-area d-center justify-content-between\">
-                                            <div class=\"d-flex gap-2\">
-                                                <span class=\"icon-item d-center\">
-                                                    <img src=\"assets/images/icon/user-6.png\" alt=\"icon\">
-                                                </span>
-                                                <span>Mi cuenta</span>
-                                            </div>
-                                            <div class=\"icon-arrow d-center\">
-                                                <i class=\"icon-c-arrow-single\"></i>
-                                            </div>
-                                        </a>
-                                        <div class=\"btn-area mt-5 d-flex gap-4\">
-                                            <a href=\"javascript:void(0)\" class=\"cmn-btn\">Depositar</a>
-                                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Retirar</a>
-                                        </div>
-                                    </div>
-                                    <div class=\"bottom-area\">
-                                        <a href=\"/logout\" class=\"d-flex justify-content-center py-3 gap-2\">
-                                            <div class=\"icon-log\">
-                                                <img src=\"assets/images/icon/logout-icon.png\" alt=\"icon\">
-                                            </div>
-                                            Cerrar sesión
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </nav>
-    </header>
-    <!-- header-section end -->
-
+";
+        // line 32
+        $this->loadTemplate("partials/menu.html.twig", "wallet/index.html.twig", 32)->display($context);
+        // line 33
+        echo "
     <!-- inner banner start -->
     <section class=\"banner-section inner-banner account\">
         <div class=\"banner-content\">
@@ -629,12 +84,12 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                     <div class=\"col-lg-12\">
                         <div class=\"d-flex flex-wrap gap-3 gap-md-0 justify-content-between\">
                             <h6>Hola, ";
-        // line 583
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 583, $this->source); })()), "nombre", [], "any", false, false, false, 583), "html", null, true);
+        // line 41
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 41, $this->source); })()), "nombre", [], "any", false, false, false, 41), "html", null, true);
         echo "</h6>
                             <p>Última sesión: ";
-        // line 584
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 584, $this->source); })()), "lastLogin", [], "any", false, false, false, 584), "d-m-Y g:sA"), "html", null, true);
+        // line 42
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 42, $this->source); })()), "lastLogin", [], "any", false, false, false, 42), "d-m-Y g:sA"), "html", null, true);
         echo "</p>
                         </div>
                     </div>
@@ -684,8 +139,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                             <div class=\"comment-box m-auto d-center\">
                                 <img src=\"assets/images/icon/comment-icon2.png\" class=\"max-un\" alt=\"icon\">
                             </div>
-                            <h5 class=\"my-3\">Need Help?</h5>
-                            <p>Have questions or concerns regrading your account?Our experts are here to help!.</p>
+                            <h5 class=\"my-3\">¿Necesitas ayuda?</h5>
+                            <p>Tenemos un magnífico chat de soporte 24/7 para ayudarte a solucionar los problemas o las dudas relacionadas con Casino Royal.</p>
                             <a href=\"#b_77y70llb_22\" id=\"chat\" class=\"cmn-btn mt-5\">Chatea con Soporte</a>
                         </div>
                     </div>
@@ -719,8 +174,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <h6>Balance</h6>
                                                         <div class=\"right d-center gap-2\">
                                                             <h6>";
-        // line 667
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 667, $this->source); })()), "dinero", [], "any", false, false, false, 667), "html", null, true);
+        // line 125
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 125, $this->source); })()), "dinero", [], "any", false, false, false, 125), "html", null, true);
         echo "€</h6>
                                                             <select>
                                                                 <option value=\"0\">EUR</option>
@@ -778,7 +233,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <li><h5>2000</h5></li>
                                                     </ul>
                                                    <form action=\"";
-        // line 723
+        // line 181
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("recarga_procesar");
         echo "\" method=\"POST\" id=\"depositForm\">
                                                         <div class=\"col-12\">
@@ -791,8 +246,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                              <div class=\"single-input\">
                                                                 <label for=\"email\">Email</label>
                                                                 <input type=\"text\" id=\"email\" placeholder=\"";
-        // line 733
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 733, $this->source); })()), "email", [], "any", false, false, false, 733), "html", null, true);
+        // line 191
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 191, $this->source); })()), "email", [], "any", false, false, false, 191), "html", null, true);
         echo "\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
@@ -810,8 +265,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         <h6>Balance</h6>
                                                         <div class=\"right d-center gap-2\">
                                                             <h6>";
-        // line 749
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 749, $this->source); })()), "dinero", [], "any", false, false, false, 749), "html", null, true);
+        // line 207
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 207, $this->source); })()), "dinero", [], "any", false, false, false, 207), "html", null, true);
         echo "</h6>
                                                             <select>
                                                                 <option value=\"0\">EUR</option>
@@ -877,8 +332,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                             <div class=\"single-input\">
                                                                 <label for=\"email\">Email</label>
                                                                 <input type=\"text\" id=\"email\" placeholder=\"";
-        // line 813
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 813, $this->source); })()), "email", [], "any", false, false, false, 813), "html", null, true);
+        // line 271
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 271, $this->source); })()), "email", [], "any", false, false, false, 271), "html", null, true);
         echo "\" readonly=\"readonly\" autocomplete=\"off\">
                                                             </div>
                                                             <div class=\"btn-area text-center mt-3\">
@@ -930,32 +385,32 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                                                         </thead>
                                                         <tbody>
                                                             ";
-        // line 863
+        // line 321
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["transacciones"]) || array_key_exists("transacciones", $context) ? $context["transacciones"] : (function () { throw new RuntimeError('Variable "transacciones" does not exist.', 863, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["transacciones"]) || array_key_exists("transacciones", $context) ? $context["transacciones"] : (function () { throw new RuntimeError('Variable "transacciones" does not exist.', 321, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["transaccion"]) {
-            // line 864
+            // line 322
             echo "                                                                <tr>
                                                                     <td style=\"color: white; font-weight: bold;\">";
-            // line 865
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "FechaInicio", [], "any", false, false, false, 865), "Y-m-d H:i:s"), "html", null, true);
+            // line 323
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "FechaInicio", [], "any", false, false, false, 323), "Y-m-d H:i:s"), "html", null, true);
             echo "</td>
                                                                     <td style=\"color: white; font-weight: bold;\">";
-            // line 866
-            echo (((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 866) == 1)) ? ("Depósito") : ((((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 866) == 2)) ? ("Retirada") : ("Referido"))));
+            // line 324
+            echo (((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 324) == 1)) ? ("Depósito") : ((((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Tipo", [], "any", false, false, false, 324) == 2)) ? ("Retirada") : ("Referido"))));
             echo "</td>
                                                                     <td style=\"color: white; font-weight: bold;\">EUR</td>
                                                                     <td style=\"color: white; font-weight: bold;\">";
-            // line 868
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "CantidadEUR", [], "any", false, false, false, 868), "html", null, true);
+            // line 326
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["transaccion"], "CantidadEUR", [], "any", false, false, false, 326), "html", null, true);
             echo "</td>
                                                                     <td style=\"color: white; font-weight: bold;\">";
-            // line 869
-            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Autorizacion", [], "any", false, false, false, 869)) ? ("Autorizada") : ("En espera"));
+            // line 327
+            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Autorizacion", [], "any", false, false, false, 327)) ? ("Autorizada") : ("En espera"));
             echo "</td>
                                                                     <td style=\"color: white; font-weight: bold;\">";
-            // line 870
-            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Completada", [], "any", false, false, false, 870)) ? ("Completada") : ("En espera"));
+            // line 328
+            echo ((twig_get_attribute($this->env, $this->source, $context["transaccion"], "Completada", [], "any", false, false, false, 328)) ? ("Completada") : ("En espera"));
             echo "</td>
                                                                     
                                                                 </tr>
@@ -964,7 +419,7 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['transaccion'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 874
+        // line 332
         echo "                                                        </tbody>
                                                     </table>
                                                 </div>
@@ -1320,8 +775,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                     <div class=\"head-area py-4 text-center\">
                         <h5>Hola,</h5>
                         <p class=\"email-id\">";
-        // line 1228
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1228, $this->source); })()), "email", [], "any", false, false, false, 1228), "html", null, true);
+        // line 686
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 686, $this->source); })()), "email", [], "any", false, false, false, 686), "html", null, true);
         echo "</p>
                     </div>
                     <div class=\"cash-top\">
@@ -1331,8 +786,8 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
                             </div>
                             <div class=\"info-area\">
                                 <h5>";
-        // line 1236
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 1236, $this->source); })()), "dinero", [], "any", false, false, false, 1236), "html", null, true);
+        // line 694
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 694, $this->source); })()), "dinero", [], "any", false, false, false, 694), "html", null, true);
         echo " EUR</h5>
                                 <span>Balance</span>
                             </div>
@@ -1385,77 +840,11 @@ class __TwigTemplate_6789e8c8bd7eecd5db0e6f5a1c58453b extends Template
     </div>
     <!-- Bottom Menu area end -->
 
-    <!-- Footer Area Start -->
-    <footer class=\"footer-section\">
-        <div class=\"overlay\">
-            <div class=\"call-action\">
-                <div class=\"container\">
-                    <div class=\"main-content\">
-                        <div class=\"row gap-4 gap-lg-0 align-items-center justify-content-between\">
-                            <div class=\"col-lg-6\">
-                                <div class=\"section-area mb-3\">
-                                    <h3>Ready to start Your Journey?</h3>
-                                </div>
-                                <p>Stop Scrolling, Start Playing.Create your account now and earn 500 coins</p>
-                            </div>
-                            <div class=\"col-lg-5 d-flex justify-content-lg-end\">
-                                <div class=\"btn-area\">
-                                    <a href=\"sign-up.html\" class=\"cmn-btn\">Register Now!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=\"footer-area\">
-                <div class=\"container\">
-                    <div class=\"row wrapper mt-80 mb-80\">
-                        <div class=\"col-xl-12 cus-mar d-flex flex-wrap align-items-center justify-content-center justify-content-md-between top-area\">
-                            <div class=\"single-box d-flex flex-wrap gap-md-5 gap-3 align-items-center justify-content-center justify-content-md-start\">
-                                <a href=\"index.html\">
-                                    <img src=\"assets/images/logo.png\" class=\"logo\" alt=\"logo\">
-                                </a>
-                                <ul class=\"items gap-3 d-flex flex-wrap align-items-center justify-content-md-start justify-content-center\">
-                                    <li><a href=\"index-4.html\">Home</a></li>
-                                    <li><a href=\"games.html\">Game</a></li>
-                                    <li><a href=\"shop.html\">Shop</a></li>
-                                    <li><a href=\"about-us.html\">About Us</a></li>
-                                    <li><a href=\"sign-in.html\">Support</a></li>
-                                </ul>
-                            </div>
-                            <div class=\"single-box social\">
-                                <ul class=\"d-flex\">
-                                    <li><a href=\"javascript:void(0)\"><i class=\"fab fa-facebook-f\"></i></a></li>
-                                    <li><a href=\"javascript:void(0)\"><i class=\"fab fa-youtube\"></i></a></li>
-                                    <li><a href=\"javascript:void(0)\"><i class=\"fab fa-instagram\"></i></a></li>
-                                    <li><a href=\"javascript:void(0)\"><i class=\"fab fa-linkedin-in\"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"footer-bottom\">
-                    <div class=\"container\">
-                        <div class=\"row gap-md-0 gap-3 justify-content-between\">
-                            <div class=\"col-md-6 order-1 order-md-0 text-md-start text-center\">
-                                <div class=\"copyright\">
-                                    <p>Copyright © <a href=\"index-3.html\">Dooplo</a> | Designed by <a href=\"javascript:void(0)\" class=\"company\">Pixelaxis</a></p>
-                                </div>
-                            </div>
-                            <div class=\"col-md-6 d-flex justify-content-md-end justify-content-center\">
-                                <ul class=\"d-flex gap-4 flex-wrap align-items-center\">
-                                    <li><a href=\"privacy-policy.html\">Privacy</a></li>
-                                    <li><a href=\"terms-conditions.html\">Terms & Conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Area End -->
-    <!-- Start of LiveAgent integration script: Chat button: Botón burbuja 84 -->
+   ";
+        // line 746
+        $this->loadTemplate("partials/footer.html.twig", "wallet/index.html.twig", 746)->display($context);
+        // line 747
+        echo "    <!-- Start of LiveAgent integration script: Chat button: Botón burbuja 84 -->
 <script type=\"text/javascript\">
 (function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.defer=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
 'https://casinoroyal.ladesk.com/scripts/track.js',
@@ -1506,7 +895,7 @@ function(e){ LiveAgent.createButton('77y70llb', e); });
 
     public function getDebugInfo()
     {
-        return array (  1335 => 1236,  1324 => 1228,  968 => 874,  958 => 870,  954 => 869,  950 => 868,  945 => 866,  941 => 865,  938 => 864,  934 => 863,  881 => 813,  814 => 749,  795 => 733,  782 => 723,  723 => 667,  637 => 584,  633 => 583,  567 => 520,  556 => 512,  43 => 1,);
+        return array (  847 => 747,  845 => 746,  790 => 694,  779 => 686,  423 => 332,  413 => 328,  409 => 327,  405 => 326,  400 => 324,  396 => 323,  393 => 322,  389 => 321,  336 => 271,  269 => 207,  250 => 191,  237 => 181,  178 => 125,  92 => 42,  88 => 41,  78 => 33,  76 => 32,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -1519,7 +908,7 @@ function(e){ LiveAgent.createButton('77y70llb', e); });
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Dooplo - Gaming HTML Template</title>
+    <title>CasinoRoyal: Tu casino blockchain de confianza</title>
 
     <link rel=\"shortcut icon\" href=\"assets/images/fav.png\" type=\"image/x-icon\">
     <link rel=\"stylesheet\" href=\"assets/css/bootstrap.min.css\">
@@ -1542,549 +931,7 @@ function(e){ LiveAgent.createButton('77y70llb', e); });
         </div>
     </div>
     <!-- end preloader -->
-
-    <!-- header-section start -->
-    <header class=\"header-section header-menu\">
-        <nav class=\"navbar navbar-expand-lg p-0\">
-            <div class=\"container\">
-                <nav class=\"navbar w-100 navbar-expand-lg\">
-                    <a href=\"index.html\" class=\"navbar-brand d-flex align-items-center gap-2\">
-                        <img src=\"assets/images/fav.png\" class=\"logo\" alt=\"logo\">
-                        <img src=\"assets/images/logo-alt.png\" class=\"logo-alt\" alt=\"logo-alt\">
-                    </a>
-                    <button class=\"navbar-toggler collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbar-content\">
-                        <i class=\"fas fa-bars\"></i>
-                    </button>
-                    <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbar-content\">
-                        <ul class=\"navbar-nav gap-3 py-4 py-lg-0 m-auto align-self-center\">
-                            <li class=\"dropdown show-dropdown\">
-                                <a class=\"dropdown-toggle dropdown-nav\" href=\"javascript:void(0)\">Home</a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a class=\"dropdown-item\" href=\"index.html\">Home One</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"index-2.html\">Home Two</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"index-3.html\">Home Three</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"index-4.html\">Home Four</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"index-5.html\">Home Five</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class=\"dropdown-nav\" href=\"play-as-you-go.html\">Play</a>
-                            </li>
-                            <li class=\"dropdown show-dropdown\">
-                                <a class=\"dropdown-toggle dropdown-nav\" href=\"javascript:void(0)\">games</a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a class=\"dropdown-item\" href=\"games.html\">games</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"games-details.html\">games Details</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class=\"dropdown-nav\" href=\"matchfinders.html\">Matchfinders</a>
-                            </li>
-                            <li>
-                                <a class=\"dropdown-nav\" href=\"leaderboard.html\">leaderboard</a>
-                            </li>
-                            <li class=\"dropdown show-dropdown\">
-                                <a class=\"dropdown-toggle dropdown-nav active\" href=\"javascript:void(0)\">Pages</a>
-                                <ul class=\"dropdown-menu\">
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"about-us.html\">About</a>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">tournament</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"tournament.html\">tournament</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"tournament-details.html\">tournament Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">accounts</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"accounts-1.html\">accounts one</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"accounts-2.html\">accounts two</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"accounts-3.html\">accounts three</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"affiliate.html\">affiliate</a>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">careers</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"careers.html\">careers</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"careers-details.html\">careers Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"community.html\">community</a>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"features.html\">features</a>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">help center</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"help-center.html\">help center one</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"help-center-2.html\">help center two</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"help-center-3.html\">help center three</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">group finder</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"group-finder.html\">group finder</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"group-details.html\">group Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"sub-dropdown\">
-                                        <a class=\"dropdown-item dropdown-toggle\" href=\"javascript:void(0)\">profile</a>
-                                        <ul class=\"sub sub-menu dropend\">
-                                            <li><a class=\"dropdown-item\" href=\"public-profile.html\">public profile</a></li>
-                                            <li><a class=\"dropdown-item\" href=\"private-profile.html\">private profile</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"privacy-policy.html\">privacy policy</a>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"terms-conditions.html\">terms conditions</a>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"how-works.html\">how works</a>
-                                    </li>
-                                    <li>
-                                        <a class=\"dropdown-item\" href=\"error.html\">404</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=\"dropdown show-dropdown\">
-                                <a class=\"dropdown-toggle dropdown-nav\" href=\"javascript:void(0)\">shop</a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a class=\"dropdown-item\" href=\"shop.html\">shop</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"shop-details.html\">shop details one</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"shop-details-2.html\">shop details two</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"shop-details-3.html\">shop details three</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"shop-cart.html\">shop cart</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"calculate-shipping-1.html\">shipping one</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"calculate-shipping-2.html\">shipping two</a></li>
-                                    <li><a class=\"dropdown-item\" href=\"checkout.html\">checkout</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class=\"right-area position-relative d-flex gap-3 gap-xxl-5 align-items-center\">
-                            <div class=\"single-item form-search-area\">
-                                <div class=\"form-search-btn cmn-head dot\">
-                                    <div class=\"icon-area d-center\">
-                                        <img src=\"assets/images/icon/search-icon.png\" alt=\"Icon\">
-                                    </div>
-                                </div>
-                                <div class=\"main-area px-2 py-2 py-sm-4 px-sm-4 form-search-content\">
-                                    <form action=\"#\" class=\"search-form\">
-                                        <input type=\"text\" placeholder=\"Enter Keywords.......\">
-                                        <button class=\"cmn-btn\">Search</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class=\"btn-area d-block d-lg-none d-flex gap-3 align-items-center\">
-                                <a href=\"sign-in.html\">Sign In</a>
-                                <a href=\"sign-up.html\" class=\"cmn-btn\">Sign up</a>
-                            </div>
-                            <div class=\"single-item d-none d-lg-block shop-cart-area\">
-                                <div class=\"shop-cart-btn cmn-head dot\">
-                                    <img src=\"assets/images/icon/cart-icon.png\" class=\"cart-icon max-un\" alt=\"icon\">
-                                    <div class=\"abs-area\">
-                                        <span class=\"d-center\">3</span>
-                                    </div>
-                                </div>
-                                <div class=\"main-area px-4 py-4 shop-cart-content\">
-                                    <div class=\"head-area mb-4\">
-                                        <h6>Shopping Cart <span>3</span></h6>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex align-items-center\">
-                                                <div class=\"img-area d-center\">
-                                                    <img src=\"assets/images/products-image-9.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <h6 class=\"m-0\">Esports Black Shirt</h6>
-                                                    <p class=\"mdtxt prize-area mt-2\">\$ 19.99 USD X 01</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex align-items-center\">
-                                                <div class=\"img-area d-center\">
-                                                    <img src=\"assets/images/products-image-10.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <h6 class=\"m-0\">Esports Black Shirt</h6>
-                                                    <p class=\"mdtxt prize-area mt-2\">\$ 19.99 USD X 01</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex align-items-center\">
-                                                <div class=\"img-area d-center\">
-                                                    <img src=\"assets/images/products-image-11.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <h6 class=\"m-0\">Esports Black Shirt</h6>
-                                                    <p class=\"mdtxt prize-area mt-2\">\$ 19.99 USD X 01</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class=\"total-cart-area mt-5 py-3 d-flex justify-content-between\">
-                                            <span>Total:</span>
-                                            <span>\$64.99</span>
-                                        </li>
-                                        <li class=\"d-center\">
-                                            <div class=\"acc-btn-area\">
-                                                <div class=\"btn-area mt-4 d-flex text-nowrap gap-4\">
-                                                    <a href=\"javascript:void(0)\" class=\"cmn-btn\">Shopping cart</a>
-                                                    <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Go to checkout</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class=\"single-item d-none d-lg-block chat-area\">
-                                <div class=\"chat-btn cmn-head position-relative\">
-                                    <img src=\"assets/images/icon/chat-icon.png\" class=\"chat-icon max-un\" alt=\"icon\">
-                                    <div class=\"abs-area\">
-                                        <span class=\"d-center\">3</span>
-                                    </div>
-                                </div>
-                                <div class=\"main-area chat-content\">
-                                    <div class=\"chat-item text-nowrap\">
-                                        <div class=\"chat-top-side\">
-                                            <div class=\"chat-form\">
-                                                <form action=\"#\">
-                                                    <div class=\"form-group py-1 input-area d-flex align-items-center\">
-                                                        <input type=\"text\" placeholder=\"Search\">
-                                                        <img src=\"assets/images/icon/search-icon.png\" alt=\"icon\">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <ul>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-1.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status orange\"></span>
-                                                            offline
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-2.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-3.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status orange\"></span>
-                                                            offline
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-4.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-5.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status orange\"></span>
-                                                            offline
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-6.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-7.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-8.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-9.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status green\"></span>
-                                                            online
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src=\"assets/images/leaderboard-img-10.png\" alt=\"image\">
-                                                    <div>
-                                                        <h6>Prénom Nom</h6>
-                                                        <p>
-                                                            <span class=\"status orange\"></span>
-                                                            offline
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class=\"main\">
-                                            <div class=\"d-flex px-3 py-2 align-items-center gap-3\">
-                                                <img src=\"assets/images/leaderboard-img-1.png\" alt=\"image\">
-                                                <div>
-                                                    <p>Chat with Vincent Porter</p>
-                                                </div>
-                                            </div>
-                                            <ul class=\"chat-main\">
-                                                <li class=\"you\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"status green\"></span>
-                                                        <p>Dana</p>
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        Which game you play now?
-                                                    </p>
-                                                </li>
-                                                <li class=\"me\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                        <p>Dana</p>
-                                                        <span class=\"status blue\"></span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        I play Stronghold Kingdoms
-                                                    </p>
-                                                </li>
-                                                <li class=\"me\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                        <p>Dana</p>
-                                                        <span class=\"status blue\"></span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        OK
-                                                    </p>
-                                                </li>
-                                                <li class=\"you\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"status green\"></span>
-                                                        <p>Dana</p>
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        Which game you play now?
-                                                    </p>
-                                                </li>
-                                                <li class=\"me\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                        <p>Dana</p>
-                                                        <span class=\"status blue\"></span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        I play Stronghold Kingdoms
-                                                    </p>
-                                                </li>
-                                                <li class=\"me\">
-                                                    <div class=\"entete\">
-                                                        <span class=\"mdr\">10:12AM, Today</span>
-                                                        <p>Dana</p>
-                                                        <span class=\"status blue\"></span>
-                                                    </div>
-                                                    <div class=\"triangle\"></div>
-                                                    <p class=\"message\">
-                                                        OK
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                            <div class=\"chat-footer text-right text-end\">
-                                                <form action=\"#\">
-                                                    <textarea cols=\"10\" rows=\"2\" placeholder=\"Type your message\"></textarea>
-                                                    <div class=\"upload-send px-2 d-flex justify-content-between\">
-                                                        <label for=\"files\">
-                                                            <img src=\"assets/images/icon/upload-img.png\" alt=\"icon\">
-                                                        </label>
-                                                        <input type=\"file\" id=\"files\" class=\"d-none\">
-                                                        <button type=\"submit\">Send</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=\"single-item d-none d-lg-block notifications-area\">
-                                <div class=\"notifications-btn cmn-head dot\">
-                                    <img src=\"assets/images/icon/nofify-icon.png\" class=\"bell-icon max-un\" alt=\"icon\">
-                                    <div class=\"abs-area notify\">
-                                        <span class=\"d-center\">3</span>
-                                    </div>
-                                </div>
-                                <div class=\"main-area px-4 py-4 notifications-content\">
-                                    <div class=\"head-area d-flex justify-content-between\">
-                                        <h5>Notifications</h5>
-                                        <span class=\"mdtxt\">Mark all as Read</span>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex\">
-                                                <div class=\"img-area\">
-                                                    <img src=\"assets/images/leaderboard-img-1.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <p><b>Nick Grissom</b> posted a comment on your <span>status update</span></p>
-                                                    <p class=\"mdtxt time-area mt-2\">2 minutes ago</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex\">
-                                                <div class=\"img-area\">
-                                                    <img src=\"assets/images/leaderboard-img-1.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <p><b>Nick Grissom</b> posted a comment on your <span>status update</span></p>
-                                                    <p class=\"mdtxt time-area mt-2\">2 minutes ago</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"javascript:void(0)\" class=\"d-flex\">
-                                                <div class=\"img-area\">
-                                                    <img src=\"assets/images/leaderboard-img-1.png\" class=\"max-un\" alt=\"image\">
-                                                </div>
-                                                <div class=\"text-area\">
-                                                    <p><b>Nick Grissom</b> posted a comment on your <span>status update</span></p>
-                                                    <p class=\"mdtxt time-area mt-2\">2 minutes ago</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class=\"d-center\">
-                                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">View all Notifications</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class=\"single-item d-none d-lg-block user-area\">
-                                <div class=\"profile-area d-flex align-items-center\">
-                                    <span class=\"user-profile cmn-head d-flex gap-2 align-items-center\">
-                                        <img src=\"assets/images/leaderboard-img-1.png\" alt=\"User\">
-                                        <i class=\"icon-d-arrow-thin\"></i>
-                                    </span>
-                                </div>
-                                <div class=\"main-area user-content\">
-                                    <div class=\"head-area py-4 text-center\">
-                                        <h5>Hola,</h5>
-                                        <p class=\"email-id\">{{user.email}}</p>
-                                    </div>
-                                    <div class=\"cash-top\">
-                                        <div class=\"cash-point d-flex gap-3 align-items-center\">
-                                            <div class=\"img-area d-center\">
-                                                <img src=\"assets/images/icon/cash-icon.png\" alt=\"icon\">
-                                            </div>
-                                            <div class=\"info-area\">
-                                                <h5>{{user.dinero}} EUR</h5>
-                                                <span>Balance</span>
-                                            </div>
-                                        </div>
-                                        <div class=\"cash-point\">
-                                            <div class=\"d-flex justify-content-between\">
-                                                <div class=\"d-flex gap-3\">
-                                                    <div class=\"img-area d-center\">
-                                                        <img src=\"assets/images/icon/cash-icon.png\" alt=\"icon\">
-                                                    </div>
-                                                    <div class=\"info-area\">
-                                                        <h5>0</h5>
-                                                        <span>Puntos Royal</span>
-                                                    </div>
-                                                </div>
-                                                <div class=\"btn-area\">
-                                                    <a href=\"javascript:void(0)\">Canjear</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=\"acc-btn-area py-4 px-4\">
-                                        <a href=\"javascript:void(0)\" class=\"account-area d-center justify-content-between\">
-                                            <div class=\"d-flex gap-2\">
-                                                <span class=\"icon-item d-center\">
-                                                    <img src=\"assets/images/icon/user-6.png\" alt=\"icon\">
-                                                </span>
-                                                <span>Mi cuenta</span>
-                                            </div>
-                                            <div class=\"icon-arrow d-center\">
-                                                <i class=\"icon-c-arrow-single\"></i>
-                                            </div>
-                                        </a>
-                                        <div class=\"btn-area mt-5 d-flex gap-4\">
-                                            <a href=\"javascript:void(0)\" class=\"cmn-btn\">Depositar</a>
-                                            <a href=\"javascript:void(0)\" class=\"cmn-btn alt\">Retirar</a>
-                                        </div>
-                                    </div>
-                                    <div class=\"bottom-area\">
-                                        <a href=\"/logout\" class=\"d-flex justify-content-center py-3 gap-2\">
-                                            <div class=\"icon-log\">
-                                                <img src=\"assets/images/icon/logout-icon.png\" alt=\"icon\">
-                                            </div>
-                                            Cerrar sesión
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </nav>
-    </header>
-    <!-- header-section end -->
+{% include 'partials/menu.html.twig' %}
 
     <!-- inner banner start -->
     <section class=\"banner-section inner-banner account\">
@@ -2143,8 +990,8 @@ function(e){ LiveAgent.createButton('77y70llb', e); });
                             <div class=\"comment-box m-auto d-center\">
                                 <img src=\"assets/images/icon/comment-icon2.png\" class=\"max-un\" alt=\"icon\">
                             </div>
-                            <h5 class=\"my-3\">Need Help?</h5>
-                            <p>Have questions or concerns regrading your account?Our experts are here to help!.</p>
+                            <h5 class=\"my-3\">¿Necesitas ayuda?</h5>
+                            <p>Tenemos un magnífico chat de soporte 24/7 para ayudarte a solucionar los problemas o las dudas relacionadas con Casino Royal.</p>
                             <a href=\"#b_77y70llb_22\" id=\"chat\" class=\"cmn-btn mt-5\">Chatea con Soporte</a>
                         </div>
                     </div>
@@ -2798,76 +1645,7 @@ function(e){ LiveAgent.createButton('77y70llb', e); });
     </div>
     <!-- Bottom Menu area end -->
 
-    <!-- Footer Area Start -->
-    <footer class=\"footer-section\">
-        <div class=\"overlay\">
-            <div class=\"call-action\">
-                <div class=\"container\">
-                    <div class=\"main-content\">
-                        <div class=\"row gap-4 gap-lg-0 align-items-center justify-content-between\">
-                            <div class=\"col-lg-6\">
-                                <div class=\"section-area mb-3\">
-                                    <h3>Ready to start Your Journey?</h3>
-                                </div>
-                                <p>Stop Scrolling, Start Playing.Create your account now and earn 500 coins</p>
-                            </div>
-                            <div class=\"col-lg-5 d-flex justify-content-lg-end\">
-                                <div class=\"btn-area\">
-                                    <a href=\"sign-up.html\" class=\"cmn-btn\">Register Now!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=\"footer-area\">
-                <div class=\"container\">
-                    <div class=\"row wrapper mt-80 mb-80\">
-                        <div class=\"col-xl-12 cus-mar d-flex flex-wrap align-items-center justify-content-center justify-content-md-between top-area\">
-                            <div class=\"single-box d-flex flex-wrap gap-md-5 gap-3 align-items-center justify-content-center justify-content-md-start\">
-                                <a href=\"index.html\">
-                                    <img src=\"assets/images/logo.png\" class=\"logo\" alt=\"logo\">
-                                </a>
-                                <ul class=\"items gap-3 d-flex flex-wrap align-items-center justify-content-md-start justify-content-center\">
-                                    <li><a href=\"index-4.html\">Home</a></li>
-                                    <li><a href=\"games.html\">Game</a></li>
-                                    <li><a href=\"shop.html\">Shop</a></li>
-                                    <li><a href=\"about-us.html\">About Us</a></li>
-                                    <li><a href=\"sign-in.html\">Support</a></li>
-                                </ul>
-                            </div>
-                            <div class=\"single-box social\">
-                                <ul class=\"d-flex\">
-                                    <li><a href=\"javascript:void(0)\"><i class=\"fab fa-facebook-f\"></i></a></li>
-                                    <li><a href=\"javascript:void(0)\"><i class=\"fab fa-youtube\"></i></a></li>
-                                    <li><a href=\"javascript:void(0)\"><i class=\"fab fa-instagram\"></i></a></li>
-                                    <li><a href=\"javascript:void(0)\"><i class=\"fab fa-linkedin-in\"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"footer-bottom\">
-                    <div class=\"container\">
-                        <div class=\"row gap-md-0 gap-3 justify-content-between\">
-                            <div class=\"col-md-6 order-1 order-md-0 text-md-start text-center\">
-                                <div class=\"copyright\">
-                                    <p>Copyright © <a href=\"index-3.html\">Dooplo</a> | Designed by <a href=\"javascript:void(0)\" class=\"company\">Pixelaxis</a></p>
-                                </div>
-                            </div>
-                            <div class=\"col-md-6 d-flex justify-content-md-end justify-content-center\">
-                                <ul class=\"d-flex gap-4 flex-wrap align-items-center\">
-                                    <li><a href=\"privacy-policy.html\">Privacy</a></li>
-                                    <li><a href=\"terms-conditions.html\">Terms & Conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Area End -->
+   {% include 'partials/footer.html.twig' %}
     <!-- Start of LiveAgent integration script: Chat button: Botón burbuja 84 -->
 <script type=\"text/javascript\">
 (function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.defer=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
@@ -2898,6 +1676,6 @@ function(e){ LiveAgent.createButton('77y70llb', e); });
 
 </body>
 
-</html>", "wallet/index.html.twig", "/home/alumno/Symf/symfony-casino/templates/wallet/index.html.twig");
+</html>", "wallet/index.html.twig", "/home/alumno/Symf/CasinoV3/templates/wallet/index.html.twig");
     }
 }

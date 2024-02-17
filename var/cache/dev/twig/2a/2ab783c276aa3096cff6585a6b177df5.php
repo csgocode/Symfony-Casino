@@ -132,6 +132,6 @@ class __TwigTemplate_9ea8b065f31d10fe2e08e666f44472ce extends Template
 <p>Estas en la ficha del usuario: {{usuario.id}} - {{usuario.nombre}} {{usuario.apellidos}}</p><hr>
 <p>¿Estás seguro que quieres darle permisos de usuario normal?</p>
 {{ form(formulario) }}
-{% endblock %}", "checks/removeAdmin.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/removeAdmin.html.twig");
+{% endblock %}", "checks/removeAdmin.html.twig", "/home/alumno/Symf/CasinoV3/templates/checks/removeAdmin.html.twig");
     }
 }

@@ -132,6 +132,6 @@ class __TwigTemplate_bfc81a2e99a15400ee3874352d6390de extends Template
 <p>Comprueba que los datos coinciden con los de tu cuenta, de lo contrario vamos a denegar tu solicitud de verificación.</p>
 <p>{{usuario.nombre}} {{usuario.apellidos}} - Nacimiento: {{usuario.fechaNacimiento|date('d-m-Y')}}</p>
 {{ form(formulario) }}
-{% endblock %}", "checks/verificar.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/verificar.html.twig");
+{% endblock %}", "checks/verificar.html.twig", "/home/alumno/Symf/CasinoV3/templates/checks/verificar.html.twig");
     }
 }

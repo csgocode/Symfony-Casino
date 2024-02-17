@@ -194,6 +194,6 @@ class __TwigTemplate_3cef8b7cc1016d2ae9c30bff53b6e7ed extends Template
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/alumno/Symf/symfony-casino/templates/base.html.twig");
+", "base.html.twig", "/home/alumno/Symf/CasinoV3/templates/base.html.twig");
     }
 }

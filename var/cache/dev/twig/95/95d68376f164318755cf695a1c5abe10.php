@@ -132,6 +132,6 @@ class __TwigTemplate_c79c6c52499e4bf364eb9a1558a0dc59 extends Template
 <p>Estas en la ficha del usuario: {{usuario.id}} - {{usuario.nombre}} {{usuario.apellidos}}</p><hr>
 <p>¿Estás seguro que quieres darle admin?</p>
 {{ form(formulario) }}
-{% endblock %}", "checks/makeAdmin.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/makeAdmin.html.twig");
+{% endblock %}", "checks/makeAdmin.html.twig", "/home/alumno/Symf/CasinoV3/templates/checks/makeAdmin.html.twig");
     }
 }

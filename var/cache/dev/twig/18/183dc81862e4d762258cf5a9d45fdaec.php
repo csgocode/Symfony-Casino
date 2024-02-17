@@ -900,6 +900,6 @@ class __TwigTemplate_bef5d3cc36174c010400fea48b5d4566 extends Template
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "/home/alumno/Symf/CasinoV2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "/home/alumno/Symf/CasinoV3/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
     }
 }

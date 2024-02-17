@@ -130,6 +130,6 @@ class __TwigTemplate_aac3c8558b79cb5554f13a72ef35d501 extends Template
 <h1>Admin panel - Banear usuario</h1><hr>
 <p>Estas en la ficha del usuario: {{usuario.id}} - {{usuario.nombre}} {{usuario.apellidos}}</p>
 {{ form(formulario) }}
-{% endblock %}", "checks/banear.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/banear.html.twig");
+{% endblock %}", "checks/banear.html.twig", "/home/alumno/Symf/CasinoV3/templates/checks/banear.html.twig");
     }
 }

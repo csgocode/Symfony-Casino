@@ -48,7 +48,7 @@ class __TwigTemplate_2021653511276437c40073274b3a5e49 extends Template
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Dooplo - Gaming HTML Template</title>
+    <title>CasinoRoyal: Tu casino blockchain de confianza</title>
 
     <link rel=\"shortcut icon\" href=\"/assets/images/fav.png\" type=\"image/x-icon\">
     <link rel=\"stylesheet\" href=\"/assets/css/bootstrap.min.css\">
@@ -77,7 +77,7 @@ class __TwigTemplate_2021653511276437c40073274b3a5e49 extends Template
             <div class=\"container\">
                 <nav class=\"navbar w-100 navbar-expand-lg\">
                     <a href=\"index.html\" class=\"navbar-brand d-flex align-items-center gap-2\">
-                        <img src=\"/assets/images/fav.png\" class=\"logo\" alt=\"logo\">
+                        
                         <img src=\"/assets/images/logo-alt.png\" class=\"logo-alt\" alt=\"logo-alt\">
                     </a>
                     <button class=\"navbar-toggler collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbar-content\">
@@ -3738,7 +3738,7 @@ class __TwigTemplate_2021653511276437c40073274b3a5e49 extends Template
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Dooplo - Gaming HTML Template</title>
+    <title>CasinoRoyal: Tu casino blockchain de confianza</title>
 
     <link rel=\"shortcut icon\" href=\"/assets/images/fav.png\" type=\"image/x-icon\">
     <link rel=\"stylesheet\" href=\"/assets/css/bootstrap.min.css\">
@@ -3767,7 +3767,7 @@ class __TwigTemplate_2021653511276437c40073274b3a5e49 extends Template
             <div class=\"container\">
                 <nav class=\"navbar w-100 navbar-expand-lg\">
                     <a href=\"index.html\" class=\"navbar-brand d-flex align-items-center gap-2\">
-                        <img src=\"/assets/images/fav.png\" class=\"logo\" alt=\"logo\">
+                        
                         <img src=\"/assets/images/logo-alt.png\" class=\"logo-alt\" alt=\"logo-alt\">
                     </a>
                     <button class=\"navbar-toggler collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbar-content\">
@@ -7399,6 +7399,6 @@ class __TwigTemplate_2021653511276437c40073274b3a5e49 extends Template
     <script src=\"/assets/js/main.js\"></script>
 </body>
 
-</html>", "perfil/perfilview.html.twig", "/home/alumno/Symf/symfony-casino/templates/perfil/perfilview.html.twig");
+</html>", "perfil/perfilview.html.twig", "/home/alumno/Symf/CasinoV3/templates/perfil/perfilview.html.twig");
     }
 }

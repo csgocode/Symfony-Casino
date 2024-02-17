@@ -1547,6 +1547,6 @@ class __TwigTemplate_2df6a3bb056859859230ef9e8a28502b extends Template
 \t<script src=\"assets/js/formContactValidator.js\"></script>
 </body>
 
-</html>", "funciones/contacto.html.twig", "/home/alumno/Symf/symfony-casino/templates/funciones/contacto.html.twig");
+</html>", "funciones/contacto.html.twig", "/home/alumno/Symf/CasinoV3/templates/funciones/contacto.html.twig");
     }
 }

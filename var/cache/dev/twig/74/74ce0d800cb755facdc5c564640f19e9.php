@@ -905,6 +905,6 @@ class __TwigTemplate_631b7d5fae5fef8bf61791486410cb0e extends Template
 </body>
 
 </html>
-", "funciones/login.html.twig", "/home/alumno/Symf/symfony-casino/templates/funciones/login.html.twig");
+", "funciones/login.html.twig", "/home/alumno/Symf/CasinoV3/templates/funciones/login.html.twig");
     }
 }

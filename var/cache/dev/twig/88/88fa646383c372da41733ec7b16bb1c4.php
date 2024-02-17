@@ -224,6 +224,6 @@ class __TwigTemplate_23f5c8ab8bb8cef6607637e5415322b7 extends Template
 
     </body>
 </html>
-", "checks/checkBannedUsers.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/checkBannedUsers.html.twig");
+", "checks/checkBannedUsers.html.twig", "/home/alumno/Symf/CasinoV3/templates/checks/checkBannedUsers.html.twig");
     }
 }

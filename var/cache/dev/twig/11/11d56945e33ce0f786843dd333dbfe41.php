@@ -48,7 +48,7 @@ class __TwigTemplate_91be55fe13b12bbf48787de4cfa8455d extends Template
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Dooplo - Gaming HTML Template</title>
+    <title>CasinoRoyal: Tu casino blockchain de confianza</title>
 
     <link rel=\"shortcut icon\" href=\"../../assets/images/fav.png\" type=\"image/x-icon\">
     <link rel=\"stylesheet\" href=\"../../assets/css/bootstrap.min.css\">
@@ -494,7 +494,7 @@ class __TwigTemplate_91be55fe13b12bbf48787de4cfa8455d extends Template
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Dooplo - Gaming HTML Template</title>
+    <title>CasinoRoyal: Tu casino blockchain de confianza</title>
 
     <link rel=\"shortcut icon\" href=\"../../assets/images/fav.png\" type=\"image/x-icon\">
     <link rel=\"stylesheet\" href=\"../../assets/css/bootstrap.min.css\">
@@ -903,6 +903,6 @@ class __TwigTemplate_91be55fe13b12bbf48787de4cfa8455d extends Template
     <script src=\"../../assets/js/main.js\"></script>
 </body>
 
-</html>", "funciones/register.html.twig", "/home/alumno/Symf/symfony-casino/templates/funciones/register.html.twig");
+</html>", "funciones/register.html.twig", "/home/alumno/Symf/CasinoV3/templates/funciones/register.html.twig");
     }
 }

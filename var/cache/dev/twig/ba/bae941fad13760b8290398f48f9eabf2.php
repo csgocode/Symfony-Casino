@@ -199,6 +199,6 @@ class __TwigTemplate_c207274c7e554134ef2062498de79512 extends Template
 
 
     </body>
-</html>", "checks/DNIcheck.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/DNIcheck.html.twig");
+</html>", "checks/DNIcheck.html.twig", "/home/alumno/Symf/CasinoV3/templates/checks/DNIcheck.html.twig");
     }
 }

@@ -1,0 +1,63 @@
+ <!-- header-section start -->
+    <header class="header-section header-menu">
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container">
+                <nav class="navbar w-100 navbar-expand-lg">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
+                        
+                        <img src="/assets/images/logo-alt.png" height="300px" width="230px" class="logo-alt" alt="logo-alt">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                        <ul class="navbar-nav gap-3 py-4 py-lg-0 m-auto align-self-center">
+                            <li class="dropdown show-dropdown">
+                                <a class="dropdown-nav" href="/">Inicio</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-nav" href="{{path('app_gaming')}}">Juegos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-nav" href="{{path('contactoapp')}}">Contacto</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-nav" href="{{path('app_perfil_propio')}}">Perfil</a>
+                            </li>
+                            
+                                    
+                            <li class="dropdown show-dropdown">
+                                <a class="dropdown-nav" href="{{path('app_afiliated')}}">Afiliados</a>
+                            </li>
+                        </ul>
+                        <div class="right-area position-relative d-flex gap-3 gap-xxl-5 align-items-center">
+                            <div class="single-item form-search-area">
+                                <div class="form-search-btn cmn-head dot">
+                                    <div class="icon-area d-center">
+                                        <img src="/assets/images/icon/search-icon.png" alt="Icon">
+                                    </div>
+                                </div>
+                                <div class="main-area px-2 py-2 py-sm-4 px-sm-4 form-search-content">
+                                    <form action="#" class="search-form">
+                                        <input type="text" placeholder="¿Qué buscas?....">
+                                        <button class="cmn-btn">Buscar</button>
+                                    </form>
+                                </div>
+                            </div>
+ <div class="btn-area d-flex gap-3 align-items-center">
+                               {% if app.user %}
+        
+            <a href="#">Estas logueado como {{ app.user.userIdentifier }}.</a> <a class="cmn-btn" href="{{ path('app_logout') }}">Cerrar</a>
+
+    {% else %}
+      <a href="{{path('app_login')}}">Login</a>
+      <a href="{{path('app_register')}}" class="cmn-btn">Registro</a>
+    {% endif %}stro</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <!-- header-section end -->

@@ -121,6 +121,6 @@ class __TwigTemplate_ea3c3614104890210e94d48af30f118d extends Template
 {% block body %}
 <h1>Admin panel - Editar usuario</h1><hr>
 {{ form(formulario) }}
-{% endblock %}", "checks/edit.html.twig", "/home/alumno/Symf/symfony-casino/templates/checks/edit.html.twig");
+{% endblock %}", "checks/edit.html.twig", "/home/alumno/Symf/CasinoV3/templates/checks/edit.html.twig");
     }
 }

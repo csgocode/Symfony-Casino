@@ -51,6 +51,7 @@ class __TwigTemplate_cc76b9a0f5538ed0e269ed3e54632c34 extends Template
     <link href=\"https://fonts.googleapis.com/css?family=Squada+One&display=swap\" rel=\"stylesheet\">
 </head>
 <body>
+
     <canvas id=\"canvas\" width=\"276\" height=\"414\"></canvas>
     <script src=\"/game.js\"></script>
 </body>
@@ -86,9 +87,10 @@ class __TwigTemplate_cc76b9a0f5538ed0e269ed3e54632c34 extends Template
     <link href=\"https://fonts.googleapis.com/css?family=Squada+One&display=swap\" rel=\"stylesheet\">
 </head>
 <body>
+
     <canvas id=\"canvas\" width=\"276\" height=\"414\"></canvas>
     <script src=\"/game.js\"></script>
 </body>
-</html>", "gaming/sheila.html.twig", "/home/alumno/Symf/symfony-casino/templates/gaming/sheila.html.twig");
+</html>", "gaming/sheila.html.twig", "/home/alumno/Symf/CasinoV3/templates/gaming/sheila.html.twig");
     }
 }
